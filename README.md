@@ -26,6 +26,10 @@ PRIME estimates these signal contributions from observed data, assigning zero ou
 
 ## Install
 
+### Python
+
+[PyPI](https://pypi.org/project/prime-importance/)
+
 ### R
 
 ```r
@@ -35,25 +39,7 @@ remotes::install_github("ChoYoungSeo/prime-importance-paper", subdir = "packages
 
 [R reference manual (PDF)](https://raw.githubusercontent.com/ChoYoungSeo/prime-importance-paper/main/packages/r/docs/prime.pdf)
 
-### Python
-
-[PyPI](https://pypi.org/project/prime-importance/)
-
 ## Quick start
-
-### R
-
-```r
-library(prime)
-set.seed(5)
-X <- matrix(runif(300 * 8, -1, 1), nrow = 300)
-colnames(X) <- paste0("X", seq_len(ncol(X)))
-y <- X[, 1] - X[, 2] + X[, 5]^2 + rnorm(300, sd = 0.08)
-fit <- prime(X, y)
-fit$selected_names
-fit$effects
-plot(fit)
-```
 
 ### Python
 
@@ -69,6 +55,20 @@ print(fit.selected_names)
 print(fit.effects)
 prime.plot(fit)
 plt.show()
+```
+
+### R
+
+```r
+library(prime)
+set.seed(5)
+X <- matrix(runif(300 * 8, -1, 1), nrow = 300)
+colnames(X) <- paste0("X", seq_len(ncol(X)))
+y <- X[, 1] - X[, 2] + X[, 5]^2 + rnorm(300, sd = 0.08)
+fit <- prime(X, y)
+fit$selected_names
+fit$effects
+plot(fit)
 ```
 
 Each example selects `X1`, `X2` and `X5`; the other coordinates receive zero importance.
