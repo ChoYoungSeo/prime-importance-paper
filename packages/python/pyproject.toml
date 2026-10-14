@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "prime-importance"
-version = "0.2.1"
+version = "0.2.2"
 description = "Response-relevant selection and proportional global variable importance"
 readme = "README_PYPI.md"
 requires-python = ">=3.10"
@@ -42,11 +42,8 @@ plot = ["matplotlib>=3.7"]
 dev = ["build>=1", "matplotlib>=3.7", "pytest>=8", "ruff>=0.6", "twine>=6"]
 
 [project.urls]
-Homepage = "https://github.com/ChoYoungSeo/prime-importance"
-Repository = "https://github.com/ChoYoungSeo/prime-importance"
-Issues = "https://github.com/ChoYoungSeo/prime-importance/issues"
-"Code and results" = "https://github.com/ChoYoungSeo/prime-importance-paper"
-"R package" = "https://github.com/ChoYoungSeo/prime-importance-r"
+Homepage = "https://github.com/ChoYoungSeo/prime-importance-paper"
+Repository = "https://github.com/ChoYoungSeo/prime-importance-paper"
 Paper = "https://arxiv.org/abs/2610.17053"
 
 [tool.setuptools.packages.find]

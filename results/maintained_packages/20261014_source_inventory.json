@@ -4,13 +4,13 @@
       "root": "packages/python",
       "source_files": {
         "packages/python/.gitignore": "66ce33c2ddfc62ec4adaa1a33815beabc180cbe0f5ba61a5607d41bbe249a4f2",
-        "packages/python/CITATION.cff": "40b623fb73f9a7665ffbe4768b94b11955a866563e475974fa014c605ed6e318",
+        "packages/python/CITATION.cff": "7b69524b4bf632000b9dd9898f086bd3288e7d566e5b8bf3ab88bafed961ad4f",
         "packages/python/LICENSE": "967f782b832a371a867f617c6c8a86990517acc94acc0b79ec27e788b299b9e9",
         "packages/python/MANIFEST.in": "f1f54249c5920c06a24de8865180a67c3eacee284b62c7b45b7f8aa64c78af39",
         "packages/python/Makefile": "967929a9e070f4f494761a241cae94b0490750ec58b83099fbd70182c00c4382",
-        "packages/python/README.md": "dbb9a1657fa4a0d008835efd6c9557131028d9fa6827ac741f1652a77ea684bd",
-        "packages/python/README_PYPI.md": "b5a56fc1c1fe2b11387254929f43c178c1ad34df41b23544c3699efcf37ad446",
-        "packages/python/VALIDATION.md": "d7deb52c3f6a7d7fe371f79395ea49c89ed33beffb7764acb30344a651851e47",
+        "packages/python/README.md": "91d0829721ca5d74c2011f771b95a89722b27d247f3b1d28867f65b35fc5c37d",
+        "packages/python/README_PYPI.md": "c6f2b7c7e44c27e8ef1bec55dc867bd861a2d6d01d575c9be9f3d7b727608756",
+        "packages/python/VALIDATION.md": "b512fe13850c2bea4c655059bf78dc2655e43b103e7267e1eca20f21fc283872",
         "packages/python/benchmarks/neighbor_runtime.py": "71bf0ff12f88e85036a00862ef9c156d819dac2e1790c0c1ade6f8935fa098e4",
         "packages/python/benchmarks/results/neighbors_20260913.json": "e6b2375ebefc501608c8293a4d9ece447a774a0b74b91f8ef3a63b21db5894a1",
         "packages/python/benchmarks/results/neighbors_20260913_final.json": "3828971e480a9a6be94646993eaa985ad5fe52fd998401966d1f622200c68121",
@@ -18,10 +18,11 @@
         "packages/python/docs/assets/friedman-current.png": "078fe0f272ec22cd0543cd8ade4413ddc0a5fb8fbcb3d52895418ad66256c2b6",
         "packages/python/docs/assets/proxy-allocation.png": "21ed333d93e378b12fc471fc7d70babc0a8a3734b6d84298c07cf2c648999d1b",
         "packages/python/examples/quickstart.py": "d091481932b579b063ef6364783b4457723d106c8a3ca81d364721ce6f187ec5",
-        "packages/python/pyproject.toml": "6939aacf9adc917af36d581a2511fad4d4bd9745bfbfdc1a44e6a10d91e1d023",
-        "packages/python/release/PUBLISHING_PLAN.md": "cc3e8814544661d95329f7e99fb88002d6fef2ae1f54e04664eae3c9c2e0d868",
+        "packages/python/pyproject.toml": "2d1da348ceb5e7305a6531b34c5e31fe7fdb921b8a6cb2d544e8ed4454f2ccaf",
+        "packages/python/release/PUBLISHING_PLAN.md": "b91d60f2b623daa80ab525004729e2cde9f5bec1e1c26a3db92724afa4be4669",
+        "packages/python/release/RELEASE_NOTES_0.2.2.md": "3a8509862d71893f2f6350945f8972b34da4f07780a17bfed379975914630ae6",
         "packages/python/release/publish.yml.example": "a453c856c2b83ed008dad0a0b9269d86d6abbbb2a38f5dfc160269b49f874d39",
-        "packages/python/src/prime/__init__.py": "673308f50c9bcf19572beb5128b31a1f9658030da54a19c9b4852f6a7ff684af",
+        "packages/python/src/prime/__init__.py": "e68d24fa855d11fbb1b0e9c4eda39d0ad1d2b354d46447f43e74c2c912499efc",
         "packages/python/src/prime/_core.py": "229fb7ff2802c871f4e9d7483cf78ef698c56645177296d0224ab2acf21ed74e",
         "packages/python/src/prime/_plot.py": "9c4831bcac78b0792026a396f3f56946c2b69a2ff3b5d49a5c5cd983eb4143cb",
         "packages/python/src/prime/_pme.py": "5b88f5778c4d0eaf09cdc54c39ed1e00f44576ef0132817688a405cb78be39bf",
@@ -34,7 +35,7 @@
         "packages/python/tests/test_types.py": "8ca669f690cca8251552b45cb14f0917b2daec8909b1ae8d111cf11a558a5cac",
         "packages/python/tests/test_validation.py": "622f0303fc0816baa35611195bb8f38a2523b3f171d679d9f386754858f77513"
       },
-      "version": "0.2.1"
+      "version": "0.2.2"
     },
     "r": {
       "root": "packages/r",

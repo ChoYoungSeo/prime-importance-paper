@@ -2,4 +2,4 @@
 
 [PRIME guide](https://github.com/ChoYoungSeo/prime-importance-paper#install)
 
-Distribution: `prime-importance` (`0.2.1`). Import: `prime`.
+Distribution: `prime-importance` (`0.2.2`). Import: `prime`.

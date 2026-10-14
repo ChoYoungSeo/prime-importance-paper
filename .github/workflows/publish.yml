@@ -1,10 +1,10 @@
-name: Verify or publish approved PRIME 0.2.1
+name: Verify or publish approved PRIME 0.2.2
 
 "on":
   workflow_dispatch:
     inputs:
       upload:
-        description: Upload the checked 0.2.1 files to PyPI (already published; keep false)
+        description: Upload the checked 0.2.2 files to PyPI (only after final approval)
         type: boolean
         default: false
         required: true
@@ -12,7 +12,7 @@ name: Verify or publish approved PRIME 0.2.1
 permissions: {}
 
 concurrency:
-  group: prime-0.2.1-pypi
+  group: prime-0.2.2-pypi
   cancel-in-progress: false
 
 jobs:
@@ -31,17 +31,17 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           mkdir dist
-          gh release download v0.2.1 --repo "$GH_REPO" --dir dist \
-            --pattern 'prime_importance-0.2.1.tar.gz' \
-            --pattern 'prime_importance-0.2.1-py3-none-any.whl'
+          gh release download v0.2.2 --repo "$GH_REPO" --dir dist \
+            --pattern 'prime_importance-0.2.2.tar.gz' \
+            --pattern 'prime_importance-0.2.2-py3-none-any.whl'
       - name: Verify the exact approved files
         run: |
           python - <<'PY'
           from pathlib import Path
           import hashlib
           expected = {
-              "prime_importance-0.2.1.tar.gz": "2b5ac6c8a12e1c8979bdb466e3b0193ffcfb5c3b63321161ea195cbcc327220d",
-              "prime_importance-0.2.1-py3-none-any.whl": "c04a3696495d1b9d47d44ed9b045c7032f604f848671220434e6aff0ed7f3642",
+              "prime_importance-0.2.2.tar.gz": "06b8aea35d1cbdc3489507cd4c91fd3bdc8b7ed69da4200f7d7fa85e8f7b5a7c",
+              "prime_importance-0.2.2-py3-none-any.whl": "8438ea2698a6c19ec7e39dbe2b282401e3f900922962005a4e91e607eb955a82",
           }
           root = Path("dist")
           assert {p.name for p in root.iterdir()} == set(expected)
@@ -54,7 +54,7 @@ jobs:
           python -m twine check --strict dist/*
       - uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5
         with:
-          name: prime-0.2.1-approved-distributions
+          name: prime-0.2.2-approved-distributions
           path: dist/
           if-no-files-found: error
           retention-days: 14
@@ -71,15 +71,15 @@ jobs:
     steps:
       - uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6
         with:
-          name: prime-0.2.1-approved-distributions
+          name: prime-0.2.2-approved-distributions
           path: dist/
       - name: Recheck the approved hashes before upload
         working-directory: dist
         run: |
           test "$(find . -type f | wc -l)" -eq 2
           sha256sum --strict --check <<'SHA256'
-          2b5ac6c8a12e1c8979bdb466e3b0193ffcfb5c3b63321161ea195cbcc327220d  prime_importance-0.2.1.tar.gz
-          c04a3696495d1b9d47d44ed9b045c7032f604f848671220434e6aff0ed7f3642  prime_importance-0.2.1-py3-none-any.whl
+          06b8aea35d1cbdc3489507cd4c91fd3bdc8b7ed69da4200f7d7fa85e8f7b5a7c  prime_importance-0.2.2.tar.gz
+          8438ea2698a6c19ec7e39dbe2b282401e3f900922962005a4e91e607eb955a82  prime_importance-0.2.2-py3-none-any.whl
           SHA256
       - name: Publish the verified distributions
         uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # v1.14.2

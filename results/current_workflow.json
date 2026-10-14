@@ -2,7 +2,7 @@
   "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
   "maintained_packages": {
     "manifest": "results/maintained_packages/20261014_source_inventory.json",
-    "sha256": "09e8d02b1e3706d7f26da62a2ab7897fb99730b2a91563bf81dd717b5808d8eb"
+    "sha256": "64d092f55657c2e4ffdb91aa6b7268317a3beb717796acc9bce01f4c51c9e1f9"
   },
   "manifest": "results/workflow_revisions/20261014_legacy_document_links.json",
   "schema_version": 1,

@@ -1,6 +1,6 @@
 # PRIME: A New Measure for Variable Importance
 
-[Paper](https://arxiv.org/abs/2610.17053) · [Code and results](https://github.com/ChoYoungSeo/prime-importance-paper) · [R package](https://github.com/ChoYoungSeo/prime-importance-r)
+[Paper](https://arxiv.org/abs/2610.17053) · [Code and results](https://github.com/ChoYoungSeo/prime-importance-paper)
 
 PRIME estimates proportional global variable importance from noisy data with
 dependent predictors. It combines local-linear residual-variance estimation,
@@ -9,13 +9,11 @@ selected coordinates.
 
 ## Installation
 
-Requires Python 3.10 or newer. NumPy and SciPy are installed as dependencies.
-
 ```bash
 python -m pip install prime-importance
 ```
 
-For optional Matplotlib plots:
+To use `prime.plot(fit)`, install plotting support:
 
 ```bash
 python -m pip install "prime-importance[plot]"
@@ -44,13 +42,5 @@ an importance plot.
 Cho, Y., and Joseph, V. R. (2026). *Measuring Variable Importance Using
 Proportional Inclusive Marginal Effects*. [arXiv:2610.17053](https://arxiv.org/abs/2610.17053).
 [DOI: 10.48550/arXiv.2610.17053](https://doi.org/10.48550/arXiv.2610.17053).
-
-## Documentation and license
-
-- [Python package overview](https://github.com/ChoYoungSeo/prime-importance#readme)
-- [Examples](https://github.com/ChoYoungSeo/prime-importance/tree/main/examples)
-- [Issue tracker](https://github.com/ChoYoungSeo/prime-importance/issues)
-- [Code and results](https://github.com/ChoYoungSeo/prime-importance-paper)
-- [R package](https://github.com/ChoYoungSeo/prime-importance-r)
 
 License: MIT. Authors: Youngseo Cho and V. Roshan Joseph.
