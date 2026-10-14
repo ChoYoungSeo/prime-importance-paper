@@ -4,7 +4,7 @@
     "manifest": "results/maintained_packages/20261014_source_inventory.json",
     "sha256": "09e8d02b1e3706d7f26da62a2ab7897fb99730b2a91563bf81dd717b5808d8eb"
   },
-  "manifest": "results/workflow_revisions/20261014_monorepo_topology.json",
+  "manifest": "results/workflow_revisions/20261014_python_install_link_only.json",
   "schema_version": 1,
-  "sha256": "68381848e4310f34415a329ca77b7c09a2de38dc82890f4ffb17ab96397b35d6"
+  "sha256": "e6454300bdac5c92d1e69ba52e09e27de7be1122d0f389fba7f536c24c6617c2"
 }

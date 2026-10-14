@@ -37,10 +37,6 @@ remotes::install_github("ChoYoungSeo/prime-importance-paper", subdir = "packages
 
 ### Python
 
-```sh
-python -m pip install "prime-importance[plot]"
-```
-
 [PyPI](https://pypi.org/project/prime-importance/)
 
 ## Quick start
