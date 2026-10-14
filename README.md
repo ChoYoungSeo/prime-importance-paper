@@ -16,23 +16,17 @@ PRIME estimates these signal contributions from observed data, assigning zero ou
 ## Results
 
 
-**Friedman.** Five active inputs and five correlated proxies. In the paper’s Table 2, PRIME has the lowest mean PME estimation error among PRIME, PRIME-Full, and PME-NA across all nine sample-size and correlation settings. The plot shows 30 paired datasets with n = 100 and ρ = 0.9; PME-NA denotes noise-adjusted PME-kNN with six neighbors, and FIRST-SHAP and mean absolute SHAP provide Shapley-based comparisons. Mean absolute SHAP is shown in response units.
+**Friedman function.** Importance estimates for five active inputs and five correlated proxies, based on 30 simulated datasets (n = 100, ρ = 0.9).
 
 <p align="center"><img src="docs/assets/friedman-current.png" alt="Friedman variable importance: PRIME, PME-NA, FIRST-SHAP and mean absolute SHAP" width="700"></p>
 
-**Concrete strength.** Across 100 repeated samples of 824 observations, PRIME gives concentrated importance to the water-to-binder ratio and age. All four methods use the same observations; mean absolute SHAP summarizes a fitted boosted-tree model.
+**Concrete compressive strength.** Importance estimates for eight concrete predictors, based on 100 repeated samples of 824 observations.
 
 <p align="center"><img src="docs/assets/concrete-current.png" alt="Concrete variable importance: PRIME, PME-NA, FIRST-SHAP and mean absolute SHAP" width="700"></p>
 
-[Experiment scripts](experiments/) · [Inputs and saved results](results/numerical_20261011/) · [Numerical protocols](docs/numerical-evidence.md)
-
 ## Install
 
-Choose the R or Python implementation for your own data.
-
 ### R
-
-Requires R 4.2 or newer and a C++ build toolchain.
 
 ```r
 install.packages("remotes")
@@ -42,8 +36,6 @@ remotes::install_github("ChoYoungSeo/prime-importance-r", upgrade = "never")
 [R reference manual (PDF)](https://raw.githubusercontent.com/ChoYoungSeo/prime-importance-r/main/docs/prime.pdf)
 
 ### Python
-
-Requires Python 3.10 or newer. The optional plotting dependency is included below.
 
 ```sh
 python -m pip install "prime-importance[plot]"

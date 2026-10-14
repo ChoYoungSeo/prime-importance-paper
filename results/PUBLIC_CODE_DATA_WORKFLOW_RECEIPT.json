@@ -1,5 +1,99 @@
 {
   "algorithm_or_estimator_changes": false,
+  "approved_caption_style_main_page_20261014": {
+    "checks": {
+      "all_existing_code_fences_and_figure_HTML_unchanged": true,
+      "caption_style_B_exactly_applied": true,
+      "common_figure_footnote_absent": true,
+      "historical_source_input_numerical_manifests_and_frozen_manual_byte_unchanged": true,
+      "main_link_and_anchor_checks": {
+        "count": 8,
+        "status": "PASS"
+      },
+      "redundant_frontend_environment_intro_and_resource_navigation_removed": true,
+      "saved_numerical": {
+        "cases": 130,
+        "historical_saved_files": 51,
+        "latest_manifest_files": 156,
+        "new_fits": false,
+        "status": "PASS"
+      },
+      "tracked_file_integrity": {
+        "changed_existing_files": [
+          "README.md",
+          "results/PUBLIC_CODE_DATA_WORKFLOW_RECEIPT.json",
+          "results/current_workflow.json"
+        ],
+        "deleted_existing_files": [],
+        "tracked_before": 532,
+        "unchanged_existing_files": 529,
+        "unexpected_changes": []
+      },
+      "verify_release": {
+        "input_pins": 64,
+        "only_one_README_pin_delta": true,
+        "other_93_source_pins_unchanged": true,
+        "package_inventory": 30,
+        "source_pins": 94,
+        "status": "PASS"
+      },
+      "workflow_contracts": {
+        "status": "PASS",
+        "tests": 18
+      }
+    },
+    "common_SHAP_runtime_footnote_removed_as_requested": true,
+    "current_R_manual_direct_link_preserved": {
+      "pages": 8,
+      "sha256": "70a21d5e01556dcc35b5a29ec7830b0356d2b402bacf8cae70a404100703d32d",
+      "url": "https://raw.githubusercontent.com/ChoYoungSeo/prime-importance-r/main/docs/prime.pdf",
+      "version": "0.5.5"
+    },
+    "current_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_approved_caption_style_main_page.json",
+      "schema_version": 1,
+      "sha256": "327c893912c6908fdd7c00f599725b485729a3ae445b94a3817fb54229616f9a"
+    },
+    "figure_assets_and_scientific_source_inputs_saved_results_unchanged": true,
+    "frozen_R_manual_unchanged": {
+      "pages": 7,
+      "path": "docs/prime.pdf",
+      "sha256": "107d076e007f6a24b96cb9940fc088c4ca6e72e1a6489c40cba74b5de7f58c31",
+      "version": "0.5.2.9101"
+    },
+    "input_pin_inventory_count": 64,
+    "installation_commands_plot_usage_citation_and_licence_preserved": true,
+    "new_fits_or_experiments": false,
+    "not_a_repository_source_consolidation": true,
+    "prepared_utc": "2026-10-14T20:22:00.168649+00:00",
+    "presentation_hash_changes": [
+      {
+        "after_sha256": "d30da68be64e10f87637c688a4656421a1d2d0205e7eaf022b2ccb71fcf8137f",
+        "before_sha256": "66d34afc8f0be7a0b4b743167562608505058ac79ec01915f7f36ae622a7dbf3",
+        "path": "README.md"
+      }
+    ],
+    "previous_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_single_main_page_user_guide.json",
+      "schema_version": 1,
+      "sha256": "0dab5edab7881d7196ef905664ad4dbb15b1ab862d5708373ada4f0db9f6a8be"
+    },
+    "scientific_protocol_files_preserved_despite_frontend_link_removal": true,
+    "scope": "Apply user-approved concise caption-style B results descriptions, remove the common figure-units/runtime footnote, redundant installation environment/introduction text and Results resource navigation, retaining installation commands, existing figures and examples.",
+    "source_pin_changes": [
+      {
+        "after_sha256": "d30da68be64e10f87637c688a4656421a1d2d0205e7eaf022b2ccb71fcf8137f",
+        "before_sha256": "66d34afc8f0be7a0b4b743167562608505058ac79ec01915f7f36ae622a7dbf3",
+        "path": "README.md"
+      }
+    ],
+    "source_pin_inventory_count": 94,
+    "user_reviewed_proposal": "Caption-style B; interpretation option A not applied.",
+    "validated_utc": "2026-10-14T20:23:01.639978+00:00",
+    "validation_status": "PASS_SOURCE_GUARD_WORKFLOW_CONTRACTS_AND_SAVED_NUMERICAL_CHECKS"
+  },
   "archived_replay_documentation": "Executable native refit instructions removed from the public workflow; retained source is archival and preflight remains unvalidated. Supported public workflow is saved code/data/graphics.",
   "arxiv_and_professor_documentation_20261014": {
     "article_doi": "10.48550/arXiv.2610.17053",
@@ -136,9 +230,9 @@
   "created_utc": "2026-10-12T18:25:06.353460+00:00",
   "current_workflow_pointer": {
     "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
-    "manifest": "results/workflow_revisions/20261014_single_main_page_user_guide.json",
+    "manifest": "results/workflow_revisions/20261014_approved_caption_style_main_page.json",
     "schema_version": 1,
-    "sha256": "0dab5edab7881d7196ef905664ad4dbb15b1ab862d5708373ada4f0db9f6a8be"
+    "sha256": "327c893912c6908fdd7c00f599725b485729a3ae445b94a3817fb54229616f9a"
   },
   "documentation_or_orchestration_pin_changes": [
     {
@@ -531,9 +625,9 @@
   },
   "previous_workflow_pointer": {
     "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
-    "manifest": "results/workflow_revisions/20261014_minimal_navigation_cleanup.json",
+    "manifest": "results/workflow_revisions/20261014_single_main_page_user_guide.json",
     "schema_version": 1,
-    "sha256": "ca7b529b126df6ec7c9594e625bf098f48b44a4b35f3ce2970c4d8ed59c40ab4"
+    "sha256": "0dab5edab7881d7196ef905664ad4dbb15b1ab862d5708373ada4f0db9f6a8be"
   },
   "public_export_scope": {
     "manuscript_sources": "NOT_IN_PUBLIC_EXPORT",
@@ -543,7 +637,7 @@
   "retained_approved_graphic_pdf_scope": "Standalone research figures, not article PDFs",
   "reviewed_presentation_sha256": {
     "CITATION.cff": "b190a549168191c80f7d56a3936b7d905caef11310ef8b75caf08aae295ff1f0",
-    "README.md": "66d34afc8f0be7a0b4b743167562608505058ac79ec01915f7f36ae622a7dbf3",
+    "README.md": "d30da68be64e10f87637c688a4656421a1d2d0205e7eaf022b2ccb71fcf8137f",
     "VALIDATION.md": "c9943ddb066c01fa046ee749b838850fe0f5b108c9fbc2c0f98e547527ebed55",
     "docs/assets/concrete-current.png": "6b5bea793d015bfac16971f67f546df93c0aed9cb54f6d18da3d6f5f0deea42c",
     "docs/assets/friedman-current.png": "078fe0f272ec22cd0543cd8ade4413ddc0a5fb8fbcb3d52895418ad66256c2b6",

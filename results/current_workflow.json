@@ -1,6 +1,6 @@
 {
   "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
-  "manifest": "results/workflow_revisions/20261014_single_main_page_user_guide.json",
+  "manifest": "results/workflow_revisions/20261014_approved_caption_style_main_page.json",
   "schema_version": 1,
-  "sha256": "0dab5edab7881d7196ef905664ad4dbb15b1ab862d5708373ada4f0db9f6a8be"
+  "sha256": "327c893912c6908fdd7c00f599725b485729a3ae445b94a3817fb54229616f9a"
 }
