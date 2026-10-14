@@ -24,6 +24,8 @@ PRIME estimates these signal contributions from observed data, assigning zero ou
 
 <p align="center"><img src="docs/assets/concrete-current.png" alt="Concrete variable importance: PRIME, PME-NA, FIRST-SHAP and mean absolute SHAP" width="700"></p>
 
+[Experiment scripts](experiments/) · [Inputs and saved results](results/numerical_20261011/) · [Numerical protocols](docs/numerical-evidence.md)
+
 ## Install
 
 Choose the R or Python implementation for your own data.
@@ -44,11 +46,10 @@ remotes::install_github("ChoYoungSeo/prime-importance-r", upgrade = "never")
 Requires Python 3.10 or newer. The optional plotting dependency is included below.
 
 ```sh
-python -m pip install \
-  "prime-importance[plot] @ git+https://github.com/ChoYoungSeo/prime-importance.git"
+python -m pip install "prime-importance[plot]"
 ```
 
-[Python package guide](https://github.com/ChoYoungSeo/prime-importance)
+[Python package guide](https://github.com/ChoYoungSeo/prime-importance) · [PyPI](https://pypi.org/project/prime-importance/)
 
 ## Quick start
 
@@ -86,4 +87,4 @@ Cho, Y. and Joseph, V. R. (2026). *Measuring Variable Importance Using
 Proportional Inclusive Marginal Effects*. [arXiv:2610.17053](https://arxiv.org/abs/2610.17053).
 [DOI:10.48550/arXiv.2610.17053](https://doi.org/10.48550/arXiv.2610.17053).
 
-[GitHub issues](https://github.com/ChoYoungSeo/prime-importance-paper/issues) · [Research materials](docs/research-materials.md) · [Licence and attribution](docs/licensing.md) · [Citation metadata](CITATION.cff)
+[Licence and attribution](docs/licensing.md)

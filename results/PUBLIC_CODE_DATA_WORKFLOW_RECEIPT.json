@@ -136,9 +136,9 @@
   "created_utc": "2026-10-12T18:25:06.353460+00:00",
   "current_workflow_pointer": {
     "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
-    "manifest": "results/workflow_revisions/20261014_paper_navigation_no_contact.json",
+    "manifest": "results/workflow_revisions/20261014_minimal_navigation_cleanup.json",
     "schema_version": 1,
-    "sha256": "5214dac3802f4cb217ec49b28347e68449ce22be8429b856f093fa03dfbbf56d"
+    "sha256": "ca7b529b126df6ec7c9594e625bf098f48b44a4b35f3ce2970c4d8ed59c40ab4"
   },
   "documentation_or_orchestration_pin_changes": [
     {
@@ -268,6 +268,146 @@
     "new_fits_or_experiments": false,
     "scope": "User documentation only: hide lower-level allocator and duplicate summary topics, explain summary generics, reuse the main X1/X2/X5 example for screening. Public API, package versions, statistical implementation and experiment inputs unchanged."
   },
+  "minimal_navigation_cleanup_20261014": {
+    "checks": {
+      "all_live_markdown_research_materials_references_removed": true,
+      "canonical_before_vs_after_inventory": {
+        "before_tracked_files": 531,
+        "deleted_existing_tracked_files": 1,
+        "modified_existing_tracked_files": 5,
+        "new_dated_workflow_manifest": "results/workflow_revisions/20261014_minimal_navigation_cleanup.json",
+        "unchanged_existing_tracked_files": 525,
+        "unexpected_changes": []
+      },
+      "historical_scientific_and_numerical_sha256_unchanged": {
+        "docs/numerical-evidence.md": "9b46a5c4fc6cedac455c380b34674025dd18f920006e9a486bec67ac3d42b57f",
+        "docs/prime.pdf": "107d076e007f6a24b96cb9940fc088c4ca6e72e1a6489c40cba74b5de7f58c31",
+        "results/current_release.json": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+        "results/numerical_20261001/MANIFEST.json": "c58f440b58382bba044ed20f1c902d2713dfb885f294e3547816f1ca06d33250",
+        "results/numerical_20261001/SOURCE_PROVENANCE.json": "ac9d5badb1f50db1ada6c1cfd191d3d1691a3b8671b066e7846c914858e68a75",
+        "results/numerical_20261011/manifest.json": "4f10499af30142af9453533f104c3aaed65c5c3ac58c19f530c811b210b96255",
+        "results/numerical_20261011/provenance/source_receipts.json": "d1cd98c3b619010ed0fe620adf36ee309fbc6acdd7ec2fc139fce8157d6a2112",
+        "software/prime/DESCRIPTION": "09ff7daf3f32959c4c581f66f717d8245bb9d51236c2d6a30866648fc642d8d7"
+      },
+      "relative_link_checks": {
+        "links": 14,
+        "status": "PASS"
+      },
+      "saved_numerical": {
+        "cases": 130,
+        "historical_saved_files": 51,
+        "latest_manifest_files": 156,
+        "new_fits": false,
+        "status": "PASS"
+      },
+      "verify_release": {
+        "input_pins": 64,
+        "only_two_documentation_pin_deltas": true,
+        "other_92_source_pins_byte_unchanged": true,
+        "package_inventory": 30,
+        "source_pins": 94,
+        "status": "PASS"
+      },
+      "workflow_contracts": {
+        "status": "PASS",
+        "tests": 18
+      }
+    },
+    "current_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_minimal_navigation_cleanup.json",
+      "schema_version": 1,
+      "sha256": "ca7b529b126df6ec7c9594e625bf098f48b44a4b35f3ce2970c4d8ed59c40ab4"
+    },
+    "existing_scientific_code_inputs_and_results_preserved": true,
+    "historical_presentation_records_preserved": true,
+    "input_pin_inventory_count": 64,
+    "new_fits_or_experiments": false,
+    "prepared_utc": "2026-10-14T18:44:40.064928+00:00",
+    "presentation_hash_changes": [
+      {
+        "after_sha256": "47adcdd63d13647e398cd752a41a57cbc80db7947a2700cf1cceadf775344829",
+        "before_sha256": "98f68525126da3953fe30bbef44fbdfdcf4f305ac6cec54e8c9f08689324c212",
+        "operation": "modify",
+        "path": "README.md"
+      },
+      {
+        "after_sha256": "c4caf676098d3f492516da8db7f8b40fc178eb069589c5d8902e62bb7a5ac628",
+        "before_sha256": "f55b6c6ab7f2f060467d9aeec5f0721369b150dfb8170f939a5dcf0d47cbccec",
+        "operation": "modify",
+        "path": "docs/licensing.md"
+      },
+      {
+        "after_sha256": null,
+        "before_sha256": "91ccbbd28bbd94779f50a8f482af0de99fef9e4a1fdd918e5bae7ac106f82c59",
+        "operation": "delete",
+        "path": "docs/research-materials.md"
+      },
+      {
+        "after_sha256": "6b946997b4fbfb640fb1173725c150521c8daae64d210bba41902603f8509ddb",
+        "before_sha256": "ba2d473483532cf59dec308fd050ff2f04b4a997ab6b345e62799ffc82cf5ed3",
+        "operation": "modify",
+        "path": "software/prime/README.md"
+      }
+    ],
+    "previous_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_paper_navigation_no_contact.json",
+      "schema_version": 1,
+      "sha256": "5214dac3802f4cb217ec49b28347e68449ce22be8429b856f093fa03dfbbf56d"
+    },
+    "removed_page_information_retained": [
+      {
+        "removed_content": "experiment code, inputs and saved numerical results description",
+        "retained_location": "README.md Results and direct experiment/input/result links; docs/numerical-evidence.md lines 5-13"
+      },
+      {
+        "removed_content": "results and experimental protocols",
+        "retained_location": "docs/numerical-evidence.md, README direct Numerical protocols link"
+      },
+      {
+        "removed_content": "dataset attribution",
+        "retained_location": "docs/licensing.md line 6 -> data/ATTRIBUTION.md; data/README.md"
+      },
+      {
+        "removed_content": "frozen prime version 0.5.2.9101 and new-analysis packages",
+        "retained_location": "software/prime/README.md lines 3-7; VALIDATION.md line 29"
+      },
+      {
+        "removed_content": "saved-result checks, graphics and archived scripts limitations",
+        "retained_location": "docs/numerical-evidence.md Reproduction and provenance; VALIDATION.md"
+      },
+      {
+        "removed_content": "article-source/typesetting exclusion",
+        "retained_location": "docs/numerical-evidence.md lines 20-26 and 99-108; VALIDATION.md lines 18-22"
+      },
+      {
+        "removed_content": "comparator source notice",
+        "retained_location": "docs/licensing.md line 5 -> results/numerical_20261001/reference_source/NOTICE.md"
+      },
+      {
+        "removed_content": "official arXiv record",
+        "retained_location": "README.md Paper and Citation links; docs/paper.md"
+      }
+    ],
+    "research_materials_page_removed": true,
+    "scope": "Remove the redundant Research materials navigation page and Citation-section support links, retain direct experiment/input/result/protocol access, and synchronize the Python install command with the published PyPI package.",
+    "source_pin_changes": [
+      {
+        "after_sha256": "47adcdd63d13647e398cd752a41a57cbc80db7947a2700cf1cceadf775344829",
+        "before_sha256": "98f68525126da3953fe30bbef44fbdfdcf4f305ac6cec54e8c9f08689324c212",
+        "path": "README.md"
+      },
+      {
+        "after_sha256": "6b946997b4fbfb640fb1173725c150521c8daae64d210bba41902603f8509ddb",
+        "before_sha256": "ba2d473483532cf59dec308fd050ff2f04b4a997ab6b345e62799ffc82cf5ed3",
+        "path": "software/prime/README.md"
+      }
+    ],
+    "source_pin_inventory_count": 94,
+    "validated_utc": "2026-10-14T18:45:42.416192+00:00",
+    "validation_status": "PASS_SOURCE_GUARD_WORKFLOW_CONTRACTS_AND_SAVED_NUMERICAL_CHECKS"
+  },
   "new_fits_or_experiments": false,
   "paper_navigation_no_contact_20261014": {
     "checks": {
@@ -391,9 +531,9 @@
   },
   "previous_workflow_pointer": {
     "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
-    "manifest": "results/workflow_revisions/20261012_final_title_and_link_cleanup.json",
+    "manifest": "results/workflow_revisions/20261014_paper_navigation_no_contact.json",
     "schema_version": 1,
-    "sha256": "eb5a18a096099fd082b9e9360cea50b62a44ea59d0fa4f562d97f878c14ece04"
+    "sha256": "5214dac3802f4cb217ec49b28347e68449ce22be8429b856f093fa03dfbbf56d"
   },
   "public_export_scope": {
     "manuscript_sources": "NOT_IN_PUBLIC_EXPORT",
@@ -403,17 +543,17 @@
   "retained_approved_graphic_pdf_scope": "Standalone research figures, not article PDFs",
   "reviewed_presentation_sha256": {
     "CITATION.cff": "b190a549168191c80f7d56a3936b7d905caef11310ef8b75caf08aae295ff1f0",
-    "README.md": "98f68525126da3953fe30bbef44fbdfdcf4f305ac6cec54e8c9f08689324c212",
+    "README.md": "47adcdd63d13647e398cd752a41a57cbc80db7947a2700cf1cceadf775344829",
     "VALIDATION.md": "c9943ddb066c01fa046ee749b838850fe0f5b108c9fbc2c0f98e547527ebed55",
     "docs/assets/concrete-current.png": "6b5bea793d015bfac16971f67f546df93c0aed9cb54f6d18da3d6f5f0deea42c",
     "docs/assets/friedman-current.png": "078fe0f272ec22cd0543cd8ade4413ddc0a5fb8fbcb3d52895418ad66256c2b6",
     "docs/assets/proxy-allocation.png": "21ed333d93e378b12fc471fc7d70babc0a8a3734b6d84298c07cf2c648999d1b",
     "docs/assets/selection-to-pme.png": "dce6a093c6ef645b66dc9819558a624de54f01a4a27b6400ca5516a82376266d",
-    "docs/licensing.md": "f55b6c6ab7f2f060467d9aeec5f0721369b150dfb8170f939a5dcf0d47cbccec",
+    "docs/licensing.md": "c4caf676098d3f492516da8db7f8b40fc178eb069589c5d8902e62bb7a5ac628",
     "docs/numerical-evidence.md": "9b46a5c4fc6cedac455c380b34674025dd18f920006e9a486bec67ac3d42b57f",
     "docs/paper-link.json": "cb6d42fa5c4df1fdb496641b6f38a0d38e40f11f8f8883f39c5d977638e1e9c6",
     "docs/paper.md": "38dec55a32032f39a58619cf212cb8379746a70f297d8a205959d457ed47c140",
-    "docs/research-materials.md": "91ccbbd28bbd94779f50a8f482af0de99fef9e4a1fdd918e5bae7ac106f82c59"
+    "software/prime/README.md": "6b946997b4fbfb640fb1173725c150521c8daae64d210bba41902603f8509ddb"
   },
   "schema_version": 1,
   "scientific_release_metadata_and_input_pins_unchanged": true,

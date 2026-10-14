@@ -11,4 +11,4 @@ The paper is distributed through [arXiv](https://arxiv.org/abs/2610.17053)
 under its perpetual, non-exclusive licence. This is separate from the MIT
 software licence. This repository provides the code, inputs and results.
 
-[arXiv record](paper.md) · [Research materials](research-materials.md) · [Back to PRIME](../README.md)
+[arXiv record](paper.md) · [Back to PRIME](../README.md)

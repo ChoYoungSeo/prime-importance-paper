@@ -16,8 +16,8 @@ make validate-release
 ```
 
 Bootstrap builds the pinned package in the repository's local R library and
-checks its installed files. The [reproduction guide](../../docs/research-materials.md)
-describes the saved-result checks and estimator replay.
+checks its installed files. The [numerical evidence guide](../../docs/numerical-evidence.md#reproduction-and-provenance)
+describes the saved-result checks and archived replay source.
 
 - [R reference manual](../../docs/prime.pdf)
 - [Quickstart source](inst/examples/quickstart.R)
