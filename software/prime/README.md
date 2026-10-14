@@ -2,9 +2,7 @@
 
 This directory contains PRIME 0.5.2.9101, the R implementation used for the
 paper's experiments. Its scientific source is pinned by the release manifests.
-The maintained [R package](https://github.com/ChoYoungSeo/prime-importance-r)
-and [Python package](https://github.com/ChoYoungSeo/prime-importance) provide
-PRIME for new analyses.
+For new analyses, use the [maintained R and Python packages](../../README.md#install).
 
 Run these commands from the **paper repository root**:
 

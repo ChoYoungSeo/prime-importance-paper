@@ -4,7 +4,7 @@ Original PRIME software follows the repository and package MIT licence files. Th
 
 - [Archived sensitivity comparator: GPL-2 notice](../results/numerical_20261001/reference_source/NOTICE.md)
 - [UCI datasets: CC BY 4.0 attribution](../data/ATTRIBUTION.md)
-- The current R package retains nanoflann BSD 2-Clause [source](https://github.com/ChoYoungSeo/prime-importance-r/blob/main/src/vendor/nanoflann/COPYING) and [binary notices](https://github.com/ChoYoungSeo/prime-importance-r/blob/main/inst/LICENSES/nanoflann.txt).
+- The current R package retains nanoflann BSD 2-Clause [source](../packages/r/src/vendor/nanoflann/COPYING) and [binary notices](../packages/r/inst/LICENSES/nanoflann.txt).
 - Obtain the original FIRST supplement through its official source and the documented importer. Its implementation is not assigned an MIT licence here.
 
 The paper is distributed through [arXiv](https://arxiv.org/abs/2610.17053)

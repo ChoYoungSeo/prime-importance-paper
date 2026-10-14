@@ -4,7 +4,7 @@
     "manifest": "results/maintained_packages/20261014_source_inventory.json",
     "sha256": "09e8d02b1e3706d7f26da62a2ab7897fb99730b2a91563bf81dd717b5808d8eb"
   },
-  "manifest": "results/workflow_revisions/20261014_python_install_link_only.json",
+  "manifest": "results/workflow_revisions/20261014_legacy_document_links.json",
   "schema_version": 1,
-  "sha256": "e6454300bdac5c92d1e69ba52e09e27de7be1122d0f389fba7f536c24c6617c2"
+  "sha256": "0fabfd387e0872defd94031e2d32f66f2cbe5043a8351884e2b754312ee3a8e9"
 }

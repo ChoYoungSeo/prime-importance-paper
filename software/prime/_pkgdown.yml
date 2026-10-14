@@ -1,5 +1,3 @@
-url: https://choyoungseo.github.io/prime-importance-r/
-
 template:
   bootstrap: 5
   bootswatch: flatly
@@ -18,7 +16,7 @@ navbar:
     github:
       icon: fa-github
       aria-label: GitHub
-      href: https://github.com/ChoYoungSeo/prime-importance-r
+      href: https://github.com/ChoYoungSeo/prime-importance-paper
 
 reference:
   - title: Complete workflow
