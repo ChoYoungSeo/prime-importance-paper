@@ -1,0 +1,42 @@
+{
+  "status": "EXPLICIT_DERIVED_METADATA_ANCHOR_FIX",
+  "created_utc": "2026-10-12T16:56:22.214219+00:00",
+  "origin": "Previously frozen667-file inspection ZIP, not a copy of a later mutated candidate",
+  "original_root_public_url": "https://github.com/ChoYoungSeo/prime-importance-paper",
+  "changes": [
+    {
+      "file": "results/numerical_20261011/provenance/source_receipts.json",
+      "field": "historical_release_sha256",
+      "before": "8e0d90865f91927002fac62824449ae1b2160971ee073ab1f7b67b978efd707c",
+      "after": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88"
+    },
+    {
+      "file": "results/numerical_20261011/manifest.json",
+      "field": "historical_release_sha256",
+      "before": "8e0d90865f91927002fac62824449ae1b2160971ee073ab1f7b67b978efd707c",
+      "after": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88"
+    },
+    {
+      "file": "results/numerical_20261011/manifest.json",
+      "field": "files.results/numerical_20261011/provenance/source_receipts.json",
+      "before": "877055d59c2a30e3a8de20b723e1203bb2570b26f8ae368798785782bf6b7a96",
+      "after": "ed9f1115a39bc484bba1eb99a3bf487b66126cc182a89cae3d76445d3e3b407b"
+    }
+  ],
+  "files": [
+    {
+      "path": "results/numerical_20261011/provenance/source_receipts.json",
+      "before_sha256": "877055d59c2a30e3a8de20b723e1203bb2570b26f8ae368798785782bf6b7a96",
+      "after_sha256": "ed9f1115a39bc484bba1eb99a3bf487b66126cc182a89cae3d76445d3e3b407b"
+    },
+    {
+      "path": "results/numerical_20261011/manifest.json",
+      "before_sha256": "b6406f7d6f2c11ba3cdda30f55bab20a82e53704bcca011eae92713024d637cb",
+      "after_sha256": "03fbb869d6fd75fd29c10c43bcd48ae6690ea7abf085ea12d3a9106d02d60e6b"
+    }
+  ],
+  "method_data_results_figures_code_changed": false,
+  "all_other_json_values_preserved": true,
+  "source_input_and_package_fingerprint_maps_preserved": true,
+  "raw_before_snapshots_private": "Preserved outside the public project; original source ZIPs retained."
+}

@@ -1,0 +1,4 @@
+"dataset","original_selected_mean","original_selected_median","original_selected_q25","original_selected_q75","controls_selected_mean","controls_selected_median","controls_selected_q25","controls_selected_q75","control_mass_mean","control_mass_median","control_mass_q25","control_mass_q75","elapsed_sec_mean","elapsed_sec_median","elapsed_sec_q25","elapsed_sec_q75","n"
+"airfoil",3,3,3,3,0,0,0,0,0,0,0,0,4.0718,4.0705,4.014,4.141,20
+"auto_mpg",3,3,3,3,0,0,0,0,0,0,0,0,0.24335,0.235499999999999,0.228999999999999,0.241,20
+"concrete",6,6,6,6,0,0,0,0,0,0,0,0,5.48155,5.561,5.4345,5.575,20

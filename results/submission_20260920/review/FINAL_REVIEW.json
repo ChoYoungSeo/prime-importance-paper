@@ -1,0 +1,35 @@
+{
+  "status": "PASS_LOCAL_INTEGRATED_REVIEW",
+  "date": "2026-09-20",
+  "main_pages": 30,
+  "supplement_pages": 27,
+  "review_excerpt_pages": 8,
+  "latex_warnings": {
+    "main": 0,
+    "supplement": 0
+  },
+  "k_notation": {
+    "status": "PASS",
+    "redundant_subscripts_removed": true,
+    "stage_assignments_explicit": true
+  },
+  "theory_repairs_integrated": true,
+  "experiment_text_audit": "PASS",
+  "caption_concision_audit": "PASS",
+  "final_prose_audit": "PASS",
+  "matched_k_local_constant": {
+    "status": "PASS_INDEPENDENT_AUDIT",
+    "datasets": 270,
+    "cells": 9,
+    "complete": 270,
+    "full_ll_lower_error_cells": 9
+  },
+  "visual_review": "PASS_ALL_PAGES",
+  "protected_snapshot_unchanged": true,
+  "canonical_or_remote_writes": false,
+  "pdf_sha256": {
+    "main_full_revised.pdf": "f317caa18be48a507e99c81b557a6c2e579af1173e5b84fe3f6754e79808fd3e",
+    "supplement_full_revised.pdf": "1ea5c978c63420f0ed4c64ea150afab7591ad14d759f75dd21a23d43dd3697a0",
+    "Auto_MPG_revision_review.pdf": "3e69124983f6edbae517d00d9918d0eb8454f0e654f7b8de31f54f279d410338"
+  }
+}

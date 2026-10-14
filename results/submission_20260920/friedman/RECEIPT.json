@@ -1,0 +1,86 @@
+{
+  "completion": {
+    "all_game_lengths_1024": true,
+    "all_projected_game_lengths_1024": true,
+    "all_value_calls_1024": true,
+    "complete": 30,
+    "failed": 0,
+    "game_length_expected": 1024,
+    "planned": 30,
+    "warnings": 0
+  },
+  "generated_utc": "2026-09-20 22:13:23 UTC",
+  "method": {
+    "excluded_from_timing": [
+      "package loading",
+      "source loading",
+      "file input/output",
+      "hashing",
+      "data generation",
+      "Shapley allocation",
+      "raw-game Shapley",
+      "duality checks",
+      "monotonicity diagnostics",
+      "validation summaries"
+    ],
+    "function_path": "make_llr_value(X, y) then estimate_pme_with_value(value, 1:10, 10)",
+    "garbage_collection": "gc() immediately before, and outside, each timed interval",
+    "native_threads": 1,
+    "package_path": "historical-provenance:friedman-installed-prime",
+    "prime_version": "0.5.2.9101",
+    "quantile_method": "R quantile type 7",
+    "r_workers": 1,
+    "schedule": "one unrecorded warm-up, then one serial timed run per dataset in replication order",
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "RCPP_PARALLEL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "timed_components": [
+      "full-coordinate local-linear game construction",
+      "monotone projection",
+      "PME allocation"
+    ],
+    "timer": "proc.time()[['elapsed']]"
+  },
+  "runtime": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "platform": "aarch64-apple-darwin23"
+  },
+  "scope": "Pure Full LL-PME on the 30 frozen Friedman inputs at n=200, p=10, rho=0.5.",
+  "source_hashes": {
+    "audit_script_sha256": "2c180fe7024b954d65c53be501954c0833a07b014721917c91dc6ac38eb82ccd",
+    "common_source_sha256": "78bde971f844af4907fbf1abb29031ef59d8486841e7359319630779850914d1",
+    "frozen_json_sha256": "a986bba9f2ec5877f426283e2284096bf391e9003f716a30e9f8265f6e4c6047",
+    "input_set_manifest_sha256": "38ee906efc307f895b55055421d5ec1c14283205593ea8c086e2363283f74ffb",
+    "prime_description_sha256": "cf56a29be5c4d740a99f0f6d4f31f4e19007cc7addca36e0cbfb3438e4d1fb16",
+    "prime_r_database_sha256": "f4c428b3edbab17124cf7a2e3642bf6b2837218e1f859f85975fb8faa75a4abb",
+    "prime_shared_library_sha256": "d47f573c3b1cabe30b597e24edaaaebf0c380194914c012b532c348facbea06f",
+    "reference_set_manifest_sha256": "0edc80413bd9e2e4cf0a009e16b63b673d25ab502ade2a8d90fe144a04d74a51",
+    "source_manifest_csv_sha256": "ee38b1221bef644f2b5ed3fb3e8127d8d7058cc37c53a35debc57101b0f955c8",
+    "tasks_json_sha256": "1a965b982a018aae4da2444ad7ba6bd0c39d7757c8fa3a885f09b07b1e52fa69"
+  },
+  "status": "PASS",
+  "timing_seconds": {
+    "iqr": 0.1447500000000006,
+    "maximum": 1.6270000000000024,
+    "mean": 1.2845999999999997,
+    "median": 1.2699999999999978,
+    "minimum": 1.1000000000000014,
+    "q1": 1.2082499999999992,
+    "q3": 1.3529999999999998,
+    "warmup_unrecorded": 1.3050000000000002
+  },
+  "validation": {
+    "all_effects_match": true,
+    "effect_reference": "existing Full LL-PME vectors in local_linear_rule_comparison_20260920/checkpoints",
+    "effect_tolerance": 1e-12,
+    "maximum_effect_abs_gap": 0,
+    "maximum_efficiency_error": 2.220446049250313e-16,
+    "maximum_projected_game_abs_gap": 0,
+    "maximum_raw_game_abs_gap": 0
+  }
+}

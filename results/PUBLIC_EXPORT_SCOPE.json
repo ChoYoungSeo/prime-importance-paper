@@ -1,0 +1,26 @@
+{
+  "approved_standalone_graphics": {
+    "results/numerical_20261011/approved_figures/PRIME_Concrete.pdf": "7b88cc749689b18dbe2d25af8af982c9611d76da2cd078a2368ce8425f7694ab",
+    "results/numerical_20261011/approved_figures/PRIME_Concrete.png": "6b5bea793d015bfac16971f67f546df93c0aed9cb54f6d18da3d6f5f0deea42c",
+    "results/numerical_20261011/approved_figures/PRIME_Friedman.pdf": "d8a809b5e017b27eb3c3ecfbf35c6e7ac956377dbd453fdd1e56d7f9512b15a3",
+    "results/numerical_20261011/approved_figures/PRIME_Friedman.png": "078fe0f272ec22cd0543cd8ade4413ddc0a5fb8fbcb3d52895418ad66256c2b6"
+  },
+  "estimator_or_algorithm_code_changed": false,
+  "golden_csv": {
+    "available_method_columns": 4,
+    "path": "results/numerical_20261001/friedman/earlier_four_method_table.csv",
+    "reported_comparison_method_columns": 3,
+    "settings": 9,
+    "sha256": "40464cb6859306e8a85e37f59918c3f3676470fa51d6e83b79c326f2951773b6"
+  },
+  "kind": "public_saved_numerical_export_scope",
+  "new_fits_or_experiments": false,
+  "private_article_scope": "Original article/doc/prose/typesetTable provenance retained privately. Historical publication_receipt facts carry HISTORICAL_PRIVATE_ARTICLE_RECEIPT scope, without a claim that the article is exported or currently validated.",
+  "public_export_scope": {
+    "manuscript_sources": "NOT_IN_PUBLIC_EXPORT",
+    "paper_prose": "NOT_IN_PUBLIC_EXPORT",
+    "typeset_table": "NOT_IN_PUBLIC_EXPORT"
+  },
+  "schema_version": 1,
+  "scientific_input_data_values_unchanged": true
+}

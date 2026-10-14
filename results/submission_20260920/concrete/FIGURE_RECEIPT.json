@@ -1,0 +1,17 @@
+{
+  "builder": "build_concrete_p8_figure.py",
+  "source_csv": "results/submission_20260920/concrete/distinct_824/coordinate_summary.csv",
+  "source_sha256": "be2d8c332feae206cf7242f8890b9290e7be6a2f8c199659b9c5b34f09bb0162",
+  "replications": 100,
+  "design": "100 paired 824/1030 (80%) without-replacement subsamples",
+  "output_pdf": "manuscript/figures/concrete_p8_distinct_subsamples.pdf",
+  "output_sha256": "14ec3d372565be673705d7a711c3eefbd0705a52df9b56ca2d4b222f77cddc12",
+  "regular_font": "Arial.ttf",
+  "bold_font": "Arial Bold.ttf",
+  "size_pt": [
+    468,
+    270
+  ],
+  "median_markers": 40,
+  "percentile_ranges": 40
+}

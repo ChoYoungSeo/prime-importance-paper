@@ -1,0 +1,35 @@
+{
+  "kind": "explicit_public_derived_validation_log_headers",
+  "created_utc": "2026-10-12T17:08:08.662822+00:00",
+  "records": [
+    {
+      "path": "results/provenance/R_CMD_check.log",
+      "source_repository": "ChoYoungSeo/prime-importance-paper",
+      "source_commit": "df2a3d92a96942a1c97a5b8891518de56162a01e",
+      "raw_sha256": "dad56dade0aa4c7b759005dfbad6608dcc55be3606b3f80dd9feea9ee85a2040",
+      "derived_sha256": "21079281b9654462121c26a6154434ea012921c6402810369e7a6a46fd0a6c7b",
+      "raw_bytes": 2771,
+      "derived_bytes": 2687,
+      "rule": "Replace only the private workspace directory value in the first using-log-directory header with <historical build directory>; every other byte is unchanged.",
+      "all_bytes_after_first_line_unchanged": true,
+      "historical_status_unchanged": true
+    },
+    {
+      "path": "results/provenance/portable_R_CMD_check.log",
+      "source_repository": "ChoYoungSeo/prime-importance-paper",
+      "source_commit": "df2a3d92a96942a1c97a5b8891518de56162a01e",
+      "raw_sha256": "eb4c8237cce9756fa90a57b2f458410b322f3e2b13fa2bfc67fa8e9e97911df6",
+      "derived_sha256": "e9cb06e502e1b915aa254db7f2ff9d0ad676ad6ca38c35d3053c4edd9b88df24",
+      "raw_bytes": 2912,
+      "derived_bytes": 2692,
+      "rule": "Replace only the private workspace directory value in the first using-log-directory header with <historical build directory>; every other byte is unchanged.",
+      "all_bytes_after_first_line_unchanged": true,
+      "historical_status_unchanged": true
+    }
+  ],
+  "historical_inventory_note": "results/provenance/file_manifest.csv and results/provenance/release_lineage/file_manifest_before_public.csv record the original raw historical log hashes. They are preserved unchanged; their log hashes are historical raw digests, not assertions of these derived public log bytes.",
+  "private_originals": "Raw originals are recoverable from the private original clean source archive outside this candidate; additional review-only raw copies are outside project.",
+  "scientific_data_source_input_method_and_active_pins_unchanged": true,
+  "runtime_consumer_audit": "No active source/input/numerical manifest pins these logs. 05_write_provenance.R computes current log hashes rather than asserting the raw ones. Existing numerical validators do not consume these logs.",
+  "validation_rerun_required": false
+}

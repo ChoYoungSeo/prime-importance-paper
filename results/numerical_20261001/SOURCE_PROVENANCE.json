@@ -1,0 +1,200 @@
+{
+  "external_first_source": {
+    "distribution": "User import into .verified/first_reference.R; excluded from publication",
+    "origin": "Official supplementary code.zip for DOI 10.1080/00401706.2025.2483531",
+    "sha256": "759c110ef16e4cce1fcebf17e1d1ed03035a90c92878e02715ff038f1afe1ee4"
+  },
+  "files": [
+    {
+      "path": "friedman/native_phi.csv",
+      "sha256": "152978c13fdf0466ac14d5eb4ff9f77622eb4b37ebc77ad5d40b0f58e37fab86",
+      "source": "2026-09-27_standardized_review/data/friedman_grid/native_phi.csv"
+    },
+    {
+      "path": "friedman/runs.csv",
+      "sha256": "6fafae9e439e39095d6fadd6849a83f3927758dd78c1dd8596d51f4a82b11d39",
+      "source": "2026-09-27_standardized_review/data/friedman_grid/runs.csv"
+    },
+    {
+      "path": "friedman/input_manifest.csv",
+      "sha256": "d4448caa34ed4bb9a20cd47c14d958d09395b456e89d1d64f0893bcf4e903ea0",
+      "source": "2026-09-27_standardized_review/data/friedman_grid/input_manifest.csv"
+    },
+    {
+      "path": "friedman/standardization_vectors.csv",
+      "sha256": "b4fada0aa57694861003605783bde288ced182ffec50b4dadf5db58d7eca8de0",
+      "source": "2026-09-27_standardized_review/data/friedman_grid/standardization_vectors.csv"
+    },
+    {
+      "path": "friedman/prime_reuse_audit.csv",
+      "sha256": "c95a5b6a7006a6b05eeed72d78512bb68293b8d9286f368e588499335297cd3c",
+      "source": "2026-09-27_standardized_review/data/friedman_grid/prime_reuse_audit.csv"
+    },
+    {
+      "path": "concrete/paired_phi.csv",
+      "sha256": "21e1537567d8f16927017e07dc45a8e7765e64679e70f3c6694bf09e723ba26b",
+      "source": "2026-09-27_standardized_review/data/concrete824/paired_phi.csv"
+    },
+    {
+      "path": "concrete/full_data_reference.csv",
+      "sha256": "801c2915a7b53c98ed19b00608a6dfcf5a37db0a00be3992e449ba69f383b84e",
+      "source": "2026-09-27_standardized_review/data/concrete824/full_data_reference.csv"
+    },
+    {
+      "path": "concrete/all_status.csv",
+      "sha256": "ab785235d2a79cea0bd101303e6d39679da9910b50fac86e98ad2f7b577ba167",
+      "source": "2026-09-27_standardized_review/data/concrete824/all_status.csv"
+    },
+    {
+      "path": "concrete/sample_indices.csv",
+      "sha256": "cb4b49036846120408583afd49d6b78d0b9153a0b62ea4a74f074bbc5f9163d7",
+      "source": "2026-09-27_standardized_review/data/concrete824/sample_indices.csv"
+    },
+    {
+      "path": "concrete/standardization_coordinates.csv",
+      "sha256": "75d336e95e1e00f6c372e8117f8aa75699a0c50c01c7993a68dbcb88a5d7832d",
+      "source": "2026-09-27_standardized_review/data/concrete824/standardization_coordinates.csv"
+    },
+    {
+      "path": "concrete/standardization_receipts.csv",
+      "sha256": "1af6ac2278e859781089be980d2e53c7846f2499508f149a9dbff03a95553416",
+      "source": "2026-09-27_standardized_review/data/concrete824/standardization_receipts.csv"
+    },
+    {
+      "path": "concrete/stability_distances.csv",
+      "sha256": "be72e75a34f8289d3be33074293b87e65ce32807da9c15b8a427e8274120e5eb",
+      "source": "2026-09-27_standardized_review/data/concrete824/stability_distances.csv"
+    },
+    {
+      "path": "concrete/coordinate_summary.csv",
+      "sha256": "a7d4cce277cf2686496965a304c7720176ab77b84dd88f6d2ee49b7ab197d3fd",
+      "source": "2026-09-27_standardized_review/data/concrete824/coordinate_summary.csv"
+    },
+    {
+      "path": "concrete/method_summary.csv",
+      "sha256": "b8538f97cc03cb282d031bc9db8bac365140e8e4843fe894cf891ef890a8a058",
+      "source": "2026-09-27_standardized_review/data/concrete824/method_summary.csv"
+    },
+    {
+      "path": "timing/timings.csv",
+      "sha256": "bfcfc3d724713fd1a9b81269aaa8fac92063d224e5302a466c8f00dc5413ae00",
+      "source": "2026-09-27_k6_noise_manuscript_review/data/timing/timings.csv"
+    },
+    {
+      "path": "timing/summary.csv",
+      "sha256": "414ec04b7d9005de24adf4ff3edff6d1070da37854558e7dedb3e3befed606ac",
+      "source": "2026-09-27_k6_noise_manuscript_review/data/timing/summary.csv"
+    },
+    {
+      "path": "timing/TIMING_RECEIPT.json",
+      "sha256": "160e26ea604ab1dedc010270597db5108a21620509f8fdad4b5f4ba7e8ecded1",
+      "source": "2026-09-27_k6_noise_manuscript_review/data/timing/TIMING_RECEIPT.json"
+    },
+    {
+      "path": "timing/SESSION.json",
+      "sha256": "41a628827d482776b73d7287e408ffd26dbbec00efdd750a3800281e6163db54",
+      "source": "2026-09-27_k6_noise_manuscript_review/data/timing/SESSION.json"
+    },
+    {
+      "path": "figures/figure4_native.csv",
+      "sha256": "99595be5489d38eab44ab478ae4e3aa9e6c9a222507c92afc398688f6ca03372",
+      "source": "2026-09-27_k6_noise_manuscript_review/data/figure4_native.csv"
+    },
+    {
+      "path": "figures/figure4_references.csv",
+      "sha256": "a557e911754cfee2395d89c5fc8cab07c047b03dce3ac0561f17bca13ce9816e",
+      "source": "2026-09-27_k6_noise_manuscript_review/data/figure4_references.csv"
+    },
+    {
+      "path": "figures/figure5_native.csv",
+      "sha256": "541b43f260b4683dcf0330e5f01ff436862b16d73c17c616e93dc5a0e50d6a66",
+      "source": "2026-09-27_k6_noise_manuscript_review/data/figure5_native.csv"
+    },
+    {
+      "path": "figures/figure5_references.csv",
+      "sha256": "f5e356ad7714d3f22a42ccd9bb83838a3451b6997b69ed525baddc05350603d2",
+      "source": "2026-09-27_k6_noise_manuscript_review/data/figure5_references.csv"
+    },
+    {
+      "path": "friedman/full_ll_allocations.csv",
+      "sha256": "da272bee1a9d0bd3c07e84032de11198f349b2a1864813b1950e3bc944674e9e",
+      "source": "2026-09-16_meeting_followup/local_linear_rule_comparison_20260920/allocations_long.csv"
+    },
+    {
+      "path": "friedman/full_ll_runs.csv",
+      "sha256": "1b0de2ecd2f3d5ad4cd1a461591aa202325d41519f133ea852d9c5c4dbb2c064",
+      "source": "2026-09-16_meeting_followup/local_linear_rule_comparison_20260920/dataset_summary.csv"
+    },
+    {
+      "path": "friedman/earlier_four_method_table.csv",
+      "sha256": "40464cb6859306e8a85e37f59918c3f3676470fa51d6e83b79c326f2951773b6",
+      "source": "2026-09-27_standardized_review/data/integration/table2.csv"
+    },
+    {
+      "path": "provenance/FRIEDMAN_GRID_VALIDATION.json",
+      "sha256": "395b25b92842740d1cde61c0de654585cd16bd9b3857ceb7a847a809a8b545f5",
+      "source": "2026-09-27_standardized_review/evidence/FRIEDMAN_GRID_VALIDATION.json"
+    },
+    {
+      "path": "provenance/CONCRETE_INDEPENDENT_VALIDATION.json",
+      "sha256": "318d4994daeae897b352cd8a2445fb303eb8fceb055167dac63fef6af25d3d16",
+      "source": "2026-09-27_standardized_review/evidence/CONCRETE_INDEPENDENT_VALIDATION.json"
+    },
+    {
+      "path": "provenance/STANDARDIZATION_CONTRACT.json",
+      "sha256": "99c7a4b10db5d48d64e976977e8acddb36d97ef502b96752dda916e1ffb5f761",
+      "source": "2026-09-27_standardized_review/evidence/STANDARDIZATION_CONTRACT.json"
+    },
+    {
+      "path": "provenance/TABLE2_INTEGRATION_VALIDATION.json",
+      "sha256": "cf65c294d57a0752467bade7f0de31006b21b9e780d80248011314779fb29839",
+      "source": "2026-09-27_standardized_review/evidence/TABLE2_INTEGRATION_VALIDATION.json"
+    },
+    {
+      "path": "provenance/UNCHANGED_COLUMNS_VALIDATION.json",
+      "sha256": "5d3488be7421f456eaca6c57eef1d44ab57e53e43f5bc83db81dfa2a800ce6f7",
+      "source": "2026-09-27_standardized_review/evidence/UNCHANGED_COLUMNS_VALIDATION.json"
+    },
+    {
+      "path": "provenance/POPULATION_TARGETS.json",
+      "sha256": "01f127875ef17c71038bd1776610f6dc29267c573b5815e3885aa71fcd8fab96",
+      "source": "2026-09-27_pme_options_diagnostic/evidence/POPULATION_TARGETS.json"
+    },
+    {
+      "path": "provenance/K6_FIGURE_VALIDATION.json",
+      "sha256": "53052cb2e4a5f6a4d987d905f4f0ab09d00d5bcda6cf850e639809ee53e98576",
+      "source": "2026-09-27_k6_noise_manuscript_review/evidence/FIGURE_VALIDATION.json"
+    },
+    {
+      "path": "reference_source/sensitivity_1.27.1_pme.R",
+      "sha256": "67304c8f9126d879c380a5e76ba59aa4b08fce2a6fddf8f70ae3476eeb9b1f1d",
+      "source": "2026-09-26_original_pme_local/evidence/original_pme_validation/source/pme.R"
+    },
+    {
+      "path": "reference_source/original_standardization_adapter.R",
+      "sha256": "f948b28d4fbc0f72e4ad715ac3ebef3ea5bbc4b98e7892d1d7edc5821e8b8b4d",
+      "source": "2026-09-27_standardized_review/scripts/common.R"
+    },
+    {
+      "path": "inputs/friedman_and_historical_concrete.rds",
+      "sha256": "85a342c9d227eb2b1fdfb0e99d4891c2a417cba1e18386693856e581b378bf9b",
+      "source": "2026-09-26_original_pme_local/data/official_pme/inputs.rds"
+    },
+    {
+      "path": "inputs/concrete824.rds",
+      "sha256": "04927e5f9af25daa5b2a4348195d0887c29fa4b0d5d5063fdeb9a10aebcab462",
+      "source": "2026-09-27_standardized_review/data/concrete824/inputs.rds"
+    },
+    {
+      "path": "reference_source/first_adapter.R",
+      "sha256": "fc2df8306d3a01ad8dc778fbedec4769bae6cc814e88efa3ac79bec467f8290d",
+      "source": "2026-09-16_meeting_followup/execution_20260919/first_adapter.R"
+    }
+  ],
+  "public_export_scope": {
+    "manuscript_sources": "NOT_IN_PUBLIC_EXPORT",
+    "paper_prose": "NOT_IN_PUBLIC_EXPORT",
+    "typeset_table": "NOT_IN_PUBLIC_EXPORT"
+  },
+  "scope": "Certified existing exports; source locations relative to historical reviews archive"
+}

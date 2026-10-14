@@ -1,0 +1,10 @@
+"study","id","method","seed","status","max_abs_difference","tolerance","elapsed_sec"
+"friedman","friedman_n100_rho0.9_r001","PRIME",202622261,"PASS",3.88578058618805e-16,1e-10,0.0469999999999999
+"friedman","friedman_n100_rho0.9_r001","PME-kNN",202622361,"PASS",1.94289029309402e-16,1e-10,1.569
+"friedman","friedman_n100_rho0.9_r001","FIRST-SHAP",202622461,"PASS",3.88578058618805e-16,1e-10,0.0609999999999999
+"friedman","friedman_n100_rho0.9_r001","Full LL",202622161,"PASS",0,1e-10,0.983
+"friedman","friedman_n100_rho0.9_r001","PME-kNN FALSE",202622361,"PASS",4.71844785465692e-16,1e-10,1.552
+"concrete","n0824_r01","PRIME",202609261,"PASS",4.44089209850063e-16,1e-10,0.268
+"concrete","n0824_r01","PME-kNN",202609461,"PASS",4.44089209850063e-16,1e-10,8.719
+"concrete","n0824_r01","FIRST-SHAP",202609561,"PASS",4.9960036108132e-16,1e-10,0.244999999999999
+"concrete","n0824_r01","PME-kNN FALSE",202609461,"PASS",4.9960036108132e-16,1e-10,8.747

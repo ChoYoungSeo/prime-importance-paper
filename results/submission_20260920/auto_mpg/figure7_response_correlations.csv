@@ -1,0 +1,9 @@
+"variable","display_variable","pearson_r_with_mpg"
+"cylinders","Cylinders",-0.777617508126022
+"displacement","Displacement",-0.805126946710457
+"horsepower","Horsepower",-0.778426783897776
+"weight","Weight",-0.832244214831575
+"acceleration","Acceleration",0.423328536902787
+"model_year","Model year",0.580540966090785
+"origin_2","Origin 2",0.244312500984388
+"origin_3","Origin 3",0.451453629929747

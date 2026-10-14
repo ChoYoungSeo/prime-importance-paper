@@ -1,0 +1,65 @@
+"row_variable","column_variable","row_label","column_label","value"
+"cylinders","cylinders","Cylinders","Cylinders",1
+"displacement","cylinders","Displacement","Cylinders",0.950823300827782
+"horsepower","cylinders","Horsepower","Cylinders",0.842983356918658
+"weight","cylinders","Weight","Cylinders",0.897527340340817
+"acceleration","cylinders","Acceleration","Cylinders",-0.504683379348644
+"model_year","cylinders","Model year","Cylinders",-0.345647440338085
+"origin_2","cylinders","Origin 2","Cylinders",-0.352323621193365
+"origin_3","cylinders","Origin 3","Cylinders",-0.404209047133356
+"cylinders","displacement","Cylinders","Displacement",0.950823300827782
+"displacement","displacement","Displacement","Displacement",1
+"horsepower","displacement","Horsepower","Displacement",0.897257001843468
+"weight","displacement","Weight","Displacement",0.93299440408901
+"acceleration","displacement","Acceleration","Displacement",-0.543800496734567
+"model_year","displacement","Model year","Displacement",-0.369855206675179
+"origin_2","displacement","Origin 2","Displacement",-0.371632605070452
+"origin_3","displacement","Origin 3","Displacement",-0.440824616101863
+"cylinders","horsepower","Cylinders","Horsepower",0.842983356918658
+"displacement","horsepower","Displacement","Horsepower",0.897257001843468
+"horsepower","horsepower","Horsepower","Horsepower",1
+"weight","horsepower","Weight","Horsepower",0.864537737574143
+"acceleration","horsepower","Acceleration","Horsepower",-0.689195510334236
+"model_year","horsepower","Model year","Horsepower",-0.416361477099988
+"origin_2","horsepower","Origin 2","Horsepower",-0.284947881002488
+"origin_3","horsepower","Origin 3","Horsepower",-0.321935593515924
+"cylinders","weight","Cylinders","Weight",0.897527340340817
+"displacement","weight","Displacement","Weight",0.93299440408901
+"horsepower","weight","Horsepower","Weight",0.864537737574143
+"weight","weight","Weight","Weight",1
+"acceleration","weight","Acceleration","Weight",-0.416839202003707
+"model_year","weight","Model year","Weight",-0.309119880830816
+"origin_2","weight","Origin 2","Weight",-0.293841151986878
+"origin_3","weight","Origin 3","Weight",-0.447928726225827
+"cylinders","acceleration","Cylinders","Acceleration",-0.504683379348644
+"displacement","acceleration","Displacement","Acceleration",-0.543800496734567
+"horsepower","acceleration","Horsepower","Acceleration",-0.689195510334236
+"weight","acceleration","Weight","Acceleration",-0.416839202003707
+"acceleration","acceleration","Acceleration","Acceleration",1
+"model_year","acceleration","Model year","Acceleration",0.290316113336519
+"origin_2","acceleration","Origin 2","Acceleration",0.208297932961878
+"origin_3","acceleration","Origin 3","Acceleration",0.115020399195233
+"cylinders","model_year","Cylinders","Model year",-0.345647440338085
+"displacement","model_year","Displacement","Model year",-0.369855206675179
+"horsepower","model_year","Horsepower","Model year",-0.416361477099988
+"weight","model_year","Weight","Model year",-0.309119880830816
+"acceleration","model_year","Acceleration","Model year",0.290316113336519
+"model_year","model_year","Model year","Model year",1
+"origin_2","model_year","Origin 2","Model year",-0.0377454341222553
+"origin_3","model_year","Origin 3","Model year",0.199840824183081
+"cylinders","origin_2","Cylinders","Origin 2",-0.352323621193365
+"displacement","origin_2","Displacement","Origin 2",-0.371632605070452
+"horsepower","origin_2","Horsepower","Origin 2",-0.284947881002488
+"weight","origin_2","Weight","Origin 2",-0.293841151986878
+"acceleration","origin_2","Acceleration","Origin 2",0.208297932961878
+"model_year","origin_2","Model year","Origin 2",-0.0377454341222553
+"origin_2","origin_2","Origin 2","Origin 2",1
+"origin_3","origin_2","Origin 3","Origin 2",-0.230156544264265
+"cylinders","origin_3","Cylinders","Origin 3",-0.404209047133356
+"displacement","origin_3","Displacement","Origin 3",-0.440824616101863
+"horsepower","origin_3","Horsepower","Origin 3",-0.321935593515924
+"weight","origin_3","Weight","Origin 3",-0.447928726225827
+"acceleration","origin_3","Acceleration","Origin 3",0.115020399195233
+"model_year","origin_3","Model year","Origin 3",0.199840824183081
+"origin_2","origin_3","Origin 2","Origin 3",-0.230156544264265
+"origin_3","origin_3","Origin 3","Origin 3",1

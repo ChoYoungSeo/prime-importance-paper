@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "paired_inputs": 270,
+  "verified_allocation_vectors": 810,
+  "common_population_truth": true,
+  "all_LL_checkpoint_hashes_match": true,
+  "max_stored_loss_gap": 6.106226635438361e-16,
+  "cell_count": 9,
+  "replications_per_cell": 30
+}

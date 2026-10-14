@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "scope": "Full Friedman grid: n in {100,200,500}, rho in {0,0.5,0.9}, p=10; 30 frozen paired datasets per cell",
+  "datasets": 270,
+  "workers": 4,
+  "estimator": "full-coordinate local-constant PME and Shapley with the same dimension-dependent K_n(d) rule as PRIME",
+  "neighbor_identity": "K nearest other observations; query self-excluded",
+  "k_by_n": {
+    "n100": [15, 15, 15, 15, 15, 18, 21, 24, 27, 30],
+    "n200": [22, 22, 22, 22, 22, 22, 22, 24, 27, 30],
+    "n500": [34, 34, 34, 34, 34, 34, 34, 34, 34, 34]
+  },
+  "cell_means": [
+    {
+      "n": 100,
+      "rho": 0,
+      "pme_half_l1": 0.52101508147308917,
+      "shapley_half_l1": 0.21571652681839071,
+      "pme_proxy_mass": 0.0030384029787871771,
+      "shapley_proxy_mass": 0.057832131700282507,
+      "elapsed_sec": 2.0026333333333333
+    },
+    {
+      "n": 200,
+      "rho": 0,
+      "pme_half_l1": 0.47810624506180399,
+      "shapley_half_l1": 0.18199497034637532,
+      "pme_proxy_mass": 3.2191257957671537e-05,
+      "shapley_proxy_mass": 0.021582852300039656,
+      "elapsed_sec": 2.7025666666666663
+    },
+    {
+      "n": 500,
+      "rho": 0,
+      "pme_half_l1": 0.37648416657209216,
+      "shapley_half_l1": 0.16472335038166983,
+      "pme_proxy_mass": 0,
+      "shapley_proxy_mass": 0.0053511371200540949,
+      "elapsed_sec": 5.6563666666666688
+    },
+    {
+      "n": 100,
+      "rho": 0.5,
+      "pme_half_l1": 0.50576522439447469,
+      "shapley_half_l1": 0.210665461540297,
+      "pme_proxy_mass": 0.0023192821227344391,
+      "shapley_proxy_mass": 0.15163856679729432,
+      "elapsed_sec": 1.907333333333334
+    },
+    {
+      "n": 200,
+      "rho": 0.5,
+      "pme_half_l1": 0.44028825948058509,
+      "shapley_half_l1": 0.1797834694078948,
+      "pme_proxy_mass": 0.00081915481369985576,
+      "shapley_proxy_mass": 0.11888141713062514,
+      "elapsed_sec": 2.0056666666666665
+    },
+    {
+      "n": 500,
+      "rho": 0.5,
+      "pme_half_l1": 0.35647702106416507,
+      "shapley_half_l1": 0.15916901502396952,
+      "pme_proxy_mass": 5.5761073868476117e-06,
+      "shapley_proxy_mass": 0.091555236901942588,
+      "elapsed_sec": 5.6518000000000042
+    },
+    {
+      "n": 100,
+      "rho": 0.90000000000000002,
+      "pme_half_l1": 0.57876243860577792,
+      "shapley_half_l1": 0.17028549876074794,
+      "pme_proxy_mass": 0.14396882150955723,
+      "shapley_proxy_mass": 0.44313259382557713,
+      "elapsed_sec": 2.3367666666666667
+    },
+    {
+      "n": 200,
+      "rho": 0.90000000000000002,
+      "pme_half_l1": 0.45414029880653739,
+      "shapley_half_l1": 0.19219047365802072,
+      "pme_proxy_mass": 0.042273009528682251,
+      "shapley_proxy_mass": 0.417538760106481,
+      "elapsed_sec": 2.664299999999999
+    },
+    {
+      "n": 500,
+      "rho": 0.90000000000000002,
+      "pme_half_l1": 0.28825969945092067,
+      "shapley_half_l1": 0.14358189880638419,
+      "pme_proxy_mass": 0.047046328056912293,
+      "shapley_proxy_mass": 0.39916459751108241,
+      "elapsed_sec": 5.4440666666666635
+    }
+  ],
+  "overall_mean": {
+    "pme_half_l1": 0.4443664927677165,
+    "shapley_half_l1": 0.17979007386041687,
+    "pme_proxy_mass": 0.02661141848619087,
+    "shapley_proxy_mass": 0.18963081037704207,
+    "elapsed_sec": 3.3746111111111134
+  },
+  "median_elapsed_sec": 2.6774999999999984,
+  "input_md5_unique": true,
+  "prime_version": "0.5.2.9101",
+  "script_md5": "f2f5774f71e2bb301be38bec1d199fa1"
+}

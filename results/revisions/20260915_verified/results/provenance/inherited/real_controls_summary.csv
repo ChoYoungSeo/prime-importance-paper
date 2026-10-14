@@ -1,0 +1,55 @@
+"dataset","dataset_name","mode","full_n","n_used","original_p","injected_noise_p","method","reps","mean_original_selected","mean_noise_selected","no_noise_rate","median_time_sec"
+"abalone","Abalone","full",4177,4177,9,30,"FIRST",5,4.8,0.6,0.4,4.05899999999929
+"abalone","Abalone","full",4177,4177,9,30,"FIRST-LLR",5,3,0,1,41.72
+"abalone","Abalone","full",4177,4177,9,30,"FOCI",5,3.8,1.4,0,11.23
+"abalone","Abalone","full",4177,4177,9,30,"LASSO",5,6.6,9.4,0,0.70699999999988
+"abalone","Abalone","n100",4177,100,9,30,"FIRST",5,2.2,1,0.2,0.128999999999905
+"abalone","Abalone","n100",4177,100,9,30,"FIRST-LLR",5,2,1,0.4,0.170999999999992
+"abalone","Abalone","n100",4177,100,9,30,"FOCI",5,1.6,1,0.4,0.352000000000004
+"abalone","Abalone","n100",4177,100,9,30,"LASSO",5,1.2,0,1,0.673000000000002
+"abalone","Abalone","n100",4177,100,9,30,"RF-VS",5,6.2,2.4,0.4,6.09100000000001
+"airfoil","Airfoil Self-Noise","full",1503,1503,5,30,"FIRST",5,4,0,1,1.11799999999857
+"airfoil","Airfoil Self-Noise","full",1503,1503,5,30,"FIRST-LLR",5,3,0,1,7.58199999999999
+"airfoil","Airfoil Self-Noise","full",1503,1503,5,30,"FOCI",5,3,0,1,1.83899999999994
+"airfoil","Airfoil Self-Noise","full",1503,1503,5,30,"LASSO",5,5,0,1,0.608000000000175
+"airfoil","Airfoil Self-Noise","n100",1503,100,5,30,"FIRST",5,2.2,0.8,0.2,0.104000000000042
+"airfoil","Airfoil Self-Noise","n100",1503,100,5,30,"FIRST-LLR",5,2.8,0,1,0.152999999999992
+"airfoil","Airfoil Self-Noise","n100",1503,100,5,30,"FOCI",5,1.4,1.2,0.4,0.359999999998763
+"airfoil","Airfoil Self-Noise","n100",1503,100,5,30,"LASSO",5,4.2,3.6,0.2,0.622
+"airfoil","Airfoil Self-Noise","n100",1503,100,5,30,"RF-VS",5,2.8,0.2,0.8,4.00300000000061
+"auto_mpg","Auto MPG","full",392,392,8,30,"FIRST",5,5.6,0.2,0.8,0.432999999999993
+"auto_mpg","Auto MPG","full",392,392,8,30,"FIRST-LLR",5,4,0,1,0.839
+"auto_mpg","Auto MPG","full",392,392,8,30,"FOCI",5,4.8,0.2,0.8,1.15700000000015
+"auto_mpg","Auto MPG","full",392,392,8,30,"LASSO",5,4.8,0,1,0.652000000000044
+"auto_mpg","Auto MPG","n100",392,100,8,30,"FIRST",5,2.6,1,0.2,0.138000000000829
+"auto_mpg","Auto MPG","n100",392,100,8,30,"FIRST-LLR",5,2.8,0,1,0.162
+"auto_mpg","Auto MPG","n100",392,100,8,30,"FOCI",5,3,0.8,0.6,0.476999999999862
+"auto_mpg","Auto MPG","n100",392,100,8,30,"LASSO",5,3.6,0.2,0.8,0.635000000000218
+"auto_mpg","Auto MPG","n100",392,100,8,30,"RF-VS",5,6,0.8,0.4,4.37799999999879
+"boston","Boston Housing","full",506,506,13,30,"FIRST",5,8,0,1,0.755999999999999
+"boston","Boston Housing","full",506,506,13,30,"FIRST-LLR",5,7,0,1,1.393
+"boston","Boston Housing","full",506,506,13,30,"FOCI",5,5.4,0.2,0.8,1.085
+"boston","Boston Housing","full",506,506,13,30,"LASSO",5,6.8,0.8,0.6,0.652999999999338
+"boston","Boston Housing","n100",506,100,13,30,"FIRST",5,3.6,0.8,0.2,0.148000000000138
+"boston","Boston Housing","n100",506,100,13,30,"FIRST-LLR",5,3.6,0.8,0.6,0.221000000000004
+"boston","Boston Housing","n100",506,100,13,30,"FOCI",5,3,0.8,0.2,0.335999999999331
+"boston","Boston Housing","n100",506,100,13,30,"LASSO",5,2.8,0,1,0.621999999999957
+"boston","Boston Housing","n100",506,100,13,30,"RF-VS",5,4.6,0,1,6.18399999999997
+"california","California Housing","full",20433,20433,8,30,"FIRST",5,2,0,1,18.6749999999993
+"california","California Housing","full",20433,20433,8,30,"FIRST-LLR",5,7,0,1,607.549
+"california","California Housing","full",20433,20433,8,30,"FOCI",5,3,0,1,28.335
+"california","California Housing","full",20433,20433,8,30,"LASSO",5,7,0,1,0.89100000000002
+"california","California Housing","n100",20433,100,8,30,"FIRST",5,2.4,0.2,0.8,0.134
+"california","California Housing","n100",20433,100,8,30,"FIRST-LLR",5,2.8,0.6,0.6,0.156
+"california","California Housing","n100",20433,100,8,30,"FOCI",5,2.4,0.4,0.6,0.300999999999476
+"california","California Housing","n100",20433,100,8,30,"LASSO",5,1.2,0,1,0.661000000000058
+"california","California Housing","n100",20433,100,8,30,"RF-VS",5,3.2,1.6,0,5.45500000000015
+"concrete","Concrete Compressive Strength","full",1030,1030,8,30,"FIRST",5,4.6,0,1,1.01099999999997
+"concrete","Concrete Compressive Strength","full",1030,1030,8,30,"FIRST-LLR",5,6,0,1,4.001
+"concrete","Concrete Compressive Strength","full",1030,1030,8,30,"FOCI",5,4,0,1,3.106
+"concrete","Concrete Compressive Strength","full",1030,1030,8,30,"LASSO",5,7,0.6,0.4,0.643000000000029
+"concrete","Concrete Compressive Strength","n100",1030,100,8,30,"FIRST",5,3.6,0.2,0.8,0.155000000000086
+"concrete","Concrete Compressive Strength","n100",1030,100,8,30,"FIRST-LLR",5,4.8,0.6,0.8,0.155999999999992
+"concrete","Concrete Compressive Strength","n100",1030,100,8,30,"FOCI",5,2.8,1,0.4,0.493999999999915
+"concrete","Concrete Compressive Strength","n100",1030,100,8,30,"LASSO",5,5.6,2,0.2,0.646999999999935
+"concrete","Concrete Compressive Strength","n100",1030,100,8,30,"RF-VS",5,4.4,0,1,4.55099999999948

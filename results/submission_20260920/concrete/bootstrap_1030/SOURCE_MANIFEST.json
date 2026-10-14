@@ -1,0 +1,19 @@
+{
+  "frozen_kit_signature": "4f29d1c54aff9649c6cb469aa7103c7231ecd093dfeacd7abe3146ea4a8c745b",
+  "frozen_runtime": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "platform": "aarch64-apple-darwin23",
+    "packages": {
+      "FNN": "1.1.4.1",
+      "MASS": "7.3.65",
+      "Rcpp": "1.1.1.1.1",
+      "RcppArmadillo": "15.2.6.1",
+      "jsonlite": "2.0.0",
+      "digest": "0.6.39"
+    }
+  },
+  "number_of_hashed_files": 429,
+  "bootstrap_checkpoints": 200,
+  "existing_method_checkpoints": 200,
+  "full_data_pilot_checkpoints": 1
+}

@@ -1,0 +1,16 @@
+{
+  "source": "raw RDS method checkpoints, independently of display summary",
+  "full_data_records_checked": 4,
+  "repeated_records_checked": 400,
+  "coordinates_checked": 32,
+  "maximum_absolute_bar_error": 4.9960036108132044e-16,
+  "maximum_absolute_q05_error": 6.2450045135165055e-16,
+  "maximum_absolute_q95_error": 8.3266726846886741e-16,
+  "prime_zero_padded_repeated_records": 100,
+  "first_shap_zero_padded_repeated_records": 100,
+  "ranges_include_selection_variation": true,
+  "issues": [],
+  "pass_value_audit": true,
+  "audited_plot_values_sha256": "84c13de5e9ca928639287f60839a96e8896ecd07dab69e45ea887afe2c9b2056",
+  "audit_csv_sha256": "da703fc40ad3b46d738ce5e1caae1124fa34f0622c1d8dd34b5bcf5d563ba937"
+}

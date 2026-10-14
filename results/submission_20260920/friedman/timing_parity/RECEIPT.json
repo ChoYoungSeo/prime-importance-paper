@@ -1,0 +1,47 @@
+{
+  "R": "R version 4.6.1 (2026-06-24)",
+  "complete": 150,
+  "excluded_from_timer": [
+    "package/source loading",
+    "file reads/writes",
+    "hashing",
+    "data generation",
+    "garbage collection",
+    "result validation"
+  ],
+  "generated_utc": "2026-09-23 01:16:24 UTC",
+  "maximum_effect_abs_gap": 0,
+  "methods": [
+    "PRIME",
+    "Full_LL_PME",
+    "Full_LC_Kn",
+    "PME_kNN",
+    "FIRST_SHAP"
+  ],
+  "n": 200,
+  "native_threads": 1,
+  "p": 10,
+  "platform": "aarch64-apple-darwin23",
+  "prime_version": "0.5.2.9101",
+  "r_workers": 1,
+  "replications": 30,
+  "rho": 0.5,
+  "schedule": "One unrecorded warm-up per method; 30 datasets serially in cyclic method order",
+  "scope": "Five Table 3 Friedman methods on the same frozen central 30 datasets",
+  "selected_mismatches": 0,
+  "source_manifest_sha256": "74c2f010d71d54b4c2f0615f399458a88a3a23428e47dc783bec33c60916c0d7",
+  "status": "PASS",
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PRIME_NUM_THREADS": "1",
+    "RCPP_PARALLEL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "timed_scope": "Complete method fit through allocation; Full LC-Kn excludes diagnostic Shapley as in prior pure-PME timing",
+  "timer": "proc.time()[['elapsed']]",
+  "timings_sha256": "dc0efae2a8fdc1ae9541f6defcde3855a5bf02518d47c3836b3f76f26325a739",
+  "total_warnings": 0
+}

@@ -1,0 +1,12 @@
+# Optional --run environment; --check-only uses only the Python standard library.
+# Exact recorded package versions from the full-sample TreeSHAP source protocol.
+# Source run used Python 3.12.14. These are package pins, not an OS/compiler lock.
+# lime is retained for parity with the recorded environment; this script does not import it.
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.5.2
+xgboost==2.1.4
+shap==0.46.0
+lime==0.2.0.1
+threadpoolctl==3.5.0

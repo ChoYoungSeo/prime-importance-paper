@@ -1,0 +1,66 @@
+{
+  "protocol": "shared-column-standardization-v1",
+  "status": "verified",
+  "canonical_formula": "center <- colMeans(X); scale <- apply(X, 2L, stats::sd); Z <- sweep(sweep(X, 2L, center, '-'), 2L, scale, '/')",
+  "scales_policy": "All scales must be finite and strictly positive; errors retained as cases, no column dropping",
+  "transforms": {
+    "response": "none",
+    "whitening": false,
+    "rotation": false,
+    "row_permutation": false,
+    "column_permutation": false,
+    "clipping": false
+  },
+  "prime": {
+    "package": "prime",
+    "version": "0.5.2.9101",
+    "rescale": false,
+    "reuse_requirement": "Exact prepared X and y equality under frozen implementation"
+  },
+  "pme": {
+    "method": "knn",
+    "n.knn": 6,
+    "noise": true,
+    "rescale": false,
+    "marg": true,
+    "tol": null,
+    "n.limit": 2001,
+    "nboot": null,
+    "parl": null
+  },
+  "first": {
+    "screen_rescale": false,
+    "shapley_rescale": false,
+    "n.knn": 2,
+    "n.forward": 2,
+    "n.mc": "nrow(X)",
+    "twin.mc": false,
+    "noise": true,
+    "parl": null,
+    "rng": "Caller-owned frozen seed; original tie jitter unchanged",
+    "body_edits": "None to estimators; frozen capture_return reporting adapter unchanged"
+  },
+  "counts": {
+    "friedman": 270,
+    "concrete": 101,
+    "verified": 371,
+    "preflight_errors": 0,
+    "prime_true_exact": 371,
+    "prime_false_exact": 371,
+    "first_scale_exact": 3
+  },
+  "first_scale_max_abs_difference": 2.9753977059954195e-14,
+  "first_reuse_policy": "Rerun FIRST; scale() input equality is not uniformly exact and nested selected-input scaling must not be reused",
+  "constant_column_rejected": true,
+  "nonfinite_input_rejected": true,
+  "preprocessing_consumes_rng": false,
+  "first_orchestration_only_two_flags_changed": true,
+  "frozen_sources_unchanged": true,
+  "common_sha256": "f948b28d4fbc0f72e4ad715ac3ebef3ea5bbc4b98e7892d1d7edc5821e8b8b4d",
+  "audit_script_sha256": "6ee3f108f10ef38cfe182bbec6e4cc1e8f79beab21f63034a52b1591a970a892",
+  "input_bundles": ["85a342c9d227eb2b1fdfb0e99d4891c2a417cba1e18386693856e581b378bf9b", "04927e5f9af25daa5b2a4348195d0887c29fa4b0d5d5063fdeb9a10aebcab462"],
+  "source_sha256": "67304c8f9126d879c380a5e76ba59aa4b08fce2a6fddf8f70ae3476eeb9b1f1d",
+  "first_source_sha256": "759c110ef16e4cce1fcebf17e1d1ed03035a90c92878e02715ff038f1afe1ee4",
+  "frozen_signature": "4f29d1c54aff9649c6cb469aa7103c7231ecd093dfeacd7abe3146ea4a8c745b",
+  "session": ["R version 4.6.1 (2026-06-24)", "Platform: aarch64-apple-darwin23", "Running under: macOS Tahoe 26.6.2", "", "Matrix products: default", "BLAS:   /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRblas.0.dylib ", "LAPACK: /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1", "", "locale:", "[1] C.UTF-8/C.UTF-8/C.UTF-8/C/C.UTF-8/C.UTF-8", "", "time zone: America/New_York", "tzcode source: internal", "", "attached base packages:", "[1] stats     graphics  grDevices utils     datasets  methods   base     ", "", "loaded via a namespace (and not attached):", " [1] generics_0.1.4        class_7.3-23          gtools_3.9.5         ", " [4] stringi_1.8.7         lattice_0.22-9        numbers_0.9-2        ", " [7] digest_0.6.39         magrittr_2.0.5        grid_4.6.1           ", "[10] RColorBrewer_1.1-3    iterators_1.0.14      fastmap_1.2.0        ", "[13] foreach_1.5.2         plyr_1.8.9            jsonlite_2.0.0       ", "[16] Matrix_1.7-5          ggrepel_0.9.8         prime_0.5.2.9101     ", "[19] RSpectra_0.16-2       promises_1.5.0        scales_1.4.0         ", "[22] codetools_0.2-20      modeltools_0.2-24     cli_3.6.6            ", "[25] shiny_1.13.0          rlang_1.2.0           RANN_2.6.2           ", "[28] FNN_1.1.4.1           otel_0.2.0            tools_4.6.1          ", "[31] parallel_4.6.1        reshape2_1.4.5        dtwclust_6.0.0       ", "[34] dplyr_1.2.1           ggplot2_4.0.3         httpuv_1.6.17        ", "[37] boot_1.3-32           mime_0.13             vctrs_0.7.3          ", "[40] R6_2.6.1              stats4_4.6.1          proxy_0.4-29         ", "[43] lifecycle_1.0.5       dtw_1.23-2            stringr_1.6.0        ", "[46] clue_0.3-68           shinyjs_2.1.1         cluster_2.1.8.2      ", "[49] pkgconfig_2.0.3       RcppParallel_5.1.11-2 pillar_1.11.1        ", "[52] later_1.4.8           gtable_0.3.6          glue_1.8.1           ", "[55] Rcpp_1.1.1-1.1        tibble_3.3.1          tidyselect_1.2.1     ", "[58] flexclust_1.5.0       xtable_1.8-8          farver_2.1.2         ", "[61] htmltools_0.5.9       sensitivity_1.31.0    compiler_4.6.1       ", "[64] S7_0.2.2             "]
+}

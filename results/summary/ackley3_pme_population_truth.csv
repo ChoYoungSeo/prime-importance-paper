@@ -1,0 +1,4 @@
+"benchmark","variable","pme","source"
+"ackley3",1,0.333333333333333,"exact by permutation symmetry"
+"ackley3",2,0.333333333333333,"exact by permutation symmetry"
+"ackley3",3,0.333333333333333,"exact by permutation symmetry"

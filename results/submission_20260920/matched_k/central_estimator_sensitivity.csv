@@ -1,0 +1,7 @@
+"rule","estimator","mean_error","mean_proxy_mass"
+"PME","Full local-linear",0.093787637463078,0.000143066710317034
+"PME","Matched-K local-constant",0.440288259480585,0.000819154813699857
+"PME","Two-neighbor local-constant",0.168357042928067,0.000558898736211958
+"Shapley","Full local-linear",0.0864097819305831,0.107490492665958
+"Shapley","Matched-K local-constant",0.179783469407895,0.118881417130625
+"Shapley","Two-neighbor local-constant",0.102433420318001,0.138309306633207

@@ -1,0 +1,436 @@
+{
+  "algorithm_or_estimator_changes": false,
+  "archived_replay_documentation": "Executable native refit instructions removed from the public workflow; retained source is archival and preflight remains unvalidated. Supported public workflow is saved code/data/graphics.",
+  "arxiv_and_professor_documentation_20261014": {
+    "article_doi": "10.48550/arXiv.2610.17053",
+    "checks": {
+      "historical_numeric_container_sha256_unchanged": {
+        "results/numerical_20261001/MANIFEST.json": "c58f440b58382bba044ed20f1c902d2713dfb885f294e3547816f1ca06d33250",
+        "results/numerical_20261001/SOURCE_PROVENANCE.json": "ac9d5badb1f50db1ada6c1cfd191d3d1691a3b8671b066e7846c914858e68a75",
+        "results/numerical_20261011/manifest.json": "4f10499af30142af9453533f104c3aaed65c5c3ac58c19f530c811b210b96255",
+        "results/numerical_20261011/provenance/source_receipts.json": "d1cd98c3b619010ed0fe620adf36ee309fbc6acdd7ec2fc139fce8157d6a2112"
+      },
+      "make_validate_release": {
+        "cases": 130,
+        "historical_saved_file_checks": 51,
+        "latest_overlay_file_checks": 156,
+        "measured_timing_rows": 520,
+        "no_new_fits_or_estimator_reruns": true,
+        "paired_concrete_timing_calls": 400,
+        "plot_coordinates": 4400,
+        "shap_aggregates": 1100,
+        "status": "PASS"
+      },
+      "make_verify_workflow": {
+        "meaningful_existing_contract_tests": 18,
+        "status": "PASS"
+      },
+      "verify_release": {
+        "logical_input_pins": 64,
+        "modified_allowed_documentation_pins": [
+          "CITATION.cff",
+          "README.md",
+          "software/prime/man/prime-package.Rd",
+          "software/prime/man/prime.Rd",
+          "software/prime/man/prime_screen.Rd"
+        ],
+        "other_source_pins_byte_unchanged": 89,
+        "package_build_source_inventory": 30,
+        "source_pins": 94,
+        "status": "PASS"
+      }
+    },
+    "current_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_arxiv_and_professor_documentation.json",
+      "schema_version": 1,
+      "sha256": "f5ac94a2d305a15c48b0a3fe2a6f684cf8a59715fc88c5428935cdaf4aa7a700"
+    },
+    "derived_frozen_manual": {
+      "after_sha256": "107d076e007f6a24b96cb9940fc088c4ca6e72e1a6489c40cba74b5de7f58c31",
+      "before_sha256": "b8b665214d8041d574d8b878a04929dd45d7687422f5d9f873265ea3c262b32c",
+      "bytes": 140593,
+      "full_visual_QA": "Handled by separate documentation QA; not claimed by metadata guard",
+      "path": "docs/prime.pdf",
+      "scope": "Generated R reference manual for the frozen bundled package; not an article PDF"
+    },
+    "frozen_package_version_unchanged": "0.5.2.9101",
+    "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+    "new_simulations_or_fits": false,
+    "numerical_overlay_and_historical_manifests_changed": false,
+    "official_arxiv_identifier": "2610.17053",
+    "official_arxiv_url": "https://arxiv.org/abs/2610.17053",
+    "prepared_utc": "2026-10-14T14:06:22.892795+00:00",
+    "presentation_hash_changes": [
+      {
+        "after_sha256": "7ef0781e51fe36055d813c9ac7038f962de470988d04fbf964a4531c6e52fa67",
+        "before_sha256": "1fa85baeb2974b2aa6a9db8600371c00b4417bad62b25f7a19b7ae1975ca1212",
+        "path": "CITATION.cff"
+      },
+      {
+        "after_sha256": "438d8c5535e2a94efb482fcf2b90d1a3d4c712778d07a2be5681eccb9ce7591e",
+        "before_sha256": "ace6db5c46ab23541da2d3b7e18d0396df627aa770e92a4f0adfb0c3445a8af9",
+        "path": "README.md"
+      },
+      {
+        "after_sha256": "f55b6c6ab7f2f060467d9aeec5f0721369b150dfb8170f939a5dcf0d47cbccec",
+        "before_sha256": "b5ef14062bd097af0cc671bbe7b7a8580c6b512e9b50b6391fffe3021f39cf46",
+        "path": "docs/licensing.md"
+      },
+      {
+        "after_sha256": "f5fcc83db31c86a5de652c7b66119f2a491fa0b6629dcea221b0c1c9ce49b56a",
+        "before_sha256": "b070051257661c77d0089436a8505050ab1a3783b65ac392aa73932378779392",
+        "path": "docs/paper-link.json"
+      },
+      {
+        "after_sha256": "38dec55a32032f39a58619cf212cb8379746a70f297d8a205959d457ed47c140",
+        "before_sha256": "37417737373a8896a11291437bf7c68144dbffe170f99ae51549aa642c956262",
+        "path": "docs/paper.md"
+      },
+      {
+        "after_sha256": "91ccbbd28bbd94779f50a8f482af0de99fef9e4a1fdd918e5bae7ac106f82c59",
+        "before_sha256": "20f50ca0fd0e34b84c6ce7838163c42c0df60c3bdbe499c8dbaca2e58e01f380",
+        "path": "docs/research-materials.md"
+      }
+    ],
+    "previous_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261012_verified_poster_title.json",
+      "schema_version": 1,
+      "sha256": "19660d217dbc2417091fa471afa71e2a91591b7b50b305db1f940c47e6606686"
+    },
+    "scientific_implementation_and_inputs_unchanged": true,
+    "scientific_input_pin_count": 64,
+    "source_pin_changes": [
+      {
+        "after_sha256": "7ef0781e51fe36055d813c9ac7038f962de470988d04fbf964a4531c6e52fa67",
+        "before_sha256": "1fa85baeb2974b2aa6a9db8600371c00b4417bad62b25f7a19b7ae1975ca1212",
+        "path": "CITATION.cff"
+      },
+      {
+        "after_sha256": "438d8c5535e2a94efb482fcf2b90d1a3d4c712778d07a2be5681eccb9ce7591e",
+        "before_sha256": "ace6db5c46ab23541da2d3b7e18d0396df627aa770e92a4f0adfb0c3445a8af9",
+        "path": "README.md"
+      },
+      {
+        "after_sha256": "40d7828828fe191dc4ab5ed59d8029939153ed77e1fad17074ed6e4eb17c86ee",
+        "before_sha256": "77652946fb7f1f553f52e7dd26074507dd63e9704f5928447ce72024743077c3",
+        "path": "software/prime/man/prime-package.Rd"
+      },
+      {
+        "after_sha256": "a187718916eb26de50d0f910cf1084b1442ebbc9002e363048179e25fbc196a4",
+        "before_sha256": "64dd394ddb40f071d5b3c8736ae1d2f0cebd63d39db232026444788f72f2b43e",
+        "path": "software/prime/man/prime.Rd"
+      },
+      {
+        "after_sha256": "83621ea006b924a465f017d8cf2ff21a7eadc19412765cf6ed13a0951358ba76",
+        "before_sha256": "06d773a73ee45fda08f4ffb4441d2e295c3aa064ce7d06e1820c4b15651cf995",
+        "path": "software/prime/man/prime_screen.Rd"
+      }
+    ],
+    "source_pin_inventory_count": 94,
+    "validated_utc": "2026-10-14T14:07:34.118630+00:00",
+    "validation_status": "PASS_SOURCE_GUARD_WORKFLOW_CONTRACTS_AND_SAVED_NUMERICAL_CHECKS"
+  },
+  "canonical_repository": "https://github.com/ChoYoungSeo/prime-importance-paper",
+  "created_utc": "2026-10-12T18:25:06.353460+00:00",
+  "current_workflow_pointer": {
+    "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+    "manifest": "results/workflow_revisions/20261014_paper_navigation_no_contact.json",
+    "schema_version": 1,
+    "sha256": "5214dac3802f4cb217ec49b28347e68449ce22be8429b856f093fa03dfbbf56d"
+  },
+  "documentation_or_orchestration_pin_changes": [
+    {
+      "path": "Makefile",
+      "previous_workflow_sha256": "b06b3836d24077db98a74f3104f939a85bb52547aed11149a5b34cf1d74b18d3",
+      "public_workflow_sha256": "378fae1e1ddc2b6e4e0b5131da9a83a3389924172499a85e4e0d520f135dd729"
+    },
+    {
+      "path": "README.md",
+      "previous_workflow_sha256": "fb2d63f997810ff66c81aa7d66bc3009289caa757c94bbad4c7ad133144950bc",
+      "public_workflow_sha256": "1cf8f356bb7c627a7272726447e33160b4268521d2a24a7e995188c490baefaf"
+    },
+    {
+      "path": "VALIDATION.md",
+      "previous_workflow_sha256": "687204f93a5cfecbd01c48b91496c4bcb0499d2ebde1ea949ec2fdc6cf435abe",
+      "public_workflow_sha256": "c9943ddb066c01fa046ee749b838850fe0f5b108c9fbc2c0f98e547527ebed55"
+    },
+    {
+      "path": "experiments/99_validate/verified_workflow.py",
+      "previous_workflow_sha256": "765012ce99579f28d4aa5dcb41f610e2ac968f187c58e5fba330a50cb3193aa3",
+      "public_workflow_sha256": "509e5e55a44ebad4d776f19dc361b047e7c42154c39dacb824f4079dab309c05"
+    }
+  ],
+  "final_title_and_link_cleanup": {
+    "all_three_repository_fronts_use_same_title": true,
+    "article_citation_title_unchanged": true,
+    "article_sources_not_in_current_tree": true,
+    "historical_commit_objects_not_purged": true,
+    "obsolete_paper_anchor_removed": true,
+    "overview_title": "PRIME: A New Measure for Variable Importance",
+    "package_fronts_link_to_code_and_results_not_manuscript": "https://github.com/ChoYoungSeo/prime-importance-paper",
+    "source_pin_changes": [
+      {
+        "after": "f06a5f3e590eb3f8c0f3fa20473e949019938766af8a5ff7e43173d4ac835b27",
+        "before": "05f4caefdc6225ac95e71f69a5fa1494a83d0f47e900a879dc8b00ad7acf39f3",
+        "path": "CITATION.cff"
+      },
+      {
+        "after": "46b9727161934469b70c68047a4d71603e04c4c2b0bd6fe1b6dce93af161abb3",
+        "before": "1cf8f356bb7c627a7272726447e33160b4268521d2a24a7e995188c490baefaf",
+        "path": "README.md"
+      },
+      {
+        "after": "77809d854fd51c697319908fb89f31a4dd76202ae51e1765cd9ed76cc8a62b9f",
+        "before": "166a73ccf095366dae9458fbfe65038447fb830b5bf32df84a55b5557154ae0a",
+        "path": "software/prime/README.md"
+      },
+      {
+        "after": "819fb78d980deac052082eb396c2a33b900f6f0f0b808f95c035a59f91d05a95",
+        "before": "6ab877370c463c49a40f4736b1df997dd87c13d8da83a5da2838e7cfae56be8c",
+        "path": "software/prime/_pkgdown.yml"
+      }
+    ],
+    "statistical_implementation_unchanged": true
+  },
+  "guard_allowlist_expansion_this_revision": true,
+  "historical_archive_policy": "Private original manuscript archive and existing Git history preserved outside this public candidate; older Git history exposure must be resolved before publication.",
+  "historical_release_bytes_unchanged": true,
+  "kind": "reviewed_public_code_data_documentation_workflow_revision",
+  "legacy_graphic_output_routing": "Optional make figure-concrete writes only to ignored build/research_graphics, with an isolated receipt; unchanged historical scientific builder/default bytes retained.",
+  "legacy_main_validation_guard": {
+    "after_sha256": "378fae1e1ddc2b6e4e0b5131da9a83a3389924172499a85e4e0d520f135dd729",
+    "before_sha256": "000805c425a8679e4e933c158244efb4e34dabf40d755ee82ee80855cb492f36",
+    "changed_at_utc": "2026-10-12T19:44:52.081540+00:00",
+    "kind": "explicit_source_free_legacy_target_rejection",
+    "new_guard": "Fail before historical steps when private manuscript/main.tex is absent, with NOT_IN_PUBLIC_EXPORT and supported make validate-release instruction. All existing scientific/vector/physical recipes remain byte-identical.",
+    "no_silent_scientific_step_removal": true,
+    "path": "Makefile"
+  },
+  "manual_revision_20261012": {
+    "created_utc": "2026-10-12T20:48:16.313160+00:00",
+    "documentation_source_pin_changes": [
+      {
+        "after_sha256": "af036f5d6ab769e91ee82e7ccaf935b3904b4ae3ab3c2d5b9b8a1404ed155854",
+        "before_sha256": "509e5e55a44ebad4d776f19dc361b047e7c42154c39dacb824f4079dab309c05",
+        "path": "experiments/99_validate/verified_workflow.py"
+      },
+      {
+        "after_sha256": "6ab877370c463c49a40f4736b1df997dd87c13d8da83a5da2838e7cfae56be8c",
+        "before_sha256": "811de6ab51818107bac1980d29accf25c6d8d06f4e03353ae179ba4449908ac2",
+        "path": "software/prime/_pkgdown.yml"
+      },
+      {
+        "after_sha256": "77652946fb7f1f553f52e7dd26074507dd63e9704f5928447ce72024743077c3",
+        "before_sha256": "f495c72b17312807f387faa5cdc9d6aab44826109fa6be5528f132b39e9e7fd0",
+        "path": "software/prime/man/prime-package.Rd"
+      },
+      {
+        "after_sha256": "64dd394ddb40f071d5b3c8736ae1d2f0cebd63d39db232026444788f72f2b43e",
+        "before_sha256": "bbc5984c3be7ca1db2f7f151fa8e6d95e86fd1622a6a8ecc26776b6760c3ad2e",
+        "path": "software/prime/man/prime.Rd"
+      },
+      {
+        "after_sha256": "7ba454b007a986d1bb9b05aa24368e4c257723abe820080754aeda1b73c7a5a5",
+        "before_sha256": "17b74428d1eb20a104a332b952446ab555aa5ea97af99064f74e7162f4c6ce9d",
+        "path": "software/prime/man/prime_allocate.Rd"
+      },
+      {
+        "after_sha256": "06d773a73ee45fda08f4ffb4441d2e295c3aa064ce7d06e1820c4b15651cf995",
+        "before_sha256": "5d27c136e942992c22378ab505cdaf31bb5b7d2afa9f9aa7032b93f5f33d98fc",
+        "path": "software/prime/man/prime_screen.Rd"
+      },
+      {
+        "after_sha256": "038090f4f18c6225996869fe7dc6cb74c05350606adfec3e16a50904eeff5eed",
+        "before_sha256": "bd94f37dda9a95536391d693e59bc19adce7c264cb0b8b24665fe2e1b8842643",
+        "path": "software/prime/man/summary.prime_fit.Rd"
+      },
+      {
+        "after_sha256": "90f9091a0b6f86e80bf557f68cdca030642868fce20085603a7331cdd2f552b2",
+        "before_sha256": "419e4c8b0495436917ea5a34697d57bd993eb4fcca2e9c0eb13037ca62f32e01",
+        "path": "software/prime/man/summary.prime_screen.Rd"
+      }
+    ],
+    "frozen_manual_pdf_sha256": "b8b665214d8041d574d8b878a04929dd45d7687422f5d9f873265ea3c262b32c",
+    "frozen_package_version": "0.5.2.9101",
+    "guard_added_exact_documentation_paths": [
+      "software/prime/_pkgdown.yml",
+      "software/prime/man/prime-package.Rd",
+      "software/prime/man/prime.Rd",
+      "software/prime/man/prime_allocate.Rd",
+      "software/prime/man/prime_screen.Rd",
+      "software/prime/man/summary.prime_fit.Rd",
+      "software/prime/man/summary.prime_screen.Rd"
+    ],
+    "historical_release_and_input_pins_unchanged": true,
+    "maintained_package_version": "0.5.4.9001",
+    "new_fits_or_experiments": false,
+    "scope": "User documentation only: hide lower-level allocator and duplicate summary topics, explain summary generics, reuse the main X1/X2/X5 example for screening. Public API, package versions, statistical implementation and experiment inputs unchanged."
+  },
+  "new_fits_or_experiments": false,
+  "paper_navigation_no_contact_20261014": {
+    "checks": {
+      "frozen_manual_pdf_sha256_unchanged": "107d076e007f6a24b96cb9940fc088c4ca6e72e1a6489c40cba74b5de7f58c31",
+      "historical_and_numerical_container_hashes_unchanged": {
+        "results/numerical_20261001/MANIFEST.json": "c58f440b58382bba044ed20f1c902d2713dfb885f294e3547816f1ca06d33250",
+        "results/numerical_20261001/SOURCE_PROVENANCE.json": "ac9d5badb1f50db1ada6c1cfd191d3d1691a3b8671b066e7846c914858e68a75",
+        "results/numerical_20261011/manifest.json": "4f10499af30142af9453533f104c3aaed65c5c3ac58c19f530c811b210b96255",
+        "results/numerical_20261011/provenance/source_receipts.json": "d1cd98c3b619010ed0fe620adf36ee309fbc6acdd7ec2fc139fce8157d6a2112"
+      },
+      "saved_numerical": {
+        "cases": 130,
+        "historical_saved_files": 51,
+        "latest_manifest_files": 156,
+        "new_fits": false,
+        "status": "PASS"
+      },
+      "verify_release": {
+        "input_pins": 64,
+        "only_two_documentation_pin_deltas": true,
+        "other_92_source_files_unchanged": true,
+        "package_inventory": 30,
+        "source_pins": 94,
+        "status": "PASS"
+      },
+      "workflow_contracts": {
+        "status": "PASS",
+        "tests": 18
+      }
+    },
+    "current_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_paper_navigation_no_contact.json",
+      "schema_version": 1,
+      "sha256": "5214dac3802f4cb217ec49b28347e68449ce22be8429b856f093fa03dfbbf56d"
+    },
+    "frozen_package_description_version_API_Rd_and_manual_unchanged": true,
+    "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+    "input_pin_inventory_count": 64,
+    "new_fits_or_experiments": false,
+    "official_arxiv_identifier": "2610.17053",
+    "paper_link_placement": "top_navigation_and_Citation_section",
+    "paper_url": "https://arxiv.org/abs/2610.17053",
+    "prepared_utc": "2026-10-14T15:05:57.384533+00:00",
+    "presentation_hash_changes": [
+      {
+        "after_sha256": "b190a549168191c80f7d56a3936b7d905caef11310ef8b75caf08aae295ff1f0",
+        "before_sha256": "7ef0781e51fe36055d813c9ac7038f962de470988d04fbf964a4531c6e52fa67",
+        "path": "CITATION.cff"
+      },
+      {
+        "after_sha256": "98f68525126da3953fe30bbef44fbdfdcf4f305ac6cec54e8c9f08689324c212",
+        "before_sha256": "438d8c5535e2a94efb482fcf2b90d1a3d4c712778d07a2be5681eccb9ce7591e",
+        "path": "README.md"
+      },
+      {
+        "after_sha256": "cb6d42fa5c4df1fdb496641b6f38a0d38e40f11f8f8883f39c5d977638e1e9c6",
+        "before_sha256": "f5fcc83db31c86a5de652c7b66119f2a491fa0b6629dcea221b0c1c9ce49b56a",
+        "path": "docs/paper-link.json"
+      }
+    ],
+    "previous_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_arxiv_and_professor_documentation.json",
+      "schema_version": 1,
+      "sha256": "f5ac94a2d305a15c48b0a3fe2a6f684cf8a59715fc88c5428935cdaf4aa7a700"
+    },
+    "prior_footer_only_policy_superseded": true,
+    "scientific_source_inputs_and_numerical_containers_unchanged": true,
+    "scope": "Move the verified paper link to the top navigation, replace the Contact section with Citation, and remove optional public contact addresses.",
+    "source_pin_changes": [
+      {
+        "after_sha256": "b190a549168191c80f7d56a3936b7d905caef11310ef8b75caf08aae295ff1f0",
+        "before_sha256": "7ef0781e51fe36055d813c9ac7038f962de470988d04fbf964a4531c6e52fa67",
+        "path": "CITATION.cff"
+      },
+      {
+        "after_sha256": "98f68525126da3953fe30bbef44fbdfdcf4f305ac6cec54e8c9f08689324c212",
+        "before_sha256": "438d8c5535e2a94efb482fcf2b90d1a3d4c712778d07a2be5681eccb9ce7591e",
+        "path": "README.md"
+      }
+    ],
+    "source_pin_inventory_count": 94,
+    "validated_utc": "2026-10-14T15:07:02.423807+00:00",
+    "validation_status": "PASS_SOURCE_GUARD_WORKFLOW_CONTRACTS_AND_SAVED_NUMERICAL_CHECKS"
+  },
+  "poster_front_review": {
+    "authorship_CITATION_LICENSE_metadata_preserved": true,
+    "changed_at_utc": "2026-10-12T20:06:34.523186+00:00",
+    "files": [
+      {
+        "after_sha256": "1cf8f356bb7c627a7272726447e33160b4268521d2a24a7e995188c490baefaf",
+        "before_sha256": "2aacdcf65d6b4464b7af883e787e06153ed6e94753e5a90a39d56798eec3588f",
+        "path": "README.md"
+      },
+      {
+        "after_sha256": "6ac44f792294eaa91729d00f7838d5db70fac99ee05f2ff30a9a984431a57089",
+        "before_sha256": "e431b3463534e58ca240c4c021075a5189881b25d829ce232a0d8fec4655539b",
+        "path": "docs/paper.md"
+      },
+      {
+        "after_sha256": "b070051257661c77d0089436a8505050ab1a3783b65ac392aa73932378779392",
+        "before_sha256": "4679dd66d8e60b680f2e88e54115d00a327a95511a8309412e7376a6764b9f4b",
+        "path": "docs/paper-link.json"
+      }
+    ],
+    "future_verified_arxiv_link": "footer_only_after_announcement",
+    "hidden_compatibility_anchor": "paper",
+    "kind": "poster_title_and_navigation_human_review",
+    "scientific_prose_numbers_examples_figures_unchanged": true,
+    "title": "Measuring Variable Importance<br>Using Proportional Inclusive Marginal Effects",
+    "visible_Paper_Supplement_links_removed": true,
+    "visible_author_byline_removed": true
+  },
+  "presentation_note_maintenance": {
+    "after_sha256": "20f50ca0fd0e34b84c6ce7838163c42c0df60c3bdbe499c8dbaca2e58e01f380",
+    "before_sha256": "a1121562f2a20128afc9b71246e36e2ea29e63190901679dde1f8adc8698349b",
+    "changed_at_utc": "2026-10-12T19:29:03.389754+00:00",
+    "path": "docs/research-materials.md",
+    "scope": "Clarify existing saved-result/graphic workflow and archived-script notes; scientific source, inputs, numerical values and document export scope unchanged."
+  },
+  "previous_workflow_pointer": {
+    "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+    "manifest": "results/workflow_revisions/20261012_final_title_and_link_cleanup.json",
+    "schema_version": 1,
+    "sha256": "eb5a18a096099fd082b9e9360cea50b62a44ea59d0fa4f562d97f878c14ece04"
+  },
+  "public_export_scope": {
+    "manuscript_sources": "NOT_IN_PUBLIC_EXPORT",
+    "paper_prose": "NOT_IN_PUBLIC_EXPORT",
+    "typeset_table": "NOT_IN_PUBLIC_EXPORT"
+  },
+  "retained_approved_graphic_pdf_scope": "Standalone research figures, not article PDFs",
+  "reviewed_presentation_sha256": {
+    "CITATION.cff": "b190a549168191c80f7d56a3936b7d905caef11310ef8b75caf08aae295ff1f0",
+    "README.md": "98f68525126da3953fe30bbef44fbdfdcf4f305ac6cec54e8c9f08689324c212",
+    "VALIDATION.md": "c9943ddb066c01fa046ee749b838850fe0f5b108c9fbc2c0f98e547527ebed55",
+    "docs/assets/concrete-current.png": "6b5bea793d015bfac16971f67f546df93c0aed9cb54f6d18da3d6f5f0deea42c",
+    "docs/assets/friedman-current.png": "078fe0f272ec22cd0543cd8ade4413ddc0a5fb8fbcb3d52895418ad66256c2b6",
+    "docs/assets/proxy-allocation.png": "21ed333d93e378b12fc471fc7d70babc0a8a3734b6d84298c07cf2c648999d1b",
+    "docs/assets/selection-to-pme.png": "dce6a093c6ef645b66dc9819558a624de54f01a4a27b6400ca5516a82376266d",
+    "docs/licensing.md": "f55b6c6ab7f2f060467d9aeec5f0721369b150dfb8170f939a5dcf0d47cbccec",
+    "docs/numerical-evidence.md": "9b46a5c4fc6cedac455c380b34674025dd18f920006e9a486bec67ac3d42b57f",
+    "docs/paper-link.json": "cb6d42fa5c4df1fdb496641b6f38a0d38e40f11f8f8883f39c5d977638e1e9c6",
+    "docs/paper.md": "38dec55a32032f39a58619cf212cb8379746a70f297d8a205959d457ed47c140",
+    "docs/research-materials.md": "91ccbbd28bbd94779f50a8f482af0de99fef9e4a1fdd918e5bae7ac106f82c59"
+  },
+  "schema_version": 1,
+  "scientific_release_metadata_and_input_pins_unchanged": true,
+  "source_pin_inventory_count": 94,
+  "validation_scope": "Source guard plus existing workflow contract tests and saved result integrity; no full article or typesetting verification",
+  "verified_poster_title_correction": {
+    "exact_title": "PRIME: A New Measure for Variable Importance",
+    "paper_preferred_citation_title_unchanged": true,
+    "previous_title_was_the_paper_title_not_poster_title": true,
+    "source": "Georgia Statistics Day 2026 poster title, confirmed in Joseph revision PDF and current poster source",
+    "source_pin_changes": [
+      "CITATION.cff",
+      "README.md",
+      "software/prime/README.md",
+      "software/prime/_pkgdown.yml"
+    ],
+    "statistical_implementation_and_inputs_unchanged": true,
+    "supersedes_previous_overview_title": true
+  }
+}

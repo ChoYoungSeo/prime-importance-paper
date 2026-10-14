@@ -1,0 +1,83 @@
+"benchmark","rho","variable","pme","source","n_ref","seed"
+"borehole",0,1,0.831102676223586,"reference_borehole_s8_rho0p0000_cpfr_nref100000_seed20960636.rds",100000,20960636
+"borehole",0,2,0,"reference_borehole_s8_rho0p0000_cpfr_nref100000_seed20960636.rds",100000,20960636
+"borehole",0,3,0.000385254154529905,"reference_borehole_s8_rho0p0000_cpfr_nref100000_seed20960636.rds",100000,20960636
+"borehole",0,4,0.0538659296297966,"reference_borehole_s8_rho0p0000_cpfr_nref100000_seed20960636.rds",100000,20960636
+"borehole",0,5,0.000484767653045692,"reference_borehole_s8_rho0p0000_cpfr_nref100000_seed20960636.rds",100000,20960636
+"borehole",0,6,0.0531075754902215,"reference_borehole_s8_rho0p0000_cpfr_nref100000_seed20960636.rds",100000,20960636
+"borehole",0,7,0.0512040604461527,"reference_borehole_s8_rho0p0000_cpfr_nref100000_seed20960636.rds",100000,20960636
+"borehole",0,8,0.00984973640266739,"reference_borehole_s8_rho0p0000_cpfr_nref100000_seed20960636.rds",100000,20960636
+"borehole",0.5,1,0.845965044313409,"reference_borehole_s8_rho0p5000_cpfr_nref100000_seed20961136.rds",100000,20961136
+"borehole",0.5,2,0.00362876734808375,"reference_borehole_s8_rho0p5000_cpfr_nref100000_seed20961136.rds",100000,20961136
+"borehole",0.5,3,0.00389981999086907,"reference_borehole_s8_rho0p5000_cpfr_nref100000_seed20961136.rds",100000,20961136
+"borehole",0.5,4,0.0391374903621427,"reference_borehole_s8_rho0p5000_cpfr_nref100000_seed20961136.rds",100000,20961136
+"borehole",0.5,5,0,"reference_borehole_s8_rho0p5000_cpfr_nref100000_seed20961136.rds",100000,20961136
+"borehole",0.5,6,0.0549862570324093,"reference_borehole_s8_rho0p5000_cpfr_nref100000_seed20961136.rds",100000,20961136
+"borehole",0.5,7,0.0455203830285387,"reference_borehole_s8_rho0p5000_cpfr_nref100000_seed20961136.rds",100000,20961136
+"borehole",0.5,8,0.0068622379245475,"reference_borehole_s8_rho0p5000_cpfr_nref100000_seed20961136.rds",100000,20961136
+"branin",0,1,0.463348827511805,"reference_branin_s2_rho0p0000_cpfr_nref100000_seed20960630.rds",100000,20960630
+"branin",0,2,0.536651172488195,"reference_branin_s2_rho0p0000_cpfr_nref100000_seed20960630.rds",100000,20960630
+"branin",0.5,1,0.476773607995473,"reference_branin_s2_rho0p5000_cpfr_nref100000_seed20961130.rds",100000,20961130
+"branin",0.5,2,0.523226392004527,"reference_branin_s2_rho0p5000_cpfr_nref100000_seed20961130.rds",100000,20961130
+"friedman",0,1,0.234527796610708,"reference_friedman_s5_rho0p0000_cpfr_nref100000_seed20960633.rds",100000,20960633
+"friedman",0,2,0.234691907684583,"reference_friedman_s5_rho0p0000_cpfr_nref100000_seed20960633.rds",100000,20960633
+"friedman",0,3,0.094911082571924,"reference_friedman_s5_rho0p0000_cpfr_nref100000_seed20960633.rds",100000,20960633
+"friedman",0,4,0.348272703052483,"reference_friedman_s5_rho0p0000_cpfr_nref100000_seed20960633.rds",100000,20960633
+"friedman",0,5,0.0875965100803024,"reference_friedman_s5_rho0p0000_cpfr_nref100000_seed20960633.rds",100000,20960633
+"friedman",0.5,1,0.201462553091756,"reference_friedman_s5_rho0p5000_cpfr_nref100000_seed20961133.rds",100000,20961133
+"friedman",0.5,2,0.200097962554873,"reference_friedman_s5_rho0p5000_cpfr_nref100000_seed20961133.rds",100000,20961133
+"friedman",0.5,3,0.094543981561121,"reference_friedman_s5_rho0p5000_cpfr_nref100000_seed20961133.rds",100000,20961133
+"friedman",0.5,4,0.410810245199406,"reference_friedman_s5_rho0p5000_cpfr_nref100000_seed20961133.rds",100000,20961133
+"friedman",0.5,5,0.093085257592844,"reference_friedman_s5_rho0p5000_cpfr_nref100000_seed20961133.rds",100000,20961133
+"hartmann3",0,1,0.0688681314719931,"reference_hartmann3_s3_rho0p0000_cpfr_nref500000_seed20960632.rds",500000,20960632
+"hartmann3",0,2,0.319059185112603,"reference_hartmann3_s3_rho0p0000_cpfr_nref500000_seed20960632.rds",500000,20960632
+"hartmann3",0,3,0.612072683415404,"reference_hartmann3_s3_rho0p0000_cpfr_nref500000_seed20960632.rds",500000,20960632
+"ishigami",0,1,0.386450552427843,"reference_ishigami_s3_rho0p0000_cpfr_nref100000_seed20960631.rds",100000,20960631
+"ishigami",0,2,0.442219631105575,"reference_ishigami_s3_rho0p0000_cpfr_nref100000_seed20960631.rds",100000,20960631
+"ishigami",0,3,0.171329816466582,"reference_ishigami_s3_rho0p0000_cpfr_nref100000_seed20960631.rds",100000,20960631
+"ishigami",0.5,1,0.351354648515331,"reference_ishigami_s3_rho0p5000_cpfr_nref100000_seed20961131.rds",100000,20961131
+"ishigami",0.5,2,0.477798811959913,"reference_ishigami_s3_rho0p5000_cpfr_nref100000_seed20961131.rds",100000,20961131
+"ishigami",0.5,3,0.170846539524756,"reference_ishigami_s3_rho0p5000_cpfr_nref100000_seed20961131.rds",100000,20961131
+"otl",0,1,0.501540881098648,"reference_otl_s6_rho0p0000_cpfr_nref100000_seed20960634.rds",100000,20960634
+"otl",0,2,0.409866862939486,"reference_otl_s6_rho0p0000_cpfr_nref100000_seed20960634.rds",100000,20960634
+"otl",0,3,0.0677936958528956,"reference_otl_s6_rho0p0000_cpfr_nref100000_seed20960634.rds",100000,20960634
+"otl",0,4,0.0207985601089703,"reference_otl_s6_rho0p0000_cpfr_nref100000_seed20960634.rds",100000,20960634
+"otl",0,5,0,"reference_otl_s6_rho0p0000_cpfr_nref100000_seed20960634.rds",100000,20960634
+"otl",0,6,0,"reference_otl_s6_rho0p0000_cpfr_nref100000_seed20960634.rds",100000,20960634
+"otl",0.5,1,0.435620510190854,"reference_otl_s6_rho0p5000_cpfr_nref100000_seed20961134.rds",100000,20961134
+"otl",0.5,2,0.470703949349783,"reference_otl_s6_rho0p5000_cpfr_nref100000_seed20961134.rds",100000,20961134
+"otl",0.5,3,0.0816243264211143,"reference_otl_s6_rho0p5000_cpfr_nref100000_seed20961134.rds",100000,20961134
+"otl",0.5,4,0.0120512140382493,"reference_otl_s6_rho0p5000_cpfr_nref100000_seed20961134.rds",100000,20961134
+"otl",0.5,5,0,"reference_otl_s6_rho0p5000_cpfr_nref100000_seed20961134.rds",100000,20961134
+"otl",0.5,6,0,"reference_otl_s6_rho0p5000_cpfr_nref100000_seed20961134.rds",100000,20961134
+"piston",0,1,0.0454024649991341,"reference_piston_s7_rho0p0000_cpfr_nref100000_seed20960635.rds",100000,20960635
+"piston",0,2,0.56419843497194,"reference_piston_s7_rho0p0000_cpfr_nref100000_seed20960635.rds",100000,20960635
+"piston",0,3,0.326819110398041,"reference_piston_s7_rho0p0000_cpfr_nref100000_seed20960635.rds",100000,20960635
+"piston",0,4,0.0601863428182924,"reference_piston_s7_rho0p0000_cpfr_nref100000_seed20960635.rds",100000,20960635
+"piston",0,5,0,"reference_piston_s7_rho0p0000_cpfr_nref100000_seed20960635.rds",100000,20960635
+"piston",0,6,0.0016992723721316,"reference_piston_s7_rho0p0000_cpfr_nref100000_seed20960635.rds",100000,20960635
+"piston",0,7,0.00169437444046034,"reference_piston_s7_rho0p0000_cpfr_nref100000_seed20960635.rds",100000,20960635
+"piston",0.5,1,0.0694500287646689,"reference_piston_s7_rho0p5000_cpfr_nref100000_seed20961135.rds",100000,20961135
+"piston",0.5,2,0.517886872699912,"reference_piston_s7_rho0p5000_cpfr_nref100000_seed20961135.rds",100000,20961135
+"piston",0.5,3,0.35207899902382,"reference_piston_s7_rho0p5000_cpfr_nref100000_seed20961135.rds",100000,20961135
+"piston",0.5,4,0.0603810506679097,"reference_piston_s7_rho0p5000_cpfr_nref100000_seed20961135.rds",100000,20961135
+"piston",0.5,5,0,"reference_piston_s7_rho0p5000_cpfr_nref100000_seed20961135.rds",100000,20961135
+"piston",0.5,6,0,"reference_piston_s7_rho0p5000_cpfr_nref100000_seed20961135.rds",100000,20961135
+"piston",0.5,7,0.000203048843689915,"reference_piston_s7_rho0p5000_cpfr_nref100000_seed20961135.rds",100000,20961135
+"ackley3",0,1,0.333333333333333,"reference_ackley3_s3_rho0p0000_cpfr_nref500000_seed20960637.rds; exact PME by permutation symmetry",500000,20960637
+"ackley3",0,2,0.333333333333333,"reference_ackley3_s3_rho0p0000_cpfr_nref500000_seed20960637.rds; exact PME by permutation symmetry",500000,20960637
+"ackley3",0,3,0.333333333333333,"reference_ackley3_s3_rho0p0000_cpfr_nref500000_seed20960637.rds; exact PME by permutation symmetry",500000,20960637
+"bratley",0,1,0.700185974442993,"analytic nested-product moments",NA,NA
+"bratley",0,2,0.186757444761782,"analytic nested-product moments",NA,NA
+"bratley",0,3,0.083130031590681,"analytic nested-product moments",NA,NA
+"bratley",0,4,0.014963274602272,"analytic nested-product moments",NA,NA
+"bratley",0,5,0.014963274602272,"analytic nested-product moments",NA,NA
+"sobol_g",0,1,0.616083455497375,"analytic product moments",NA,NA
+"sobol_g",0,2,0.318396340773715,"analytic product moments",NA,NA
+"sobol_g",0,3,0.054026299584936,"analytic product moments",NA,NA
+"sobol_g",0,4,0.00906521036222536,"analytic product moments",NA,NA
+"sobol_g",0,5,0.00207571040648969,"analytic product moments",NA,NA
+"sobol_g",0,6,0.00035298337525889,"analytic product moments",NA,NA
+"sobol_g3",0,1,0.542868800236728,"analytic balanced product moments",NA,NA
+"sobol_g3",0,2,0.283355149132501,"analytic balanced product moments",NA,NA
+"sobol_g3",0,3,0.173776050630771,"analytic balanced product moments",NA,NA

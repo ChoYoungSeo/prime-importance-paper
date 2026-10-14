@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "Matched-K full-coordinate local-constant game construction, monotone projection, and PME on 30 frozen Friedman datasets at n=200 and rho=0.5",
+  "excluded": ["package and source loading", "file input/output", "hashing", "pre-run garbage collection", "Shapley allocation"],
+  "timer": "proc.time()[['elapsed']]",
+  "schedule": "one unrecorded warm-up, then one serial timed run per dataset",
+  "r_workers": 1,
+  "native_threads": 1,
+  "warmup_elapsed_sec": 2.0660000000000003,
+  "complete": 30,
+  "median_sec": 1.8844999999999996,
+  "q1_sec": 1.6627500000000017,
+  "q3_sec": 2.102999999999998,
+  "mean_sec": 1.9626333333333326,
+  "min_sec": 1.4560000000000031,
+  "max_sec": 2.7489999999999988,
+  "maximum_pme_abs_gap": 0,
+  "prime_version": "0.5.2.9101",
+  "script_md5": "d3e21a7dad9b6afde70012c584cc72b8"
+}

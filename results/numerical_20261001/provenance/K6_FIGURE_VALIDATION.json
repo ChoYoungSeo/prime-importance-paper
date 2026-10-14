@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "K": 6,
+  "tol": null,
+  "figures": {
+    "figure4": {
+      "rows": 1200,
+      "replications": 30,
+      "boxes": 40,
+      "references": 30,
+      "all_finite": true,
+      "paired_standardization_hashes_equal": true,
+      "each_coordinate_complete": true,
+      "unchanged_native_data": true,
+      "unclipped_box_statistics_equal": true,
+      "outside": {
+        "PRIME": 0,
+        "FIRST-SHAP": 0,
+        "PME-kNN (noise = FALSE)": 0,
+        "PME-kNN (noise = TRUE)": 13
+      },
+      "timing_included": true
+    },
+    "figure5": {
+      "rows": 3200,
+      "replications": 100,
+      "boxes": 32,
+      "references": 32,
+      "all_finite": true,
+      "paired_standardization_hashes_equal": true,
+      "each_coordinate_complete": true,
+      "unchanged_native_data": true,
+      "unclipped_box_statistics_equal": true,
+      "outside": {
+        "PRIME": 0,
+        "FIRST-SHAP": 0,
+        "PME-kNN (noise = FALSE)": 0,
+        "PME-kNN (noise = TRUE)": 29
+      },
+      "timing_included": false
+    }
+  },
+  "display": [-0.29999999999999999, 1.05],
+  "original_source": "sensitivity 1.27.1",
+  "transformation": "none"
+}

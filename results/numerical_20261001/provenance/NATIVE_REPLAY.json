@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "smoke",
+  "run_count": 9,
+  "new_fits": 9,
+  "method_source_bodies_unchanged": true,
+  "reference": "bundled native CSV estimates",
+  "comparison_tolerance": 1e-10,
+  "grid_run_performed": false,
+  "R": "R version 4.6.1 (2026-06-24)",
+  "dependencies": {
+    "prime": "0.5.2.9101",
+    "sensitivity": "1.31.0",
+    "FNN": "1.1.4.1",
+    "digest": "0.6.39",
+    "RANN": "2.6.2",
+    "gtools": "3.9.5"
+  },
+  "input_fixtures": [
+    "friedman_n100_rho0.9_r001",
+    "n0824_r01"
+  ],
+  "source_cache": "FIRST source was imported with the exact archived hash and excluded from publication",
+  "elapsed_times_role": "Diagnostics only; published timing cohort unchanged"
+}

@@ -1,0 +1,45 @@
+{
+  "comparisons": [
+    {
+      "changed_selected_sets": 2,
+      "changed_vectors_gt_1e10": 200,
+      "corrected_age_median": 0.4122177726735885,
+      "corrected_water_binder_ratio_median": 0.441895790763939,
+      "max_coordinate_abs_change": 0.0212873978868044,
+      "method": "PRIME",
+      "pre_repair_age_median": 0.411832641214539,
+      "pre_repair_water_binder_ratio_median": 0.4416218483521235
+    },
+    {
+      "changed_selected_sets": 0,
+      "changed_vectors_gt_1e10": 200,
+      "corrected_age_median": 0.404858774441041,
+      "corrected_water_binder_ratio_median": 0.43296992000446055,
+      "max_coordinate_abs_change": 0.014855372387192797,
+      "method": "Full LL-PME",
+      "pre_repair_age_median": 0.404922353495737,
+      "pre_repair_water_binder_ratio_median": 0.43315518137897
+    },
+    {
+      "changed_selected_sets": 0,
+      "changed_vectors_gt_1e10": 200,
+      "corrected_age_median": 0.403259241060837,
+      "corrected_water_binder_ratio_median": 0.5946353984025534,
+      "max_coordinate_abs_change": 0.05783180812341404,
+      "method": "PME-kNN",
+      "pre_repair_age_median": 0.3640561976048595,
+      "pre_repair_water_binder_ratio_median": 0.6350029100828181
+    }
+  ],
+  "corrected_release_path": "results/revisions/20260915_verified/results/raw/concrete_v052_main/bootstrap_phi.csv",
+  "corrected_release_sha256": "17155889c3ed1b612e195fedc84a0eec9906b5301d7ab4155121b8ff9c2dd98b",
+  "current_summary_path": "results/summary/concrete_pme_bootstrap_summary.csv",
+  "current_summary_sha256": "fa8b0cc85b55fd1fa6fccbc0b18c2a03d777a04a1bce9fafb65ba207b38124cd",
+  "directly_numerically_comparable_as_one_implementation": false,
+  "pre_repair_baseline_path": "historical-provenance:concrete-lineage/pre_repair_baseline_path",
+  "pre_repair_baseline_sha256": "06a93a055cf25e1968421be233faf23b93d132e43019c9ab064094c362f044b8",
+  "reason": "15-Sep corrected other-observation nearest-neighbor identity under tied/bootstrap rows, plus allocation-constructor repair; old vectors are a distinct implementation lineage.",
+  "resolution": "All five p=8 methods are rerun under pinned current code; corrected release is used only for exact parity validation.",
+  "same_data_seeds_bootstrap_rule": true,
+  "same_design_and_keys": true
+}

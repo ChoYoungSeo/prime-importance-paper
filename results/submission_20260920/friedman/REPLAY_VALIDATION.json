@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "datasets": 270,
+  "independent_known_answer_checks": ["additive game", "three-player unanimity game"],
+  "maxima": {
+    "raw_endpoint_error": 0,
+    "projected_endpoint_error": 0,
+    "projected_monotonicity_violation": 1.7569146137930147e-10,
+    "pme_replay_max_abs": 0,
+    "projection_replay_max_abs": 0,
+    "shapley_replay_max_abs": 0,
+    "raw_shapley_replay_max_abs": 0,
+    "shapley_duality_max_abs": 1.1657341758564144e-15,
+    "pme_efficiency_error": 3.3306690738754696e-16,
+    "shapley_efficiency_error": 1.7763568394002505e-15
+  },
+  "thresholds": {
+    "raw_endpoint_error": 9.9999999999999998e-13,
+    "projected_endpoint_error": 9.9999999999999998e-13,
+    "projected_monotonicity_violation": 1e-08,
+    "pme_replay_max_abs": 9.9999999999999998e-13,
+    "projection_replay_max_abs": 9.9999999999999998e-13,
+    "shapley_replay_max_abs": 9.9999999999999998e-13,
+    "raw_shapley_replay_max_abs": 9.9999999999999998e-13,
+    "shapley_duality_max_abs": 9.9999999999999998e-13,
+    "pme_efficiency_error": 9.9999999999999998e-13,
+    "shapley_efficiency_error": 9.9999999999999998e-13
+  },
+  "all_projection_converged": true,
+  "prime_version": "0.5.2.9101",
+  "script_sha256": "fd3a5548313c1d2ad9d3b0da654fb1450e830bd21a2ad7edb1f5c79cb4f41340",
+  "source_signature": "4f29d1c54aff9649"
+}

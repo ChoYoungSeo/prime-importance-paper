@@ -1,0 +1,15 @@
+{
+  "arxiv_id": "2610.17053",
+  "arxiv_url": "https://arxiv.org/abs/2610.17053",
+  "arxiv_doi": "10.48550/arXiv.2610.17053",
+  "authors": [
+    "Youngseo Cho",
+    "V. Roshan Joseph"
+  ],
+  "canonical_code_url": "https://github.com/ChoYoungSeo/prime-importance-paper",
+  "link_update_policy": "Use the verified official arXiv abs URL as the prominent Paper link in the first navigation; retain the complete bibliographic citation below. Do not link to repository-hosted article sources or private submission previews.",
+  "overview_link_location": "top_navigation_and_citation_section",
+  "public_article_sources_included": false,
+  "status": "OFFICIAL_ARXIV_RECORD_VERIFIED",
+  "title": "Measuring Variable Importance Using Proportional Inclusive Marginal Effects"
+}

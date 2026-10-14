@@ -1,0 +1,30 @@
+{
+  "base_commit": "d02d11f",
+  "reason": "Previously changed Makefile and README had stale source hashes; current numerical targets now validate the current saved-output overlay. The workflow pointer supports a separately audited non-scientific source revision.",
+  "changed_source_pins": [
+    {
+      "path": "Makefile",
+      "before": "3975f0b3c1cc09bc65686d5e01c7137aae14741bd88a7542f33529231ec96950",
+      "after": "e730fc0c7846c735176815678fbede9f046b2d9e43f808e0452845648ca63fac"
+    },
+    {
+      "path": "README.md",
+      "before": "13d2b401b6cf20d3995d54fc9af59811c96aacf724c8b446e0ee060a4e627aeb",
+      "after": "6cebc6260e29088faf298f9645f02e8a50ebc97aa3d2d4826896dbadf47eb275"
+    },
+    {
+      "path": "experiments/99_validate/verified_workflow.py",
+      "before": "038e78220bdc1db43e06f13621e78335a82a932c8e75fe2ac2432d3ea4917f97",
+      "after": "886c96dcb161559eb6af85fd0170873a082f091223650ada70c776a73998864f"
+    },
+    {
+      "path": "experiments/99_validate/test_verified_workflow.py",
+      "before": "3c5fd9df01655df40a76660f74ddbad448d0af38ac38b06dc5aefc07f2db5e15",
+      "after": "846cbb74c25864f8b17f021ea39264dab664f0649bddf3b63ae7dc474cac38a3"
+    }
+  ],
+  "scientific_input_count": 64,
+  "all_scientific_inputs_unchanged": true,
+  "all_other_manifest_fields_unchanged": true,
+  "historical_manifest_byte_preserved": true
+}

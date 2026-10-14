@@ -1,0 +1,5 @@
+PRIME label migration validation
+Files compared: 36
+Selection-only labels: EVSA -> PRIME screen
+Allocation and complete-pipeline labels: EVSA -> PRIME
+Numerical and structural parity after label normalization: exact

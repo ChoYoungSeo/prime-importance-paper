@@ -1,0 +1,53 @@
+{
+  "active_case": "concrete",
+  "auto_mpg": {
+    "full_data_rows": 32,
+    "records": 404,
+    "subsamples": 100
+  },
+  "case_variants": {
+    "auto_mpg": {
+      "labels": 113,
+      "pages": {
+        "main": 30,
+        "supplement": 27
+      }
+    },
+    "concrete": {
+      "labels": 112,
+      "pages": {
+        "main": 28,
+        "supplement": 28
+      }
+    }
+  },
+  "concrete": {
+    "complete_method_fits": 500,
+    "coordinates": 8,
+    "distinct_rows_per_sample": 824,
+    "historical_bootstraps": 200,
+    "historical_complete_method_fits": 1000,
+    "source_rows": 1030,
+    "subsamples": 100
+  },
+  "friedman_timing_parity": {
+    "complete_method_fits": 150,
+    "datasets": 30,
+    "serial_workers": 1
+  },
+  "labels": 112,
+  "latex_warnings": 0,
+  "legacy_inputs_verified": 64,
+  "matched_k": {
+    "archived_pure_pme_median_time": 1.8844999999999996,
+    "cells": 9,
+    "central_pme_error": 0.440288259480585,
+    "datasets": 270,
+    "full_ll_better_cells": 9
+  },
+  "pages": {
+    "main": 28,
+    "supplement": 28
+  },
+  "status": "PASS"
+}

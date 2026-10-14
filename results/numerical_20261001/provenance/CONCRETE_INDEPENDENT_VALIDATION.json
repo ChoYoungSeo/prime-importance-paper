@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "raw_input_file_identical": true,
+  "independently_recomputed_standardizations": 101,
+  "exact_original_row_permutations": 100,
+  "expected_method_runs": 303,
+  "observed_method_runs": 303,
+  "fresh_method_runs": 303,
+  "incomplete_method_runs": 0,
+  "native_coordinates": 2424,
+  "official_game_values": 25856,
+  "official_game_export_max_gap": 4.8849813083506888e-15,
+  "prime_old_effects_identical_count": 101,
+  "prime_old_effects_compared": 101,
+  "source_and_result_files_unchanged": true,
+  "first_wrapper_matches_frozen_with_only_two_rescale_flags_changed": true,
+  "max_export_gap": 4.8849813083506888e-15,
+  "per_method_status": [
+    {
+      "Var1": "FIRST-SHAP",
+      "Var2": "complete",
+      "Freq": 101
+    },
+    {
+      "Var1": "PME-kNN",
+      "Var2": "complete",
+      "Freq": 101
+    },
+    {
+      "Var1": "PRIME",
+      "Var2": "complete",
+      "Freq": 101
+    }
+  ],
+  "generated_utc": "2026-09-27 00:35:04 UTC"
+}

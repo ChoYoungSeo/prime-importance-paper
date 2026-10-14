@@ -1,0 +1,276 @@
+{
+  "additional_fixed_reference_inputs": 1,
+  "artifacts": [
+    {
+      "approved_sha256": "031302d5752765febddec1921126522773c52a64c9d0b115ff4d9978799fcbde",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/concrete_pme_main.pdf",
+      "published": true,
+      "regenerated_sha256": "271bebf032e5c7bb3c75cb66f7197a4a4d26b98ced0139fe1ccd25d2d6fa943f",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "099b65217b8fda46151242eb7124dfbd24679962e935ebadf9469b3841a91d8a",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/conditional_variance_rmse.pdf",
+      "published": true,
+      "regenerated_sha256": "a7cadfe45029daf903e5bda907750468e62add00570cd52260d94aa6cda7627e",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "fff00eb4732ec24a34746af3606c4452cb24df66bae116f2a6c7276c245257a7",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/observed_application_main.pdf",
+      "published": true,
+      "regenerated_sha256": "1ecc00c7c381ae4711fc9883af6cb463a6a0e873dd33400578eb4e4450a254b4",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "7c2b45cc387519d2d6ceb2a7400cd86191e425271903b35ca65f0208ee9dbf2e",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/pme_estimator_calibration.pdf",
+      "published": true,
+      "regenerated_sha256": "bbdc44889d61e4934f180eb909aba29d56cc0c368d34f891f1227e942d835e85",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "3f76fe3aa48b42ece9eb15afdeef226c5343ce334b51e353735207a7d48f2195",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/pme_friedman_allocation_main.pdf",
+      "published": true,
+      "regenerated_sha256": "166ffb89a0b143cb7fdd6419a0946fd576251f5d042d174285d4ccea0f03f1ce",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "2ce9876bdd5a682e85260d5f51a092c83f0f0a861be7e9b48462208cde42562e",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/pme_scaling_main.pdf",
+      "published": true,
+      "regenerated_sha256": "0561e01872a1252825d61e53273896468c920e46ede23175138cd5d065e3b8ed",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "7962ee8edd7ade7b2ef9749255ea9c8b880ccc356392643e7ac015f38911c696",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/selection_coverage_main.pdf",
+      "published": true,
+      "regenerated_sha256": "812e86efc17f89f41aef0074ff4a893f31a769b2d9f80f4059ec9d78403cf1b3",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "85fb4a9cb417813f796abc53a48679bbe5c3ab731cccd6a1b240e7ab8f808526",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/selection_exact_supplement.pdf",
+      "published": true,
+      "regenerated_sha256": "ca8a8b6e305178745582f5e51d3b9167ff0a9a04f263469ab8c17c73f2d41fd7",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "873f7310628f0141e8021bec90b802f421ac23d4457599fdc6a8cbaccbf590f0",
+      "byte_identical": false,
+      "extracted_text_identical": true,
+      "path": "manuscript/figures/selection_to_pme_main.pdf",
+      "published": true,
+      "regenerated_sha256": "15c3523c197762fe8dcb1907e04116e4c5b601c0ddb45ae04c8e35cfa085fa63",
+      "render_100dpi_identical": true
+    },
+    {
+      "approved_sha256": "ec97c29717e5f47c375b124a79fc2007f7b8b797d173d1def65904612aa1466a",
+      "byte_identical": true,
+      "path": "manuscript/tables/concrete_raw_supplement.tex",
+      "published": true,
+      "regenerated_sha256": "ec97c29717e5f47c375b124a79fc2007f7b8b797d173d1def65904612aa1466a"
+    },
+    {
+      "approved_sha256": "402ec480fc4cd6e8a30e65d8ca9d5f92ed5ebbd7f19a914833c253b392d792f5",
+      "byte_identical": true,
+      "path": "manuscript/tables/observed_allocation_supplement.tex",
+      "published": true,
+      "regenerated_sha256": "402ec480fc4cd6e8a30e65d8ca9d5f92ed5ebbd7f19a914833c253b392d792f5"
+    },
+    {
+      "approved_sha256": "d2d7f2e939d71091ef8c5787473808bd54dfbf5230fb74cc62ffa608defff322",
+      "byte_identical": true,
+      "path": "manuscript/tables/observed_application_main.tex",
+      "published": true,
+      "regenerated_sha256": "d2d7f2e939d71091ef8c5787473808bd54dfbf5230fb74cc62ffa608defff322"
+    },
+    {
+      "approved_sha256": "34a5032f5cdc9156aac7a2257d379baa707a55bf69be6d388f344eab5e7b9e14",
+      "byte_identical": true,
+      "path": "manuscript/tables/pme_correlated_pipeline.tex",
+      "published": true,
+      "regenerated_sha256": "34a5032f5cdc9156aac7a2257d379baa707a55bf69be6d388f344eab5e7b9e14"
+    },
+    {
+      "approved_sha256": "611268927c7d55fdbad5efb93e6d7451f8ae77249758e3c016edabab1cd18fe5",
+      "byte_identical": true,
+      "path": "manuscript/tables/pme_estimator_diagnostics.tex",
+      "published": true,
+      "regenerated_sha256": "611268927c7d55fdbad5efb93e6d7451f8ae77249758e3c016edabab1cd18fe5"
+    },
+    {
+      "approved_sha256": "6d23e2a324edc8384d393f16b07252ba9e502735192a6e21ce0daf449eb91ffd",
+      "byte_identical": true,
+      "path": "manuscript/tables/pme_scaling_pmax.tex",
+      "published": true,
+      "regenerated_sha256": "6d23e2a324edc8384d393f16b07252ba9e502735192a6e21ce0daf449eb91ffd"
+    },
+    {
+      "approved_sha256": "05d65377685f6f5d6584ad155bfef39a778381330089dd913e2708a1ca13fc9c",
+      "byte_identical": true,
+      "path": "manuscript/tables/ridge_seed_diagnostic.tex",
+      "published": true,
+      "regenerated_sha256": "05d65377685f6f5d6584ad155bfef39a778381330089dd913e2708a1ca13fc9c"
+    },
+    {
+      "path": "manuscript/tables/selection_calibration_ablation.tex",
+      "published": false,
+      "regenerated_sha256": "06e8c0a37f5c68eaad539853fa119a96f907bdb57df8502addc207718d5b2f12"
+    },
+    {
+      "approved_sha256": "66ffdd89b81c9d8caa66680a122bc055b307a424479e56ae7d721925c7814b9c",
+      "byte_identical": true,
+      "path": "manuscript/tables/twinning_diagnostic.tex",
+      "published": true,
+      "regenerated_sha256": "66ffdd89b81c9d8caa66680a122bc055b307a424479e56ae7d721925c7814b9c"
+    },
+    {
+      "approved_sha256": "2e6bc1f57671f5cc5c8f7cfe4bb3d500ad326be0447eab06c8f4f67cfdd8653e",
+      "byte_identical": true,
+      "path": "results/summary/concrete_computation_summary.csv",
+      "published": true,
+      "regenerated_sha256": "2e6bc1f57671f5cc5c8f7cfe4bb3d500ad326be0447eab06c8f4f67cfdd8653e"
+    },
+    {
+      "approved_sha256": "fa8b0cc85b55fd1fa6fccbc0b18c2a03d777a04a1bce9fafb65ba207b38124cd",
+      "byte_identical": true,
+      "path": "results/summary/concrete_pme_bootstrap_summary.csv",
+      "published": true,
+      "regenerated_sha256": "fa8b0cc85b55fd1fa6fccbc0b18c2a03d777a04a1bce9fafb65ba207b38124cd"
+    },
+    {
+      "approved_sha256": "a9d2d98409410e470197cc3c229b6876b035f9db9622a3318b9bf57818c77ab2",
+      "byte_identical": true,
+      "path": "results/summary/observed_application_effects.csv",
+      "published": true,
+      "regenerated_sha256": "a9d2d98409410e470197cc3c229b6876b035f9db9622a3318b9bf57818c77ab2"
+    },
+    {
+      "approved_sha256": "de223dc0f9d17f361beb081e6f142f0baea1a4a88c4c539707d457772053fc77",
+      "byte_identical": true,
+      "path": "results/summary/observed_application_summary.csv",
+      "published": true,
+      "regenerated_sha256": "de223dc0f9d17f361beb081e6f142f0baea1a4a88c4c539707d457772053fc77"
+    },
+    {
+      "approved_sha256": "356d9ae2fd6dc943ab7bb59bffe5639218500afe454b638a5d3c1dfe0ab37f99",
+      "byte_identical": true,
+      "path": "results/summary/pme_correlated_pipeline_summary.csv",
+      "published": true,
+      "regenerated_sha256": "356d9ae2fd6dc943ab7bb59bffe5639218500afe454b638a5d3c1dfe0ab37f99"
+    },
+    {
+      "approved_sha256": "f9ac90b26ee613106a3495e83fe23e05a3a81eb018ab779b20173f85948c5947",
+      "byte_identical": true,
+      "path": "results/summary/pme_estimator_calibration_summary.csv",
+      "published": true,
+      "regenerated_sha256": "f9ac90b26ee613106a3495e83fe23e05a3a81eb018ab779b20173f85948c5947"
+    },
+    {
+      "approved_sha256": "86a6f0bd18c5cd17921fb2f6e3bd5c2c19ed0bbb055946a3e6e6a07a3ddd0702",
+      "byte_identical": true,
+      "path": "results/summary/pme_scaling_summary.csv",
+      "published": true,
+      "regenerated_sha256": "86a6f0bd18c5cd17921fb2f6e3bd5c2c19ed0bbb055946a3e6e6a07a3ddd0702"
+    },
+    {
+      "approved_sha256": "1b4d5a5eca05718e96b6f1da953add393cdfda2c8cc4fbe4d61de1c79f83b17e",
+      "byte_identical": true,
+      "path": "results/summary/ridge_seed_diagnostic.csv",
+      "published": true,
+      "regenerated_sha256": "1b4d5a5eca05718e96b6f1da953add393cdfda2c8cc4fbe4d61de1c79f83b17e"
+    },
+    {
+      "approved_sha256": "b7e2827eac8829f80d7e65be722928f3ad13efb7cffbf1ceeb62ac85ed616272",
+      "byte_identical": true,
+      "path": "results/summary/selection_calibration_summary.csv",
+      "published": true,
+      "regenerated_sha256": "b7e2827eac8829f80d7e65be722928f3ad13efb7cffbf1ceeb62ac85ed616272"
+    },
+    {
+      "approved_sha256": "360c57d8e8f5a67199eec47060ada20fac2cee007eef6726d47213a68330dc33",
+      "byte_identical": true,
+      "path": "results/summary/selection_summary.csv",
+      "published": true,
+      "regenerated_sha256": "360c57d8e8f5a67199eec47060ada20fac2cee007eef6726d47213a68330dc33"
+    },
+    {
+      "approved_sha256": "6cdce6e12ace9d3b72aa2167338a95cbc48c4f13cc75ffc83acdb8f0d6f6731a",
+      "byte_identical": true,
+      "path": "results/summary/selection_to_pme_summary.csv",
+      "published": true,
+      "regenerated_sha256": "6cdce6e12ace9d3b72aa2167338a95cbc48c4f13cc75ffc83acdb8f0d6f6731a"
+    },
+    {
+      "approved_sha256": "af0a7b6c87f9e98f7a64ebaf8089d38f00991c4bbd4b041e2073cfc72b9dd45e",
+      "byte_identical": true,
+      "path": "results/summary/twinning_v052_summary.csv",
+      "published": true,
+      "regenerated_sha256": "af0a7b6c87f9e98f7a64ebaf8089d38f00991c4bbd4b041e2073cfc72b9dd45e"
+    }
+  ],
+  "attested_runtime": {
+    "R_version": "R version 4.6.1 (2026-06-24)",
+    "dependencies": {
+      "FNN": "1.1.4.1",
+      "MASS": "7.3.65",
+      "Rcpp": "1.1.1.1.1",
+      "RcppArmadillo": "15.2.6.1",
+      "ggplot2": "4.0.3",
+      "jsonlite": "2.0.0",
+      "testthat": "3.3.2",
+      "twinning": "1.1"
+    },
+    "platform": "aarch64-apple-darwin23"
+  },
+  "compiled_papers": [
+    {
+      "approved_sha256": "3a9941d210f54dec4fe4d175183c3568d6587f96c3542013242ef55f91014923",
+      "extracted_text_identical": true,
+      "pages": 30,
+      "path": "manuscript/main.pdf",
+      "rebuilt_sha256": "8a609823c3698f12f0a829ade771288f7d9c6bd3c39f5c7d6e34f24396d72277",
+      "render_72dpi_identical": true
+    },
+    {
+      "approved_sha256": "536ab247c4859883329cb43455c7a566f778bd5e38e6a1e6d19961b009ef9912",
+      "extracted_text_identical": true,
+      "pages": 22,
+      "path": "manuscript/supplement.pdf",
+      "rebuilt_sha256": "a6b8a74b2f2be70048d2628e56c044d91bdafea48dba4bd7cf0ac8eb39bd9e46",
+      "render_72dpi_identical": true
+    }
+  ],
+  "compiler_scope": "Host toolchain configuration supplied externally; installed binary hashes are in ignored local receipt, not portable release pins.",
+  "fresh_bootstrap": "passed",
+  "original_63_numerical_hashes_unchanged": true,
+  "package_check": "Status: OK",
+  "platform_scope": "Fresh macOS source build; Linux bootstrap and strict validation configured in CI, not locally executed. POSIX workflow; full experiment grids not rerun.",
+  "release_sha256": "8e0d90865f91927002fac62824449ae1b2160971ee073ab1f7b67b978efd707c",
+  "schema_version": 1,
+  "source_pins": 94,
+  "staging_manuscript_unchanged": true,
+  "status": "passed",
+  "strict_prose_blocks": 12,
+  "strict_table_rows": 56,
+  "workflow_contract_tests": 13
+}

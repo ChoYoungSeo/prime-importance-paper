@@ -1,0 +1,40 @@
+{
+  "archive_id": "concrete_p8_distinct_subsample_20260922",
+  "archived_source_paths": {
+    "concrete_data": "data/real_data_cache/concrete.csv",
+    "first_adapter": "experiments/13_concrete_submission/first_adapter.R",
+    "full_data_reference": "results/submission_20260920/concrete/bootstrap_1030/full_data_phi.csv",
+    "pme_helper": "experiments/03_pme/00_common.R",
+    "previous_coordinate_summary": "results/submission_20260920/concrete/bootstrap_1030/coordinate_summary.csv",
+    "previous_paired_half_l1": "results/submission_20260920/concrete/bootstrap_1030/paired_half_l1.csv"
+  },
+  "design": "100 paired 824/1030 without-replacement subsamples; five methods",
+  "external_sources": {
+    "official_first": {
+      "article_url": "https://doi.org/10.1080/00401706.2025.2483531",
+      "attribution": "Huang and Joseph (2025), FIRST official supplementary code.zip, code/lib/first.R",
+      "redistributed": false,
+      "sha256": "759c110ef16e4cce1fcebf17e1d1ed03035a90c92878e02715ff038f1afe1ee4"
+    }
+  },
+  "historical_sensitivity": "200 paired size-1030 bootstrap samples with replacement",
+  "sha256": {
+    "data/real_data_cache/concrete.csv": "d7d8bd087f832935e902bcb2687667238cac3fe06799677a93ca2f46dce8db02",
+    "experiments/03_pme/00_common.R": "78bde971f844af4907fbf1abb29031ef59d8486841e7359319630779850914d1",
+    "experiments/13_concrete_submission/first_adapter.R": "fc2df8306d3a01ad8dc778fbedec4769bae6cc814e88efa3ac79bec467f8290d",
+    "results/submission_20260920/concrete/bootstrap_1030/VALIDATION.json": "899cdb40b9364644f35a85b0a97a5a08dbdaddb99425a909c05cb2628b6154e0",
+    "results/submission_20260920/concrete/bootstrap_1030/coordinate_summary.csv": "97aa2bd6a8f03d1f9a4619b45d4fee29bf6001895f57ccd413c1954d09dcc2ef",
+    "results/submission_20260920/concrete/bootstrap_1030/full_data_phi.csv": "2770b50a507848decf655df0d3504f9c8268afe1479f9f6475b82acf41640fc9",
+    "results/submission_20260920/concrete/bootstrap_1030/paired_half_l1.csv": "ba47dd5a17566e047bd4a399bc015448cac33b06fd9eb4e73b94f63e3d3b1695",
+    "results/submission_20260920/concrete/distinct_824/FILE_HASHES.csv": "27dbedc1886cccd83218d1c013d743badde267926b1403c5585d11ab5491b26b",
+    "results/submission_20260920/concrete/distinct_824/SOURCE_MANIFEST.json": "ed4dc32eb4edd6ee05141bd94117e467677ad80554d8e74341d38ce39994da71",
+    "results/submission_20260920/concrete/distinct_824/VALIDATION.json": "64dacfc122d062f5b0dda5b2fdb8b09612d276f45ed3f0e7a9ce8d51685d5132",
+    "results/submission_20260920/concrete/distinct_824/coordinate_summary.csv": "be2d8c332feae206cf7242f8890b9290e7be6a2f8c199659b9c5b34f09bb0162",
+    "results/submission_20260920/concrete/distinct_824/pair_summary.csv": "8d2c9262f30dda8b0da6f96f87221d87e9dc89a5cc439aa485918ff9e487aef5",
+    "results/submission_20260920/concrete/distinct_824/paired_half_l1.csv": "50dbec526261f09a9158bb5f93166ba4bfea0be74aae957ed48472639922c67c",
+    "results/submission_20260920/concrete/distinct_824/paired_phi.csv": "647a97c6bbeeb17d5cf8bb038cc11bf73215d60c1174f513f83c0df486c18b8a",
+    "results/submission_20260920/concrete/distinct_824/runs.csv": "ad0745ac7aa11c31c78a58669a9d5a530a9fb6c4cc33e2f91742b2b414700e34",
+    "results/submission_20260920/concrete/distinct_824/sample_inputs.csv": "e18bda7455b4c336294d60296e292a79ee72e175aaa86b409ad7e36927bf02c6",
+    "results/submission_20260920/concrete/distinct_824/timing_summary.csv": "9457899a6c472f48a986b921b4b69aacc4abeb42e07c183aa3a0a60f4bcedb9f"
+  }
+}

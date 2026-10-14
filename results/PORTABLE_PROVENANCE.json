@@ -1,0 +1,137 @@
+{
+  "active_source_pin_map_sha256": "ee05e71a8461815d992b675ffc731e6db73715b60f26419ccb425009c312f3e0",
+  "actual_active_source_files_match_count": 94,
+  "existing_validator_unmodified": true,
+  "files": [
+    {
+      "original_raw_sha256": "05ca4d8879f90ac577411b9dc5ecf203c2875af3d9706d3432fd4d4c779f0b67",
+      "path": "results/provenance/release_lineage/20260916_local_review.json",
+      "portable_sha256": "c562b2749af654b1637fda92b314b3ee65be1718f9d9f5b1d7fa8f679ac32650",
+      "redacted_fields": [
+        {
+          "json_field": "code_review_revision.apply_manifest",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:code_review_revision.apply_manifest"
+        },
+        {
+          "json_field": "code_review_revision.equivalence_evidence",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:code_review_revision.equivalence_evidence"
+        },
+        {
+          "json_field": "source_result_lineage.numeric_validation",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:source_result_lineage.numeric_validation"
+        },
+        {
+          "json_field": "source_result_lineage.upstream_input_manifest",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:source_result_lineage.upstream_input_manifest"
+        }
+      ]
+    },
+    {
+      "original_raw_sha256": "8e0d90865f91927002fac62824449ae1b2160971ee073ab1f7b67b978efd707c",
+      "path": "results/current_release.json",
+      "portable_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "redacted_fields": [
+        {
+          "json_field": "code_review_revision.apply_manifest",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:code_review_revision.apply_manifest"
+        },
+        {
+          "json_field": "code_review_revision.equivalence_evidence",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:code_review_revision.equivalence_evidence"
+        },
+        {
+          "json_field": "source_result_lineage.numeric_validation",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:source_result_lineage.numeric_validation"
+        },
+        {
+          "json_field": "source_result_lineage.upstream_input_manifest",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:source_result_lineage.upstream_input_manifest"
+        }
+      ]
+    },
+    {
+      "original_raw_sha256": "4738a89fef940f71df77b28b5562b53e77dcdcbe777db6aed52ff09443d062fc",
+      "path": "results/workflow_revisions/20261011_package_sync.json",
+      "portable_sha256": "aba0fd54cc3a80fb3af3e5c0ef02db485e7bdd92f176d573620a5693c41d5a77",
+      "redacted_fields": [
+        {
+          "json_field": "code_review_revision.apply_manifest",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:code_review_revision.apply_manifest"
+        },
+        {
+          "json_field": "code_review_revision.equivalence_evidence",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:code_review_revision.equivalence_evidence"
+        },
+        {
+          "json_field": "source_result_lineage.numeric_validation",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:source_result_lineage.numeric_validation"
+        },
+        {
+          "json_field": "source_result_lineage.upstream_input_manifest",
+          "original_value_retained_privately": true,
+          "replacement": "private-provenance:source_result_lineage.upstream_input_manifest"
+        }
+      ]
+    },
+    {
+      "original_raw_sha256": "d5ed8f495ba5cf5c7a5f8301c86c0c79fdb0e64ce0a7570d2baa90a8a104f0f7",
+      "path": "results/current_workflow.json",
+      "portable_sha256": "f803997310e0ec1809d9563ea8d87d0e0bddb6aaab11d15f2291ed89ae8cf827",
+      "redacted_fields": []
+    }
+  ],
+  "historical_source_pin_map_sha256": "6cd4b2eda68ab105988d54058fb2d293983149e44b3d226313aad6e2e791114a",
+  "kind": "derived_portable_provenance_projection",
+  "original_allowed_documentation_workflow_pin_differences": [
+    ".github/workflows/R-CMD-check.yaml",
+    ".gitignore",
+    "Makefile",
+    "README.md",
+    "VALIDATION.md",
+    "experiments/99_validate/test_verified_workflow.py",
+    "experiments/99_validate/verified_workflow.py",
+    "software/prime/README.md"
+  ],
+  "preservation_checks": {
+    "results/current_release.json": {
+      "files_identical": true,
+      "logical_input_count": 64,
+      "package_files_identical": true,
+      "source_files_count": 94,
+      "source_files_identical": true
+    },
+    "results/provenance/release_lineage/20260916_local_review.json": {
+      "files_identical": true,
+      "logical_input_count": 63,
+      "package_files_identical": true,
+      "source_files_count": 83,
+      "source_files_identical": true
+    },
+    "results/workflow_revisions/20261011_package_sync.json": {
+      "files_identical": true,
+      "logical_input_count": 64,
+      "package_files_identical": true,
+      "source_files_count": 94,
+      "source_files_identical": true
+    }
+  },
+  "private_records_policy": "Original raw manifests retained outside this project and excluded from public ZIP. Opaque private-provenance markers are informational, not public file paths.",
+  "projection_policy": "Replace only four informational machine-local provenance locators with private-provenance field identifiers; retain original bytes privately outside the exported project. Rebase lineage and manifest-container SHA links consistently. No scientific package/script/data hashes changed.",
+  "remaining_source_mismatches": [],
+  "schema_version": 1,
+  "scientific_input_map_sha256": "4df8672b84f7fdcb60176462598685e8444c145c42ba1a53d2a856bf8cf5b94e",
+  "source_paper_commit": "df2a3d92a96942a1c97a5b8891518de56162a01e",
+  "status": "scientific_source_and_input_pins_preserved_no_new_experiments",
+  "validation_scope": "Static equality/hash-chain check only; runtime bootstrap/validation remains a separate parent step. Original release validation labels refer to preserved historical scientific evidence, not new experiments."
+}

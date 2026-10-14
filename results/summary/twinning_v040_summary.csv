@@ -1,0 +1,4 @@
+"twin_r","active_recall_mean","active_recall_median","active_recall_q25","active_recall_q75","selected_jaccard_mean","selected_jaccard_median","selected_jaccard_q25","selected_jaccard_q75","candidate_jaccard_mean","candidate_jaccard_median","candidate_jaccard_q25","candidate_jaccard_q75","speedup_mean","speedup_median","speedup_q25","speedup_q75","n"
+"2",1,1,1,1,1,1,1,1,1,1,1,1,1.72488391652389,1.73147734220323,1.64863991618313,1.80711907544975,60
+"3",1,1,1,1,1,1,1,1,1,1,1,1,2.448194850448,2.44958077021582,2.31341003314483,2.58409148892223,60
+"5",1,1,1,1,1,1,1,1,1,1,1,1,3.8173135573039,3.80405659109157,3.51763995725835,4.14294093988865,60

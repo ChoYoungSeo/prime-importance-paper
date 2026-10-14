@@ -1,0 +1,33 @@
+{
+  "schema": "prime-matched-initialization-validation-v1",
+  "complete": true,
+  "expected_rows": 870,
+  "validated_rows": 870,
+  "unique_datasets": 290,
+  "forward_trace_rows_checked": 2852,
+  "backward_trace_rows_checked": 1835,
+  "all_input_hashes_match_prior": true,
+  "both_buffers_on_all_rows": true,
+  "original_grid_and_seeds_preserved": true,
+  "all_metrics_recomputed_from_selected_sets": true,
+  "prior_buffered_scientific_field_differences": {
+    "input_hash": 0,
+    "ridge_selected": 0,
+    "ridge_size": 0,
+    "candidates": 0,
+    "candidate_size": 0,
+    "selected": 0,
+    "selected_size": 0,
+    "active_selected": 0,
+    "tpr": 0,
+    "fpr": 0,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "inclusion": 0,
+    "exact": 0
+  },
+  "source_commit": "e11c16a20c367750ca19d0dfe4840c008f5c2de6",
+  "package_version": "0.5.2",
+  "prior_version": "0.5.4.9100",
+  "parity_scope": "All870 initialization fits on290 specific continuous synthetic datasets; no blanket tied-input parity claim."
+}

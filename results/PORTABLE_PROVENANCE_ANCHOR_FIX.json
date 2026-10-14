@@ -1,0 +1,28 @@
+{
+  "after": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+  "before": "8e0d90865f91927002fac62824449ae1b2160971ee073ab1f7b67b978efd707c",
+  "cause": "Phase2 metadata projection started from phase1 portable files and omitted raw-original current_release SHA to derived current_release anchor in numerical20261001 manifest.",
+  "field": "historical_release_sha256",
+  "kind": "portable_historical_release_anchor_fix",
+  "metadata_hash_closure": [
+    {
+      "after_sha256": "b6406f7d6f2c11ba3cdda30f55bab20a82e53704bcca011eae92713024d637cb",
+      "before_sha256": "4e3e2967c58312f2f374a5829a9f478a2538dacb8507e780d94d57b098839159",
+      "path": "results/numerical_20261011/manifest.json"
+    },
+    {
+      "after_sha256": "84c161a806be5e711ab56e19f7abfef2487113d09405a2b5aaaef173117ac7aa",
+      "before_sha256": "84f19fa1975e7096c1422bff93b34a2c931dc34ab0c17347e530653222f55809",
+      "path": "results/numerical_20261001/MANIFEST.json"
+    },
+    {
+      "after_sha256": "877055d59c2a30e3a8de20b723e1203bb2570b26f8ae368798785782bf6b7a96",
+      "before_sha256": "6f104e99f544f8f1a497c600ade1516cbf90e6dc94a49a560cfc697b5cd723d1",
+      "path": "results/numerical_20261011/provenance/source_receipts.json"
+    }
+  ],
+  "scientific_source_data_code_unchanged": true,
+  "status": "STABLE_READY_FOR_PARENT_RERUN",
+  "target": "results/numerical_20261001/MANIFEST.json",
+  "validators_run_by_this_agent": false
+}

@@ -1,0 +1,94 @@
+{
+  "design_note": "Prior bootstrap has n=1030 with replacement; distinct sensitivity has n=824 without replacement. Differences combine sampling fraction and replacement effects.",
+  "zero_variance_note": "For k=2 (self plus one neighbor), sample local variance is exactly (y_i-y_neighbor)^2/2, so zero variance is equivalent to a response tie.",
+  "predictor_tie_note": "Exact predictor ties can remain between different original rows.",
+  "results": {
+    "full_8": {
+      "subset": "full_8",
+      "metrics": {
+        "nearest_source_identity_tie_rate": {
+          "metric": "nearest_source_identity_tie_rate",
+          "bootstrap_mean": 0.6147,
+          "distinct_80pct_mean": 0,
+          "distinct_minus_bootstrap": -0.6147
+        },
+        "nearest_exact_feature_tie_rate": {
+          "metric": "nearest_exact_feature_tie_rate",
+          "bootstrap_mean": 0.6501,
+          "distinct_80pct_mean": 0.0519,
+          "distinct_minus_bootstrap": -0.5981
+        },
+        "nearest_response_tie_rate": {
+          "metric": "nearest_response_tie_rate",
+          "bootstrap_mean": 0.6681,
+          "distinct_80pct_mean": 0.1354,
+          "distinct_minus_bootstrap": -0.5327
+        },
+        "subset_raw_value": {
+          "metric": "subset_raw_value",
+          "bootstrap_mean": 0.9339,
+          "distinct_80pct_mean": 0.8488,
+          "distinct_minus_bootstrap": -0.0851
+        }
+      }
+    },
+    "ratio_only": {
+      "subset": "ratio_only",
+      "metrics": {
+        "nearest_source_identity_tie_rate": {
+          "metric": "nearest_source_identity_tie_rate",
+          "bootstrap_mean": 0.2735,
+          "distinct_80pct_mean": 0,
+          "distinct_minus_bootstrap": -0.2735
+        },
+        "nearest_exact_feature_tie_rate": {
+          "metric": "nearest_exact_feature_tie_rate",
+          "bootstrap_mean": 0.9098,
+          "distinct_80pct_mean": 0.7764,
+          "distinct_minus_bootstrap": -0.1334
+        },
+        "nearest_response_tie_rate": {
+          "metric": "nearest_response_tie_rate",
+          "bootstrap_mean": 0.2884,
+          "distinct_80pct_mean": 0.0338,
+          "distinct_minus_bootstrap": -0.2546
+        },
+        "subset_raw_value": {
+          "metric": "subset_raw_value",
+          "bootstrap_mean": 0.6181,
+          "distinct_80pct_mean": 0.5151,
+          "distinct_minus_bootstrap": -0.103
+        }
+      }
+    },
+    "age_only": {
+      "subset": "age_only",
+      "metrics": {
+        "nearest_source_identity_tie_rate": {
+          "metric": "nearest_source_identity_tie_rate",
+          "bootstrap_mean": 0.0132,
+          "distinct_80pct_mean": 0,
+          "distinct_minus_bootstrap": -0.0132
+        },
+        "nearest_exact_feature_tie_rate": {
+          "metric": "nearest_exact_feature_tie_rate",
+          "bootstrap_mean": 0.9996,
+          "distinct_80pct_mean": 0.9995,
+          "distinct_minus_bootstrap": -0
+        },
+        "nearest_response_tie_rate": {
+          "metric": "nearest_response_tie_rate",
+          "bootstrap_mean": 0.0152,
+          "distinct_80pct_mean": 0.002,
+          "distinct_minus_bootstrap": -0.0132
+        },
+        "subset_raw_value": {
+          "metric": "subset_raw_value",
+          "bootstrap_mean": 0.4045,
+          "distinct_80pct_mean": 0.4039,
+          "distinct_minus_bootstrap": -0.0006
+        }
+      }
+    }
+  }
+}

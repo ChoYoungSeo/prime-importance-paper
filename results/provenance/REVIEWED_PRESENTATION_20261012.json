@@ -1,0 +1,60 @@
+{
+  "status": "EXPLICIT_REVIEWED_DOCUMENTATION_AND_ORCHESTRATION_REVISION",
+  "created_utc": "2026-10-12T17:42:35.229346+00:00",
+  "repository": "https://github.com/ChoYoungSeo/prime-importance-paper",
+  "architecture": "Three existing independent repositories retained; paper Why PRIME/results hub links standalone R/Python; advanced research is secondary/footer",
+  "previous_pointer": {
+    "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+    "manifest": "results/workflow_revisions/20261011_package_sync.json",
+    "schema_version": 1,
+    "sha256": "aba0fd54cc3a80fb3af3e5c0ef02db485e7bdd92f176d573620a5693c41d5a77"
+  },
+  "new_pointer": {
+    "schema_version": 1,
+    "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+    "manifest": "results/workflow_revisions/20261012_existing_three_repositories_presentation.json",
+    "sha256": "d5100bb068bb5a0b6afea1a6212875474b6a169c18df4e755e9fab16152d6394"
+  },
+  "guard_change": {
+    "path": "experiments/99_validate/verified_workflow.py",
+    "before_sha256": "4a7f601c437d1b3f72de1765919a40f40df035d2547edb12d645d31cd24df1b1",
+    "after_sha256": "765012ce99579f28d4aa5dcb41f610e2ac968f187c58e5fba330a50cb3193aa3",
+    "exact_change": "Add only existing CITATION.cff path to audited documentation maintenance allowlist. No other path addition, conditional relaxation, source/input inventory or estimand change.",
+    "reason": "Explicit root authorization for nonexecuting citation/Josun/preferred-paper metadata maintenance under the existing guarded workflow mechanism."
+  },
+  "changed_allowed_source_pins": [
+    {
+      "path": "CITATION.cff",
+      "prior_active_sha256": "79e4a8b0d11d5fea96fa6d84484c91018c1991640458ad9483c0c04b3d395379",
+      "reviewed_sha256": "05f4caefdc6225ac95e71f69a5fa1494a83d0f47e900a879dc8b00ad7acf39f3"
+    },
+    {
+      "path": "README.md",
+      "prior_active_sha256": "443cdf9ed737e3f14a2e7d6728acac4a0bfff968de46748b48f7ea789af8cd67",
+      "reviewed_sha256": "fb2d63f997810ff66c81aa7d66bc3009289caa757c94bbad4c7ad133144950bc"
+    },
+    {
+      "path": "experiments/99_validate/verified_workflow.py",
+      "prior_active_sha256": "4a7f601c437d1b3f72de1765919a40f40df035d2547edb12d645d31cd24df1b1",
+      "reviewed_sha256": "765012ce99579f28d4aa5dcb41f610e2ac968f187c58e5fba330a50cb3193aa3"
+    }
+  ],
+  "source_inventory_count": 94,
+  "historical_release_bytes_unchanged": true,
+  "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+  "scientific_input_maps_and_all_non_source_metadata_unchanged": true,
+  "scientific_package_version": "0.5.2.9101",
+  "all_non_audited_source_hashes_unchanged": true,
+  "presentation_file_hashes": {
+    "README.md": "fb2d63f997810ff66c81aa7d66bc3009289caa757c94bbad4c7ad133144950bc",
+    "docs/paper.md": "f884949b365fb356dd30f524a67f8ecd29f43429f55b6ced1283b75a39b060b4",
+    "docs/research-materials.md": "d66aec50d70e64fb42a324d72e30cf361c36d69d31c46882a5870f52544b4184",
+    "docs/licensing.md": "1cfd52a33e5038220345c4b3540326ed47189d94dc538ca4594e7475a400b009",
+    "CITATION.cff": "05f4caefdc6225ac95e71f69a5fa1494a83d0f47e900a879dc8b00ad7acf39f3",
+    "docs/assets/proxy-allocation.png": "21ed333d93e378b12fc471fc7d70babc0a8a3734b6d84298c07cf2c648999d1b",
+    "docs/assets/friedman-current.png": "078fe0f272ec22cd0543cd8ade4413ddc0a5fb8fbcb3d52895418ad66256c2b6",
+    "docs/assets/concrete-current.png": "6b5bea793d015bfac16971f67f546df93c0aed9cb54f6d18da3d6f5f0deea42c"
+  },
+  "reviewed_display_metadata_is_not_new_scientific_evidence": true,
+  "no_source_repos_histories_or_remotes_changed": true
+}

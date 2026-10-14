@@ -1,0 +1,4 @@
+"method","value_calls","elapsed_sec"
+"Full LL-PME",256,4.84149999999999
+"PME-kNN",256,2.24550000000005
+"PRIME",32,0.741999999999848

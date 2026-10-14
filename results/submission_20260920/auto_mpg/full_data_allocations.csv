@@ -1,0 +1,33 @@
+"task_id","replication","full_data","method","variable","variable_name","estimate","selected"
+"auto_mpg_full",0,TRUE,"PRIME",1,"cylinders",0,FALSE
+"auto_mpg_full",0,TRUE,"PRIME",2,"displacement",0.280422175960121,TRUE
+"auto_mpg_full",0,TRUE,"PRIME",3,"horsepower",0.146268271245006,TRUE
+"auto_mpg_full",0,TRUE,"PRIME",4,"weight",0.337708020313979,TRUE
+"auto_mpg_full",0,TRUE,"PRIME",5,"acceleration",0,FALSE
+"auto_mpg_full",0,TRUE,"PRIME",6,"model_year",0.235601532480894,TRUE
+"auto_mpg_full",0,TRUE,"PRIME",7,"origin_2",0,FALSE
+"auto_mpg_full",0,TRUE,"PRIME",8,"origin_3",0,FALSE
+"auto_mpg_full",0,TRUE,"PME-kNN",1,"cylinders",0,TRUE
+"auto_mpg_full",0,TRUE,"PME-kNN",2,"displacement",0.220815587744742,TRUE
+"auto_mpg_full",0,TRUE,"PME-kNN",3,"horsepower",0.206368939434458,TRUE
+"auto_mpg_full",0,TRUE,"PME-kNN",4,"weight",0.364730051271287,TRUE
+"auto_mpg_full",0,TRUE,"PME-kNN",5,"acceleration",0,TRUE
+"auto_mpg_full",0,TRUE,"PME-kNN",6,"model_year",0.208085421549512,TRUE
+"auto_mpg_full",0,TRUE,"PME-kNN",7,"origin_2",0,TRUE
+"auto_mpg_full",0,TRUE,"PME-kNN",8,"origin_3",0,TRUE
+"auto_mpg_full",0,TRUE,"FIRST-SHAP",1,"cylinders",0,FALSE
+"auto_mpg_full",0,TRUE,"FIRST-SHAP",2,"displacement",0.265184356646077,TRUE
+"auto_mpg_full",0,TRUE,"FIRST-SHAP",3,"horsepower",0.259032766485754,TRUE
+"auto_mpg_full",0,TRUE,"FIRST-SHAP",4,"weight",0.24278044386818,TRUE
+"auto_mpg_full",0,TRUE,"FIRST-SHAP",5,"acceleration",0,FALSE
+"auto_mpg_full",0,TRUE,"FIRST-SHAP",6,"model_year",0.181167916295389,TRUE
+"auto_mpg_full",0,TRUE,"FIRST-SHAP",7,"origin_2",0.0518345167045999,TRUE
+"auto_mpg_full",0,TRUE,"FIRST-SHAP",8,"origin_3",0,FALSE
+"auto_mpg_full",0,TRUE,"Shapley (same 2NN game)",1,"cylinders",0.174510965645416,TRUE
+"auto_mpg_full",0,TRUE,"Shapley (same 2NN game)",2,"displacement",0.193652565554394,TRUE
+"auto_mpg_full",0,TRUE,"Shapley (same 2NN game)",3,"horsepower",0.190385539281083,TRUE
+"auto_mpg_full",0,TRUE,"Shapley (same 2NN game)",4,"weight",0.186369982121321,TRUE
+"auto_mpg_full",0,TRUE,"Shapley (same 2NN game)",5,"acceleration",0.0627170688511036,TRUE
+"auto_mpg_full",0,TRUE,"Shapley (same 2NN game)",6,"model_year",0.166079026556402,TRUE
+"auto_mpg_full",0,TRUE,"Shapley (same 2NN game)",7,"origin_2",0.00776277446317246,TRUE
+"auto_mpg_full",0,TRUE,"Shapley (same 2NN game)",8,"origin_3",0.0185220775271091,TRUE

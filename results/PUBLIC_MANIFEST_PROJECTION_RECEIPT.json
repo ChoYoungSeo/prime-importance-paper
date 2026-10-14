@@ -1,0 +1,156 @@
+{
+  "core_historical_source_pin_count": 94,
+  "current_release_sha256_preserved": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+  "final_guide_suppression_adjustment": {
+    "core94_runner_science_code_unchanged": true,
+    "final_sha256": "9b46a5c4fc6cedac455c380b34674025dd18f920006e9a486bec67ac3d42b57f",
+    "metadata_hash_rebases": {
+      "results/numerical_20261001/MANIFEST.json": {
+        "after": "c58f440b58382bba044ed20f1c902d2713dfb885f294e3547816f1ca06d33250",
+        "before": "004c3e53f7f01d36461b886dea356d7b205b797adaf2e531ea5a9db196c078b7"
+      },
+      "results/numerical_20261011/manifest.json": {
+        "after": "91a1f8bd50109a95898ba0d8db7428d6a4d14fbce91c9769c3f69cadd2c79350",
+        "before": "a81df0476c15b3241779a7e3f745ea158741918fb05dc05da35c73f49d94d19d"
+      },
+      "results/numerical_20261011/provenance/source_receipts.json": {
+        "after": "d1cd98c3b619010ed0fe620adf36ee309fbc6acdd7ec2fc139fce8157d6a2112",
+        "before": "62281ab1f542a3bb75269375262d4a80296f8a68e01dfc5378661003db40df25"
+      }
+    },
+    "path": "docs/numerical-evidence.md",
+    "previous_reviewed_pins": {
+      "results/numerical_20261001/MANIFEST.json": "4d1a4894814ac6f589210982e8fed94b3dc0c291f1af8b499f0e0430d16bd55a",
+      "results/numerical_20261011/manifest.json": "4d1a4894814ac6f589210982e8fed94b3dc0c291f1af8b499f0e0430d16bd55a"
+    },
+    "scope": "Parent removed executable native/full-refit and SHAP --run instructions; native source remains archival/unvalidated preflight; supported scope is saved code/data/standalone graphics.",
+    "tests_run_by_agent": false
+  },
+  "final_optional_graphic_orchestration_adjustment": {
+    "change": "Only optional figure-concrete output/receipt routed to ignored build/research_graphics and destination mkdir; scientific builder code unchanged.",
+    "current_manifest_before_sha256": "05ad2ba5838df5d9f3caa84cf19208c300c2c8a5bf10064eb7e46800aab24ebe",
+    "current_manifest_final_sha256": "a81df0476c15b3241779a7e3f745ea158741918fb05dc05da35c73f49d94d19d",
+    "final_sha256": "000805c425a8679e4e933c158244efb4e34dabf40d755ee82ee80855cb492f36",
+    "path": "Makefile",
+    "previous_reviewed_sha256": "5b8aea1a455c4d18570c7f8aba2993fd90d1682bfc8cf96682dc18088e42b9ff",
+    "tests_run_by_agent": false
+  },
+  "final_public_manifest_sha256": {
+    "results/numerical_20261001/MANIFEST.json": "c58f440b58382bba044ed20f1c902d2713dfb885f294e3547816f1ca06d33250",
+    "results/numerical_20261001/SOURCE_PROVENANCE.json": "ac9d5badb1f50db1ada6c1cfd191d3d1691a3b8671b066e7846c914858e68a75",
+    "results/numerical_20261011/manifest.json": "4f10499af30142af9453533f104c3aaed65c5c3ac58c19f530c811b210b96255",
+    "results/numerical_20261011/provenance/source_receipts.json": "d1cd98c3b619010ed0fe620adf36ee309fbc6acdd7ec2fc139fce8157d6a2112"
+  },
+  "hash_cycle_policy": "This aggregate receipt records final metadata hashes and is intentionally not pinned inside those same metadata containers.",
+  "kind": "derived_public_numerical_manifest_projection",
+  "legacy_main_validation_guard": {
+    "after_sha256": "378fae1e1ddc2b6e4e0b5131da9a83a3389924172499a85e4e0d520f135dd729",
+    "before_sha256": "000805c425a8679e4e933c158244efb4e34dabf40d755ee82ee80855cb492f36",
+    "changed_at_utc": "2026-10-12T19:44:52.081540+00:00",
+    "kind": "explicit_source_free_legacy_target_rejection",
+    "new_guard": "Fail before historical steps when private manuscript/main.tex is absent, with NOT_IN_PUBLIC_EXPORT and supported make validate-release instruction. All existing scientific/vector/physical recipes remain byte-identical.",
+    "no_silent_scientific_step_removal": true,
+    "path": "Makefile"
+  },
+  "parent_final_maintenance_hashes": [
+    {
+      "before_sha256": "12577ac5b4d15794bb78e081f77be6914cbce3db6600c2d41379d5671831f618",
+      "final_sha256": "9b46a5c4fc6cedac455c380b34674025dd18f920006e9a486bec67ac3d42b57f",
+      "kind": "parent_nonestimating_maintenance_or_documentation",
+      "manifest": "results/numerical_20261001/MANIFEST.json",
+      "path": "docs/numerical-evidence.md"
+    },
+    {
+      "before_sha256": "9ff5dea73c476abc8b18f93e87800ab21eb55059e052abffe68db8ce51fdda85",
+      "final_sha256": "d9724bac4018a7b06caf4fb30632fc8c346f887052864a62efc6852caf62b7df",
+      "kind": "parent_nonestimating_maintenance_or_documentation",
+      "manifest": "results/numerical_20261001/MANIFEST.json",
+      "path": "experiments/14_current_numerical/validate.py"
+    },
+    {
+      "before_sha256": "b06b3836d24077db98a74f3104f939a85bb52547aed11149a5b34cf1d74b18d3",
+      "final_sha256": "378fae1e1ddc2b6e4e0b5131da9a83a3389924172499a85e4e0d520f135dd729",
+      "kind": "parent_nonestimating_maintenance_or_documentation",
+      "manifest": "results/numerical_20261011/manifest.json",
+      "path": "Makefile"
+    },
+    {
+      "before_sha256": "408126201f2919ef7a324abdb9e5b77e85c4af85d76b8303a214c670609e2522",
+      "final_sha256": "9b46a5c4fc6cedac455c380b34674025dd18f920006e9a486bec67ac3d42b57f",
+      "kind": "parent_nonestimating_maintenance_or_documentation",
+      "manifest": "results/numerical_20261011/manifest.json",
+      "path": "docs/numerical-evidence.md"
+    },
+    {
+      "before_sha256": "5a54c30f2a88a70d23645e02a31fbf217afe3ab5e4f016991850f60ddde1837a",
+      "final_sha256": "d9724bac4018a7b06caf4fb30632fc8c346f887052864a62efc6852caf62b7df",
+      "kind": "parent_nonestimating_maintenance_or_documentation",
+      "manifest": "results/numerical_20261011/manifest.json",
+      "path": "experiments/14_current_numerical/validate.py"
+    },
+    {
+      "before_sha256": "d2ffc760ae70a7b818ec0dc1d585f26038ccd3cf710792dbb1034a61d003baef",
+      "final_sha256": "21199517b3a21cb17cf01a938535c22766a50c52001b2b25a2a99141bd6c8402",
+      "kind": "parent_nonestimating_maintenance_or_documentation",
+      "manifest": "results/numerical_20261011/manifest.json",
+      "path": "experiments/15_current_numerical_20261011/validate.py"
+    }
+  ],
+  "publication_receipt_facts_identical": true,
+  "raw_manifest_sha256": {
+    "results/numerical_20261001/MANIFEST.json": "84c161a806be5e711ab56e19f7abfef2487113d09405a2b5aaaef173117ac7aa",
+    "results/numerical_20261001/SOURCE_PROVENANCE.json": "f069d3b30a3e369cc2eaf505d49576d92bb6340028f7d2802c7cdf0317b475c2",
+    "results/numerical_20261011/manifest.json": "03fbb869d6fd75fd29c10c43bcd48ae6690ea7abf085ea12d3a9106d02d60e6b",
+    "results/numerical_20261011/provenance/source_receipts.json": "ed9f1115a39bc484bba1eb99a3bf487b66126cc182a89cae3d76445d3e3b407b"
+  },
+  "removed_live_pin_counts": {
+    "results/numerical_20261001/MANIFEST.json": 59,
+    "results/numerical_20261011/manifest.json": 59
+  },
+  "retained_hash_checks": {
+    "results/numerical_20261001/MANIFEST.json": {
+      "existing_nonmanuscript_pins": 51,
+      "final_pin_count": 51,
+      "preserved_existing_nonmaintenance_noncontainer_expected_hashes": 48,
+      "removed_manuscript_live_pins": 59
+    },
+    "results/numerical_20261011/manifest.json": {
+      "existing_nonmanuscript_pins": 155,
+      "final_pin_count": 156,
+      "preserved_existing_nonmaintenance_noncontainer_expected_hashes": 150,
+      "removed_manuscript_live_pins": 59
+    }
+  },
+  "schema_version": 1,
+  "scope": {
+    "approved_standalone_graphics": {
+      "results/numerical_20261011/approved_figures/PRIME_Concrete.pdf": "7b88cc749689b18dbe2d25af8af982c9611d76da2cd078a2368ce8425f7694ab",
+      "results/numerical_20261011/approved_figures/PRIME_Concrete.png": "6b5bea793d015bfac16971f67f546df93c0aed9cb54f6d18da3d6f5f0deea42c",
+      "results/numerical_20261011/approved_figures/PRIME_Friedman.pdf": "d8a809b5e017b27eb3c3ecfbf35c6e7ac956377dbd453fdd1e56d7f9512b15a3",
+      "results/numerical_20261011/approved_figures/PRIME_Friedman.png": "078fe0f272ec22cd0543cd8ade4413ddc0a5fb8fbcb3d52895418ad66256c2b6"
+    },
+    "estimator_or_algorithm_code_changed": false,
+    "golden_csv": {
+      "available_method_columns": 4,
+      "path": "results/numerical_20261001/friedman/earlier_four_method_table.csv",
+      "reported_comparison_method_columns": 3,
+      "settings": 9,
+      "sha256": "40464cb6859306e8a85e37f59918c3f3676470fa51d6e83b79c326f2951773b6"
+    },
+    "kind": "public_saved_numerical_export_scope",
+    "new_fits_or_experiments": false,
+    "private_article_scope": "Original article/doc/prose/typesetTable provenance retained privately. Historical publication_receipt facts carry HISTORICAL_PRIVATE_ARTICLE_RECEIPT scope, without a claim that the article is exported or currently validated.",
+    "public_export_scope": {
+      "manuscript_sources": "NOT_IN_PUBLIC_EXPORT",
+      "paper_prose": "NOT_IN_PUBLIC_EXPORT",
+      "typeset_table": "NOT_IN_PUBLIC_EXPORT"
+    },
+    "schema_version": 1,
+    "scientific_input_data_values_unchanged": true
+  },
+  "source_basis_paper_commit": "df2a3d92a96942a1c97a5b8891518de56162a01e",
+  "source_provenance37records_identical": true,
+  "source_receipts_export_checks_preserved": true,
+  "status": "READY_FOR_PARENT_SAVED_DATA_VALIDATION",
+  "validation_scope": "Agent performed static manifest/value/hash equality only. Parent runs saved-data validators once; no agent tests/builds/experiments."
+}

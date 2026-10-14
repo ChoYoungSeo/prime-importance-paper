@@ -1,0 +1,204 @@
+{
+  "status": "PASS",
+  "protocol_signature": "a2411f0f3f0255ce00c405a484339db40583e214f01f4f473b4b8e756e379856",
+  "protocol": {
+    "version": "k6-noise-paired-four-method-fresh-serial-timing-v1",
+    "n": 100,
+    "p": 10,
+    "rho": 0.90000000000000002,
+    "replications": 30,
+    "methods": ["PRIME", "PME_kNN_FALSE", "PME_kNN_TRUE", "FIRST_SHAP"],
+    "seed_offsets": {
+      "PRIME": 100,
+      "PME_kNN_FALSE": 200,
+      "PME_kNN_TRUE": 200,
+      "FIRST_SHAP": 300
+    },
+    "rng": ["Mersenne-Twister", "Inversion", "Rejection"],
+    "runner_sha256": "50bb205d270eb465fae3ab63099cefc8346f31bb2c9446a3294842c58e0aaca1",
+    "launcher_sha256": "6b8e3c47985a10408af96a4a50ea95f2aee5a9c15e7f005343bbecebe7755d50",
+    "shared_adapter_sha256": "f948b28d4fbc0f72e4ad715ac3ebef3ea5bbc4b98e7892d1d7edc5821e8b8b4d",
+    "original_source_sha256": "67304c8f9126d879c380a5e76ba59aa4b08fce2a6fddf8f70ae3476eeb9b1f1d",
+    "first_source_sha256": "759c110ef16e4cce1fcebf17e1d1ed03035a90c92878e02715ff038f1afe1ee4",
+    "frozen_signature": "4f29d1c54aff9649c6cb469aa7103c7231ecd093dfeacd7abe3146ea4a8c745b",
+    "input_bundle_sha256": "85a342c9d227eb2b1fdfb0e99d4891c2a417cba1e18386693856e581b378bf9b",
+    "input_sha256": ["4ef09190f1dba6ad7052e1dd0a0482cf04ec97911d339ba834eb03612c087430", "f4f915a5bacd35534f46febc00ff1f6b3e2555357d2e079f2575a99bcd096caa", "38da80e95e6f0431a3a3275549750e5f65e4eed57e9aa136d7a5441eb9cfb59f", "c8f0affd229aa00c7eef605ebd2eedf7acc7c7db693e651aadb05ed511e4f5a5", "92d41bbbfabbe984b3c80cea164261270980937b6e178cd159912a80def6ce4d", "4d99bc03d3000f9c9e850fd32faa86c96796e95da4b2eb1b19962e4c2139e1d0", "e26fb58c400ea316cd2b163e59040ad7bc64b427a5a3765aef1e88197aacc94e", "647c29c072b2db0cc53ac30d0b523019db67c7d5b19c584ade499459a0a2762f", "b1de7929473666dba488159604dde7953ee132722851a478966cd683e2633f05", "271dbf5f644fcdb9f98651dc9265764ded3ce9af007da60f8f94afae09abdee4", "4f01bde1ce246a3a064318244479e7d10d262c18d5adf60439896c1667b72139", "443a246f0d9c47dace5b48a8e88028f593fa1714783cc386fc12a185ebb2d178", "9024735eb4992e47c10e2edd60673c24d852e20a3bd962985594c9107307a3b8", "c63f1e37f71e72daaed27b1cfc5f87b7274e10985adbe05ef319cf0a7991003a", "01a7adabb26efcbc1349d14086831ec4ec44619688527dc87acff6b75a8b0c7e", "e399df9afc7d4cf01cf167250394bf72a3cb9abd808b559996d76971359c5ddb", "17ea25504d12f642c423be80b5cd0f256342c2b927ca152960a7acd089568362", "cdfedf85ce691374087b7ceeeaf8366b06c8ee4b8b04c8b34c02687716676100", "ea9c3c0e1425027eee36d8a6ac60b678ecee69568eb39df4bd744886e8eb4fd7", "1d725b856fe90c86b271b5a4ab57956500bb8b01c56ca8e15c839a57908081b0", "beca43d51111c1c8afd3707c59387c70d1e808a77c07978b0d0b241e444edb42", "ac0c8d2b5bb05bcd61d5ceb241960e18821e298099f1f7af1a77e3604a0336e3", "b98b180ff0ae89d188c195c43317044d74f3368e705344934282464931a318c0", "75b93919143653dcbc56e9b72c27949f05d1bfe456f8ada9ae2a854811ae39d4", "5d5c317079dd9282c50520544bbbd1b25ca4f9fa553a93e9c7f09c9b037b1754", "3e8419c059bed4d47b1a6efb23e3a987c2bc29e7b7a6b885cc00705eb6af9d23", "1c217ce718a886c07cf118797d9f40b8a0b2b47694247597afe465fe134001fd", "10fb1d2c26918d7e4ea8543f3f151e7d7fed1224645f6de2316fb794fc627e16", "e2e1f974d7c66074247b81868fc98fb80df598fe7ad74e391471dda8bc4d87a6", "34e4ea5582bb3024716f0a64abd98ddcbdb05ff127b678f1d71790c77e89a0d4"],
+    "standardization": "as.matrix/double; colMeans; apply(sd); nested sweep; computed within every pipeline timer",
+    "settings": {
+      "PRIME": {
+        "rescale": false,
+        "twin_r": null,
+        "lambda": 9.9999999999999995e-07
+      },
+      "PME_kNN_FALSE": {
+        "method": "knn",
+        "n.knn": 6,
+        "noise": false,
+        "rescale": false,
+        "marg": true,
+        "tol": null,
+        "n.limit": 2001,
+        "nboot": null,
+        "parl": null
+      },
+      "PME_kNN_TRUE": {
+        "method": "knn",
+        "n.knn": 6,
+        "noise": true,
+        "rescale": false,
+        "marg": true,
+        "tol": null,
+        "n.limit": 2001,
+        "nboot": null,
+        "parl": null
+      },
+      "FIRST_SHAP": {
+        "n.knn": 2,
+        "n.forward": 2,
+        "n.mc": "nrow(X)",
+        "twin.mc": false,
+        "screen_rescale": false,
+        "shapley_rescale": false,
+        "noise": true,
+        "parl": null
+      }
+    },
+    "processes": 1,
+    "native_threads": 1,
+    "timer": "proc.time()[['elapsed']]",
+    "warmups": "One complete excluded warm-up per method on replication 1",
+    "schedule": "Serial datasets, cyclic method order; 7 or 8 occurrences of every method at every position (30 datasets; 4 methods)",
+    "native_output_policy": "Retain signed native output, all errors, empty selections, unavailable and nonfinite states"
+  },
+  "runtime": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "platform": "aarch64-apple-darwin23",
+    "packages": {
+      "prime": "0.5.2.9101",
+      "sensitivity": "1.31.0",
+      "FNN": "1.1.4.1",
+      "RANN": "2.6.2",
+      "gtools": "3.9.5",
+      "digest": "0.6.39",
+      "jsonlite": "2.0.0"
+    },
+    "BLAS": "/Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRblas.0.dylib",
+    "thread_environment": {
+      "PRIME_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "RCPP_PARALLEL_NUM_THREADS": "1"
+    }
+  },
+  "measured_calls": 120,
+  "excluded_warmups": 4,
+  "sessions": "20260927T021754-80541",
+  "rotating_positions": true,
+  "position_counts": [
+    {
+      "Var1": "FIRST_SHAP",
+      "Var2": "1",
+      "Freq": 7
+    },
+    {
+      "Var1": "PME_kNN_FALSE",
+      "Var2": "1",
+      "Freq": 8
+    },
+    {
+      "Var1": "PME_kNN_TRUE",
+      "Var2": "1",
+      "Freq": 7
+    },
+    {
+      "Var1": "PRIME",
+      "Var2": "1",
+      "Freq": 8
+    },
+    {
+      "Var1": "FIRST_SHAP",
+      "Var2": "2",
+      "Freq": 7
+    },
+    {
+      "Var1": "PME_kNN_FALSE",
+      "Var2": "2",
+      "Freq": 8
+    },
+    {
+      "Var1": "PME_kNN_TRUE",
+      "Var2": "2",
+      "Freq": 8
+    },
+    {
+      "Var1": "PRIME",
+      "Var2": "2",
+      "Freq": 7
+    },
+    {
+      "Var1": "FIRST_SHAP",
+      "Var2": "3",
+      "Freq": 8
+    },
+    {
+      "Var1": "PME_kNN_FALSE",
+      "Var2": "3",
+      "Freq": 7
+    },
+    {
+      "Var1": "PME_kNN_TRUE",
+      "Var2": "3",
+      "Freq": 8
+    },
+    {
+      "Var1": "PRIME",
+      "Var2": "3",
+      "Freq": 7
+    },
+    {
+      "Var1": "FIRST_SHAP",
+      "Var2": "4",
+      "Freq": 8
+    },
+    {
+      "Var1": "PME_kNN_FALSE",
+      "Var2": "4",
+      "Freq": 7
+    },
+    {
+      "Var1": "PME_kNN_TRUE",
+      "Var2": "4",
+      "Freq": 7
+    },
+    {
+      "Var1": "PRIME",
+      "Var2": "4",
+      "Freq": 8
+    }
+  ],
+  "fresh_uninterrupted_serial_cohort": true,
+  "all_four_methods_receive_exact_same_Z": true,
+  "no_memoization": true,
+  "standardization_inside_each_timer": true,
+  "all_public_rescale_flags_false": true,
+  "timed_scope": "Canonical standardization from frozen raw X plus complete estimator through native allocation",
+  "excluded_from_timer": ["input and reference loading", "package/source loading", "seed initialization", "receipt hashing", "explicit gc", "validation", "file writes", "output redirection setup"],
+  "prime_full_saved_details_identical_to_frozen": true,
+  "official_all_scientific_fields_exact_to_option_diagnostic": true,
+  "first_full_raw_identical_to_standardized_batch": true,
+  "official_noise_TRUE_also_exact_to_standardized_batch": true,
+  "call_provenance": "Only raw$call is excluded from official parity because it records the timing wrapper; every scientific field remains exact",
+  "official_and_first_rng_state_identical_to_references": true,
+  "native_signed_effects_unchanged": true,
+  "noncomplete_states_retained": {
+    "complete": 120
+  },
+  "sources_and_inputs_unchanged": true,
+  "timings_sha256": "bfcfc3d724713fd1a9b81269aaa8fac92063d224e5302a466c8f00dc5413ae00",
+  "summary_sha256": "414ec04b7d9005de24adf4ff3edff6d1070da37854558e7dedb3e3befed606ac",
+  "source_manifest_sha256": "9a83ebf9cda60b0adcfcb015f88ebbc6b04a0956937ae37bbbe1a5a4090a87f8",
+  "generated_utc": "2026-09-27 02:20:17 UTC"
+}

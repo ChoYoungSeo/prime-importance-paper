@@ -1,0 +1,38 @@
+{
+  "concrete_timing_protocol_sha256": "721c5b108f63bd6c680d990b4937045cc85954858863e1ffc5d68c6be10cf9f9",
+  "export_checks": {
+    "all100_concrete_timed_shap_equals_figure_shap": true,
+    "all130_mean_abs_values_reaggregated_exactly": true,
+    "all130_models_and_values_hashes_verified": true,
+    "all400_concrete_timing_checks_pass": true
+  },
+  "historical_overlay_manifest_sha256": "c58f440b58382bba044ed20f1c902d2713dfb885f294e3547816f1ca06d33250",
+  "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+  "original_concrete_coordinator_sha256": "21eb31415a3c886f19f09ebbff3d8b081974efd7285edec6cd19232d17a2c6c4",
+  "original_figure_builder_sha256": "ca6cc804638e71c730bd6cc2c8e511c91421576776da99876da31f33fa207776",
+  "original_r_worker_sha256": "56d818b0d67d75626b04dfbcbb2af6b854a1cb2d38efcc0cafb700204b9533fc",
+  "original_shap_script_sha256": "7f2cd422f39a1dee9910284f0d16490d504679786d2e696c0036b85ba5041b3b",
+  "public_export_scope": {
+    "manuscript_sources": "NOT_IN_PUBLIC_EXPORT",
+    "paper_prose": "NOT_IN_PUBLIC_EXPORT",
+    "typeset_table": "NOT_IN_PUBLIC_EXPORT"
+  },
+  "publication_receipt": {
+    "all_56_other_files_unchanged": true,
+    "all_manuscript_text_unchanged": true,
+    "box_statistics_and_timings_unchanged": true,
+    "changed_files": [
+      "figures/PRIME_Concrete.pdf",
+      "figures/PRIME_Friedman.pdf"
+    ],
+    "existing_warning": "Command \\showhyphens has changed.",
+    "main_compile_errors": 0,
+    "main_pages": 28,
+    "status": "APPLIED_VERIFIED",
+    "time_utc": "2026-10-11T21:31:17.932802+00:00",
+    "upload_bytes_exact": true,
+    "zero_height_fraction": 0.045454545454545456
+  },
+  "publication_receipt_scope": "HISTORICAL_PRIVATE_ARTICLE_RECEIPT",
+  "source_protocol_sha256": "2115aebffbf3605359e7b07e946f24c571a54190346380ce41b90f1f77be8914"
+}

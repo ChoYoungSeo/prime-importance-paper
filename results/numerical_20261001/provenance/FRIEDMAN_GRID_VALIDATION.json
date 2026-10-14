@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "protocol_signature": "b87c4fe35f21b0e8a46f77e1523e456332e0f57b030702d6e6cacf4145b41c45",
+  "runner_finished": true,
+  "counts": {
+    "expected_runs": 810,
+    "stored_runs": 810,
+    "native_coordinates": 8100,
+    "new_official": 270,
+    "new_FIRST": 270,
+    "reused_PRIME": 270,
+    "complete": 810,
+    "empty_selection": 0,
+    "unavailable": 0,
+    "errors": 0,
+    "nonfinite": 0,
+    "warnings": 0
+  },
+  "checks": {
+    "exact_fixed_grid": true,
+    "all_cases_retained": true,
+    "all_coordinates_preserved": true,
+    "raw_and_standardized_hashes_verified": true,
+    "official_stored_X_identical_to_Z": true,
+    "outer_seeds_verified": true,
+    "full_PRIME_checkpoint_and_game_reused_exactly": true,
+    "no_FIRST_PME_error_or_truth": true,
+    "no_fitted_sum_normalization": true,
+    "all_csv_metrics_recomputed": true,
+    "original_sources_and_old_outputs_unchanged": true,
+    "checkpoint_hashes_verified": true,
+    "export_hashes_verified": true
+  },
+  "official_native": {
+    "coordinate_range": [-7.3333724469296504, 10.4301331593272],
+    "negative_coordinates": 1131,
+    "fits_with_negative": 269,
+    "total_range": [0.28831076024817998, 0.729701474821986],
+    "max_efficiency_residual": 1.33226762955019e-15,
+    "efficiency_discrepant_fits": 0,
+    "all_game_counts_1024": true
+  },
+  "first_native": {
+    "coordinate_range": [-0.030591074303911302, 1],
+    "negative_coordinates": 5,
+    "fits_with_negative": 5,
+    "efficiency_max_abs": 2.2204460492503099e-16
+  },
+  "gamma": 0.95972040121345192,
+  "source_sha256": "67304c8f9126d879c380a5e76ba59aa4b08fce2a6fddf8f70ae3476eeb9b1f1d",
+  "first_source_sha256": "759c110ef16e4cce1fcebf17e1d1ed03035a90c92878e02715ff038f1afe1ee4",
+  "adapter_sha256": "f948b28d4fbc0f72e4ad715ac3ebef3ea5bbc4b98e7892d1d7edc5821e8b8b4d",
+  "export_manifest_sha256": "a7da233ded86a621dd82b318e4c64a8b24841e8c001dabf227e69ef782c91340",
+  "no_estimators_modified": true,
+  "no_new_PRIME_fits": true,
+  "timing": "All batch elapsed times diagnostic only; parallel work quiescent for separate fresh matched serial timing",
+  "generated_utc": "2026-09-27 00:34:13 UTC"
+}
