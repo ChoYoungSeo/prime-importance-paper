@@ -1,6 +1,6 @@
 # PRIME: A New Measure for Variable Importance
 
-[Paper](https://arxiv.org/abs/2610.17053) · [R package](https://github.com/ChoYoungSeo/prime-importance-r) · [Python package](https://github.com/ChoYoungSeo/prime-importance) · [Examples](#quick-start)
+[Paper](https://arxiv.org/abs/2610.17053) · [Install](#install) · [Examples](#quick-start)
 
 ## Why PRIME?
 
@@ -39,7 +39,7 @@ install.packages("remotes")
 remotes::install_github("ChoYoungSeo/prime-importance-r", upgrade = "never")
 ```
 
-[R package guide](https://github.com/ChoYoungSeo/prime-importance-r) · [R reference manual](https://github.com/ChoYoungSeo/prime-importance-r/blob/main/docs/prime.pdf)
+[R reference manual (PDF)](https://raw.githubusercontent.com/ChoYoungSeo/prime-importance-r/main/docs/prime.pdf)
 
 ### Python
 
@@ -49,7 +49,7 @@ Requires Python 3.10 or newer. The optional plotting dependency is included belo
 python -m pip install "prime-importance[plot]"
 ```
 
-[Python package guide](https://github.com/ChoYoungSeo/prime-importance) · [PyPI](https://pypi.org/project/prime-importance/)
+[PyPI](https://pypi.org/project/prime-importance/)
 
 ## Quick start
 
@@ -64,11 +64,13 @@ y <- X[, 1] - X[, 2] + X[, 5]^2 + rnorm(300, sd = 0.08)
 fit <- prime(X, y)
 fit$selected_names
 fit$effects
+plot(fit)
 ```
 
 ### Python
 
 ```python
+import matplotlib.pyplot as plt
 import numpy as np
 import prime
 rng = np.random.default_rng(5)
@@ -77,9 +79,11 @@ y = X[:, 0] - X[:, 1] + X[:, 4] ** 2 + rng.normal(0, 0.08, size=300)
 fit = prime.fit(X, y)
 print(fit.selected_names)
 print(fit.effects)
+prime.plot(fit)
+plt.show()
 ```
 
-Each example selects `X1`, `X2` and `X5`; the other coordinates receive zero importance. The package guides describe diagnostic plots and other options.
+Each example selects `X1`, `X2` and `X5`; the other coordinates receive zero importance.
 
 ## Citation
 

@@ -136,9 +136,9 @@
   "created_utc": "2026-10-12T18:25:06.353460+00:00",
   "current_workflow_pointer": {
     "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
-    "manifest": "results/workflow_revisions/20261014_minimal_navigation_cleanup.json",
+    "manifest": "results/workflow_revisions/20261014_single_main_page_user_guide.json",
     "schema_version": 1,
-    "sha256": "ca7b529b126df6ec7c9594e625bf098f48b44a4b35f3ce2970c4d8ed59c40ab4"
+    "sha256": "0dab5edab7881d7196ef905664ad4dbb15b1ab862d5708373ada4f0db9f6a8be"
   },
   "documentation_or_orchestration_pin_changes": [
     {
@@ -531,9 +531,9 @@
   },
   "previous_workflow_pointer": {
     "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
-    "manifest": "results/workflow_revisions/20261014_paper_navigation_no_contact.json",
+    "manifest": "results/workflow_revisions/20261014_minimal_navigation_cleanup.json",
     "schema_version": 1,
-    "sha256": "5214dac3802f4cb217ec49b28347e68449ce22be8429b856f093fa03dfbbf56d"
+    "sha256": "ca7b529b126df6ec7c9594e625bf098f48b44a4b35f3ce2970c4d8ed59c40ab4"
   },
   "public_export_scope": {
     "manuscript_sources": "NOT_IN_PUBLIC_EXPORT",
@@ -543,7 +543,7 @@
   "retained_approved_graphic_pdf_scope": "Standalone research figures, not article PDFs",
   "reviewed_presentation_sha256": {
     "CITATION.cff": "b190a549168191c80f7d56a3936b7d905caef11310ef8b75caf08aae295ff1f0",
-    "README.md": "47adcdd63d13647e398cd752a41a57cbc80db7947a2700cf1cceadf775344829",
+    "README.md": "66d34afc8f0be7a0b4b743167562608505058ac79ec01915f7f36ae622a7dbf3",
     "VALIDATION.md": "c9943ddb066c01fa046ee749b838850fe0f5b108c9fbc2c0f98e547527ebed55",
     "docs/assets/concrete-current.png": "6b5bea793d015bfac16971f67f546df93c0aed9cb54f6d18da3d6f5f0deea42c",
     "docs/assets/friedman-current.png": "078fe0f272ec22cd0543cd8ade4413ddc0a5fb8fbcb3d52895418ad66256c2b6",
@@ -557,6 +557,155 @@
   },
   "schema_version": 1,
   "scientific_release_metadata_and_input_pins_unchanged": true,
+  "single_main_page_user_guide_20261014": {
+    "Python_install_method": "Published prime-importance[plot] package from PyPI.",
+    "R_install_method": "Current GitHub source install command retained until official CRAN publication; no false registry availability claim.",
+    "api_usage_proof": [
+      {
+        "README_usage": "plot(fit)",
+        "api_check": "Existing maintained R README and man/plot.prime_fit.Rd document this use",
+        "evidence": "S3method(plot,prime_fit)",
+        "package": "R 0.5.5",
+        "source": "NAMESPACE:8"
+      },
+      {
+        "README_usage": "prime.plot(fit); plt.show()",
+        "api_check": "src/prime/_plot.py plot returns Axes; existing maintained Python README imports matplotlib.pyplot and calls plt.show()",
+        "evidence": "from ._plot import plot",
+        "package": "Python 0.2.1",
+        "source": "src/prime/__init__.py:3"
+      },
+      {
+        "README_usage": "python -m pip install \"prime-importance[plot]\"",
+        "api_check": "Plot dependency is explicitly included by existing README installation command",
+        "evidence": "plot = [\"matplotlib>=3.7\"]",
+        "package": "Python 0.2.1",
+        "source": "pyproject.toml:41"
+      }
+    ],
+    "checks": {
+      "current_R_manual_direct_HTTP200_SHA256_verified": {
+        "anonymous_HTTP_status": 200,
+        "behavior": "Direct PDF download; no GitHub repository UI navigation",
+        "bytes": 160173,
+        "content_type": "application/octet-stream",
+        "package_version": "0.5.5",
+        "pages": 8,
+        "sha256": "70a21d5e01556dcc35b5a29ec7830b0356d2b402bacf8cae70a404100703d32d",
+        "url": "https://raw.githubusercontent.com/ChoYoungSeo/prime-importance-r/main/docs/prime.pdf"
+      },
+      "frozen_R_manual_and_source_unchanged": true,
+      "main_README_matches_reviewed_candidate": true,
+      "no_Issues_text_or_label": true,
+      "on_page_anchors_and_relative_links": "PASS",
+      "plot_API_usage_static_proof": [
+        {
+          "README_usage": "plot(fit)",
+          "api_check": "Existing maintained R README and man/plot.prime_fit.Rd document this use",
+          "evidence": "S3method(plot,prime_fit)",
+          "package": "R 0.5.5",
+          "source": "NAMESPACE:8"
+        },
+        {
+          "README_usage": "prime.plot(fit); plt.show()",
+          "api_check": "src/prime/_plot.py plot returns Axes; existing maintained Python README imports matplotlib.pyplot and calls plt.show()",
+          "evidence": "from ._plot import plot",
+          "package": "Python 0.2.1",
+          "source": "src/prime/__init__.py:3"
+        },
+        {
+          "README_usage": "python -m pip install \"prime-importance[plot]\"",
+          "api_check": "Plot dependency is explicitly included by existing README installation command",
+          "evidence": "plot = [\"matplotlib>=3.7\"]",
+          "package": "Python 0.2.1",
+          "source": "pyproject.toml:41"
+        }
+      ],
+      "saved_numerical": {
+        "cases": 130,
+        "historical_saved_files": 51,
+        "latest_manifest_files": 156,
+        "new_fits": false,
+        "status": "PASS"
+      },
+      "title_science_results_figures_protocols_citation_and_licence_preserved": true,
+      "tracked_file_integrity": {
+        "changed_existing_files": [
+          "README.md",
+          "results/PUBLIC_CODE_DATA_WORKFLOW_RECEIPT.json",
+          "results/current_workflow.json"
+        ],
+        "deleted_existing_files": [],
+        "tracked_before": 531,
+        "unchanged": 528,
+        "unexpected_changes": []
+      },
+      "verify_release": {
+        "input_pins": 64,
+        "only_one_README_pin_delta": true,
+        "other_93_source_pins_unchanged": true,
+        "package_inventory": 30,
+        "source_pins": 94,
+        "status": "PASS"
+      },
+      "workflow_contracts": {
+        "status": "PASS",
+        "tests": 18
+      }
+    },
+    "current_R_reference_manual": {
+      "anonymous_HTTP_status": 200,
+      "behavior": "Direct PDF download; no GitHub repository UI navigation",
+      "bytes": 160173,
+      "content_type": "application/octet-stream",
+      "package_version": "0.5.5",
+      "pages": 8,
+      "sha256": "70a21d5e01556dcc35b5a29ec7830b0356d2b402bacf8cae70a404100703d32d",
+      "url": "https://raw.githubusercontent.com/ChoYoungSeo/prime-importance-r/main/docs/prime.pdf"
+    },
+    "current_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_single_main_page_user_guide.json",
+      "schema_version": 1,
+      "sha256": "0dab5edab7881d7196ef905664ad4dbb15b1ab862d5708373ada4f0db9f6a8be"
+    },
+    "existing_title_science_results_figures_protocol_citation_and_licence_preserved": true,
+    "frozen_paper_manual_preserved": {
+      "pages": 7,
+      "path": "docs/prime.pdf",
+      "sha256": "107d076e007f6a24b96cb9940fc088c4ca6e72e1a6489c40cba74b5de7f58c31",
+      "version": "0.5.2.9101"
+    },
+    "input_pin_inventory_count": 64,
+    "new_fits_or_experiments": false,
+    "not_a_repository_consolidation_or_source_migration": true,
+    "prepared_utc": "2026-10-14T19:51:01.052664+00:00",
+    "presentation_hash_changes": [
+      {
+        "after_sha256": "66d34afc8f0be7a0b4b743167562608505058ac79ec01915f7f36ae622a7dbf3",
+        "before_sha256": "47adcdd63d13647e398cd752a41a57cbc80db7947a2700cf1cceadf775344829",
+        "path": "README.md"
+      }
+    ],
+    "previous_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "manifest": "results/workflow_revisions/20261014_minimal_navigation_cleanup.json",
+      "schema_version": 1,
+      "sha256": "ca7b529b126df6ec7c9594e625bf098f48b44a4b35f3ce2970c4d8ed59c40ab4"
+    },
+    "scientific_implementation_inputs_results_and_package_metadata_unchanged": true,
+    "scope": "Concentrate end-user installation, examples and plotting in the main README; replace package-repository guide navigation with on-page links and a direct current R manual PDF download.",
+    "source_pin_changes": [
+      {
+        "after_sha256": "66d34afc8f0be7a0b4b743167562608505058ac79ec01915f7f36ae622a7dbf3",
+        "before_sha256": "47adcdd63d13647e398cd752a41a57cbc80db7947a2700cf1cceadf775344829",
+        "path": "README.md"
+      }
+    ],
+    "source_pin_inventory_count": 94,
+    "validated_utc": "2026-10-14T19:52:12.469226+00:00",
+    "validation_status": "PASS_SOURCE_GUARD_WORKFLOW_CONTRACTS_AND_SAVED_NUMERICAL_CHECKS"
+  },
   "source_pin_inventory_count": 94,
   "validation_scope": "Source guard plus existing workflow contract tests and saved result integrity; no full article or typesetting verification",
   "verified_poster_title_correction": {
