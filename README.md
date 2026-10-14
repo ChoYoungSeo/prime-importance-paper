@@ -30,10 +30,10 @@ PRIME estimates these signal contributions from observed data, assigning zero ou
 
 ```r
 install.packages("remotes")
-remotes::install_github("ChoYoungSeo/prime-importance-r", upgrade = "never")
+remotes::install_github("ChoYoungSeo/prime-importance-paper", subdir = "packages/r", upgrade = "never")
 ```
 
-[R reference manual (PDF)](https://raw.githubusercontent.com/ChoYoungSeo/prime-importance-r/main/docs/prime.pdf)
+[R reference manual (PDF)](https://raw.githubusercontent.com/ChoYoungSeo/prime-importance-paper/main/packages/r/docs/prime.pdf)
 
 ### Python
 

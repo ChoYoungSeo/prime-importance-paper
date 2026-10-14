@@ -1,0 +1,92 @@
+name: Verify or publish approved PRIME 0.2.1
+
+"on":
+  workflow_dispatch:
+    inputs:
+      upload:
+        description: Upload the checked 0.2.1 files to PyPI (already published; keep false)
+        type: boolean
+        default: false
+        required: true
+
+permissions: {}
+
+concurrency:
+  group: prime-0.2.1-pypi
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/main' && github.repository == 'ChoYoungSeo/prime-importance-paper'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.13"
+      - name: Download the approved GitHub release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          mkdir dist
+          gh release download v0.2.1 --repo "$GH_REPO" --dir dist \
+            --pattern 'prime_importance-0.2.1.tar.gz' \
+            --pattern 'prime_importance-0.2.1-py3-none-any.whl'
+      - name: Verify the exact approved files
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          expected = {
+              "prime_importance-0.2.1.tar.gz": "2b5ac6c8a12e1c8979bdb466e3b0193ffcfb5c3b63321161ea195cbcc327220d",
+              "prime_importance-0.2.1-py3-none-any.whl": "c04a3696495d1b9d47d44ed9b045c7032f604f848671220434e6aff0ed7f3642",
+          }
+          root = Path("dist")
+          assert {p.name for p in root.iterdir()} == set(expected)
+          for name, digest in expected.items():
+              assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest, name
+          PY
+      - name: Check distribution metadata
+        run: |
+          python -m pip install 'twine==7.0.0'
+          python -m twine check --strict dist/*
+      - uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5
+        with:
+          name: prime-0.2.1-approved-distributions
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    if: ${{ inputs.upload && github.ref == 'refs/heads/main' && github.repository == 'ChoYoungSeo/prime-importance-paper' }}
+    needs: verify
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/prime-importance/
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6
+        with:
+          name: prime-0.2.1-approved-distributions
+          path: dist/
+      - name: Recheck the approved hashes before upload
+        working-directory: dist
+        run: |
+          test "$(find . -type f | wc -l)" -eq 2
+          sha256sum --strict --check <<'SHA256'
+          2b5ac6c8a12e1c8979bdb466e3b0193ffcfb5c3b63321161ea195cbcc327220d  prime_importance-0.2.1.tar.gz
+          c04a3696495d1b9d47d44ed9b045c7032f604f848671220434e6aff0ed7f3642  prime_importance-0.2.1-py3-none-any.whl
+          SHA256
+      - name: Publish the verified distributions
+        uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # v1.14.2
+        with:
+          packages-dir: dist/
+          attestations: true
+          skip-existing: false
+          verify-metadata: true
+          print-hash: true
+          verbose: false

@@ -502,6 +502,87 @@
     "validated_utc": "2026-10-14T18:45:42.416192+00:00",
     "validation_status": "PASS_SOURCE_GUARD_WORKFLOW_CONTRACTS_AND_SAVED_NUMERICAL_CHECKS"
   },
+  "monorepo_source_consolidation_20261014": {
+    "Python_README_PYPI_and_pyproject_unchanged": true,
+    "Python_version": "0.2.1",
+    "R_DESCRIPTION_and_BugReports_unchanged": true,
+    "R_version": "0.5.5",
+    "allowed_orchestration_source_pin_deltas": [
+      {
+        "after_sha256": "0b3a259a8645a37e80907de12bfa84e0afd1edea00a222e1e0f59e8813ec0384",
+        "before_sha256": "d30da68be64e10f87637c688a4656421a1d2d0205e7eaf022b2ccb71fcf8137f",
+        "path": "README.md"
+      },
+      {
+        "after_sha256": "8e58d45259af2ed4cc778745b8e35e522d7098554c2a4aaea2710ad63892fd4e",
+        "before_sha256": "dc22b61ff6c03e640304dd5540d672d2fbb8fd8825c2f3b60d9018468a97462c",
+        "path": "experiments/99_validate/test_verified_workflow.py"
+      },
+      {
+        "after_sha256": "0c613ee8892649086caaf7b8481f05b78e1ae3d05fb2c221666ab7fb1e97e070",
+        "before_sha256": "af036f5d6ab769e91ee82e7ccaf935b3904b4ae3ab3c2d5b9b8a1404ed155854",
+        "path": "experiments/99_validate/verified_workflow.py"
+      }
+    ],
+    "candidate": "/Users/ycho397/Documents/ResearchReview/PRIME_2026-10-11/submission_followup/consolidation_execution_2026-10-14/monorepo_candidate",
+    "current_workflow_manifest_sha256": "68381848e4310f34415a329ca77b7c09a2de38dc82890f4ffb17ab96397b35d6",
+    "current_workflow_pointer": {
+      "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
+      "maintained_packages": {
+        "manifest": "results/maintained_packages/20261014_source_inventory.json",
+        "sha256": "43d53d6c013a5ebc13c2c9f29b848e9192b6aec97b203cd1bca121f32b061164"
+      },
+      "manifest": "results/workflow_revisions/20261014_monorepo_topology.json",
+      "schema_version": 1,
+      "sha256": "68381848e4310f34415a329ca77b7c09a2de38dc82890f4ffb17ab96397b35d6"
+    },
+    "external_mutations": [],
+    "frozen_R_all_30_files_unchanged": true,
+    "historical_manifest_bytes_unchanged": true,
+    "maintained_documentation_deltas": {
+      "Python": [
+        {
+          "after_sha256": "40b623fb73f9a7665ffbe4768b94b11955a866563e475974fa014c605ed6e318",
+          "before_sha256": "36fb32baf5a4b6f62ad7054691230c40b33edaffd216d7e689e6298f61bc67e2",
+          "path": "packages/python/CITATION.cff"
+        },
+        {
+          "after_sha256": "dbb9a1657fa4a0d008835efd6c9557131028d9fa6827ac741f1652a77ea684bd",
+          "before_sha256": "f025c3127f8846b74192bae92de3b3ca70825b56f7f6ff9f06db39fb2432dd53",
+          "path": "packages/python/README.md"
+        }
+      ],
+      "R": [
+        {
+          "after_sha256": "487bf225eef679945b5a8e0ce47573728bf0ef00fbb287aba3fc2bea9ffe3974",
+          "before_sha256": "4c398c189bbd6914b0bddb8802848ba2ddcff76464898ccb07aacd7c1f54c4f7",
+          "path": "packages/r/CITATION.cff"
+        },
+        {
+          "after_sha256": "1a565b34e0a6dc237428d353fb3759bda484fe05229cb1e99f196f7873ac396e",
+          "before_sha256": "7119c66501ad343fb66248b9df96af35104cd62c62f78caba45d98fd2ff7545c",
+          "path": "packages/r/README.md"
+        }
+      ]
+    },
+    "maintained_inventory_counts": {
+      "python": 30,
+      "r": 61
+    },
+    "maintained_package_manifest": {
+      "manifest": "results/maintained_packages/20261014_source_inventory.json",
+      "sha256": "43d53d6c013a5ebc13c2c9f29b848e9192b6aec97b203cd1bca121f32b061164"
+    },
+    "maintained_scientific_code_and_API_file_bytes_unchanged": true,
+    "phase": "LOCAL_MONOREPO_SOURCE_GUARD_READY_FOR_PRIVATE_CI",
+    "prepared_utc": "2026-10-14T20:37:15.428843+00:00",
+    "registry_submissions_or_files_changed": false,
+    "retirement_state": "No legacy repositories closed or permission changes here; compatibility URLs remain required by published0.2.1 metadata and pendingCRAN0.5.5 submission.",
+    "scientific_guard_pass": true,
+    "scientific_input_pins": 64,
+    "scientific_manifest_source_paths": 94,
+    "scientific_release_metadata_unchanged": true
+  },
   "new_fits_or_experiments": false,
   "paper_navigation_no_contact_20261014": {
     "checks": {

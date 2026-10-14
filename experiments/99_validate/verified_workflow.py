@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 from pathlib import Path, PurePosixPath
+import re
 import shutil
 import subprocess
 import tempfile
@@ -90,10 +91,194 @@ def package_source_inventory(root):
             and path.name != ".DS_Store"}
 
 
+MAINTAINED_PACKAGE_ROOTS = {"r": "packages/r", "python": "packages/python"}
+MAINTAINED_TRANSIENT_DIRECTORIES = frozenset({
+    "__pycache__", ".pytest_cache", ".ruff_cache", "build", "dist",
+    "library", "tmp", "check"})
+MAINTAINED_COMPILED_SUFFIXES = frozenset({".o", ".so", ".dll", ".a"})
+
+
+def maintained_relative(value):
+    """New inventory paths have one canonical spelling; old pins are unchanged."""
+    if not isinstance(value, str):
+        raise ValueError("Maintained package paths must be strings")
+    path = relative(value)
+    if path.as_posix() != value or value == ".":
+        raise ValueError(f"Noncanonical maintained package path: {value!r}")
+    return path
+
+
+def maintained_package_source_inventory(root, package_root):
+    """Pin every maintained source/build input, excluding named transient artifacts.
+
+    Paths are repository-relative. Source symlinks and special files are refused,
+    including symlinked package ancestors. Ignored directories are not traversed.
+    This is deliberately separate from the frozen software/prime inventory.
+    """
+    root = Path(root)
+    relative_root = maintained_relative(package_root)
+    if package_root not in MAINTAINED_PACKAGE_ROOTS.values():
+        raise ValueError(f"Unsupported maintained package root: {package_root}")
+    source = confined(root, package_root)
+    ancestor = root
+    for component in relative_root.parts:
+        ancestor = ancestor / component
+        if ancestor.is_symlink():
+            raise ValueError(f"Maintained package source symlink: {ancestor.relative_to(root)}")
+    if not source.is_dir():
+        raise ValueError(f"Missing maintained package root: {package_root}")
+    inventory = set()
+
+    def walk_error(error):
+        raise ValueError(f"Cannot inspect maintained package source: {error}") from error
+
+    for directory, directories, filenames in os.walk(source, followlinks=False, onerror=walk_error):
+        directory = Path(directory)
+        kept_directories = []
+        for name in sorted(directories):
+            path = directory / name
+            if path.is_symlink():
+                raise ValueError(f"Maintained package source symlink: {path.relative_to(root)}")
+            if (name in MAINTAINED_TRANSIENT_DIRECTORIES or
+                    name.endswith((".egg-info", ".Rcheck"))):
+                continue
+            kept_directories.append(name)
+        directories[:] = kept_directories
+        for name in sorted(filenames):
+            path = directory / name
+            if path.is_symlink():
+                raise ValueError(f"Maintained package source symlink: {path.relative_to(root)}")
+            if (path.suffix in MAINTAINED_COMPILED_SUFFIXES or name == ".DS_Store" or
+                    name.endswith((".egg-info", ".Rcheck"))):
+                continue
+            if not path.is_file():
+                raise ValueError(f"Maintained package source is not a regular file: {path.relative_to(root)}")
+            inventory.add(path.relative_to(root).as_posix())
+    return inventory
+
+
+def maintained_sha256(value):
+    if not isinstance(value, str) or re.fullmatch(r"[0-9a-f]{64}", value) is None:
+        raise ValueError("Maintained package SHA256 must be 64 lowercase hexadecimal characters")
+    return value
+
+
+def verify_maintained_package_version(source, language, expected):
+    """Read static source metadata without importing or installing either package."""
+    if not isinstance(expected, str) or not expected:
+        raise ValueError("Maintained package version must be a nonempty string")
+    if language == "r":
+        fields = {name: [] for name in ("Package", "Version")}
+        current_field = None
+        for line in (source / "DESCRIPTION").read_text().splitlines():
+            if line.startswith((" ", "\t")) and current_field in fields:
+                raise ValueError("Maintained R package name/version must be single-line fields")
+            current_field = line.split(":", 1)[0] if ":" in line and not line[0].isspace() else None
+            for name in fields:
+                if line.startswith(name + ":"):
+                    fields[name].append(line.split(":", 1)[1].strip())
+        if fields["Package"] != ["prime"] or fields["Version"] != [expected]:
+            raise ValueError("Maintained R package name/version mismatch")
+    else:
+        # Existing pyproject metadata uses static, single-line name/version
+        # strings. Keep this guard dependency-free on Python 3.10 as well.
+        text = (source / "pyproject.toml").read_text()
+        # Refuse forms the bounded Python 3.10 parser cannot interpret: a fake
+        # table inside a multiline string must never stand in for metadata.
+        if "\"\"\"" in text or "'''" in text:
+            raise ValueError("Maintained Python package metadata must use single-line strings")
+        for header in re.finditer(r"(?m)^[ \t]*\[(.*)\][ \t]*(?:#.*)?$", text):
+            if re.fullmatch(r"[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)*", header.group(1)) is None:
+                raise ValueError("Maintained Python package metadata must use bare table names")
+        sections = list(re.finditer(r"(?m)^[ \t]*\[([^\]\r\n]+)\][ \t]*(?:#.*)?$", text))
+        projects = [i for i, section in enumerate(sections) if section.group(1) == "project"]
+        if len(projects) != 1:
+            raise ValueError("Maintained Python package requires one static [project] table")
+        index = projects[0]
+        end = sections[index + 1].start() if index + 1 < len(sections) else len(text)
+        project = text[sections[index].end():end]
+        fields = {name: [] for name in ("name", "version")}
+        for line in project.splitlines():
+            if re.match(r"[ \t]*dynamic[ \t]*=", line):
+                raise ValueError("Maintained Python package metadata must be static")
+            if re.match(r"[ \t]*(['\"])[^'\"\r\n]+\1[ \t]*(?:=|\.)", line):
+                raise ValueError("Maintained Python package metadata must use unquoted keys")
+            match = re.fullmatch(r"[ \t]*(name|version)[ \t]*=[ \t]*(['\"])([^'\"\\\r\n]+)\2[ \t]*(?:#.*)?", line)
+            if match:
+                fields[match.group(1)].append(match.group(3))
+            elif re.match(r"[ \t]*(name|version)[ \t]*(?:=|\.)", line):
+                raise ValueError("Maintained Python package name/version must be static strings")
+        if fields["name"] != ["prime-importance"] or fields["version"] != [expected]:
+            raise ValueError("Maintained Python package name/version mismatch")
+        # The standard parser additionally checks the complete TOML on Python
+        # 3.11+. The bounded static format above remains usable on Python 3.10.
+        try:
+            import tomllib
+        except ModuleNotFoundError:
+            pass
+        else:
+            try:
+                parsed = tomllib.loads(text)
+            except tomllib.TOMLDecodeError as error:
+                raise ValueError("Invalid maintained Python package metadata") from error
+            if (parsed.get("project", {}).get("name") != "prime-importance" or
+                    parsed.get("project", {}).get("version") != expected):
+                raise ValueError("Maintained Python package name/version mismatch")
+
+
+def maintained_json_object(pairs):
+    """Refuse ambiguous duplicate keys in the new independently pinned manifest."""
+    value = {}
+    for key, item in pairs:
+        if key in value:
+            raise ValueError(f"Duplicate maintained package manifest key: {key}")
+        value[key] = item
+    return value
+
+
+def verify_maintained_packages(root, reference):
+    """Verify optional maintained packages without changing the scientific manifest."""
+    if not isinstance(reference, dict) or set(reference) != {"manifest", "sha256"}:
+        raise ValueError("Unsupported maintained package manifest reference")
+    maintained_relative(reference["manifest"])
+    manifest_path = confined(root, reference["manifest"])
+    expected_digest = maintained_sha256(reference["sha256"])
+    manifest_bytes = manifest_path.read_bytes()
+    if hashlib.sha256(manifest_bytes).hexdigest() != expected_digest:
+        raise ValueError("Maintained package manifest hash mismatch")
+    manifest = json.loads(manifest_bytes, object_pairs_hook=maintained_json_object)
+    if (not isinstance(manifest, dict) or set(manifest) != {"schema_version", "packages"} or
+            type(manifest["schema_version"]) is not int or manifest["schema_version"] != 1 or
+            not isinstance(manifest["packages"], dict) or
+            set(manifest["packages"]) != set(MAINTAINED_PACKAGE_ROOTS)):
+        raise ValueError("Unsupported maintained package manifest schema")
+    for language, expected_root in MAINTAINED_PACKAGE_ROOTS.items():
+        package = manifest["packages"][language]
+        if (not isinstance(package, dict) or set(package) != {"root", "version", "source_files"} or
+                package["root"] != expected_root):
+            raise ValueError(f"Unsupported maintained {language} package record/root")
+        source_files = package["source_files"]
+        if not isinstance(source_files, dict) or not source_files:
+            raise ValueError("Maintained package must pin source files")
+        for logical, expected in source_files.items():
+            logical_path = maintained_relative(logical)
+            if not logical_path.is_relative_to(maintained_relative(expected_root)):
+                raise ValueError(f"Maintained source path escapes its package root: {logical}")
+            maintained_sha256(expected)
+        if maintained_package_source_inventory(root, expected_root) != set(source_files):
+            raise ValueError(f"Maintained package source inventory differs from its pins: {expected_root}")
+        for logical, expected in source_files.items():
+            if digest(confined(root, logical)) != expected:
+                raise ValueError(f"Maintained package source hash mismatch: {logical}")
+        verify_maintained_package_version(confined(root, expected_root), language, package["version"])
+
+
 def verify_release(root):
     manifest_path = root / "results/current_release.json"
     historical = json.loads(manifest_path.read_text())
     pointer_path = root / "results/current_workflow.json"
+    maintained_reference = None
+    maintained_present = False
     if pointer_path.exists():
         pointer = json.loads(pointer_path.read_text())
         if pointer.get("schema_version") != 1:
@@ -129,6 +314,9 @@ def verify_release(root):
                    if revised["source_files"][p] != historical["source_files"][p]}
         if not changed <= audited_paths:
             raise ValueError("Workflow revision changed scientific source pins")
+        if "maintained_packages" in pointer:
+            maintained_present = True
+            maintained_reference = pointer["maintained_packages"]
         manifest_path = revised_path
     manifest = json.loads(manifest_path.read_text())
     if manifest.get("schema_version") != 2:
@@ -159,6 +347,8 @@ def verify_release(root):
         logical = f"results/provenance/paired_baselines/{name}.csv.gz"
         if logical not in manifest["files"]:
             raise ValueError(f"Missing corrected baseline: {logical}")
+    if maintained_present:
+        verify_maintained_packages(root, maintained_reference)
     return manifest, digest(manifest_path)
 
 

@@ -1,0 +1,77 @@
+# Inactive local draft: this is deliberately outside .github/workflows.
+# Configure the matching PyPI Trusted Publisher and GitHub pypi environment
+# only after release approval, then install as publish.yml.
+name: Publish approved Python distribution to PyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      expected_version:
+        description: Approved package version
+        required: true
+        default: "0.2.1"
+        type: string
+      confirm_pypi_upload:
+        description: Upload these checked distributions to production PyPI
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Check approved version
+        env:
+          EXPECTED_VERSION: ${{ inputs.expected_version }}
+        run: |
+          python - <<'PYVERSION'
+          import os
+          import tomllib
+          from pathlib import Path
+          project = tomllib.loads(Path("pyproject.toml").read_text())["project"]
+          assert project["name"] == "prime-importance"
+          assert project["version"] == os.environ["EXPECTED_VERSION"]
+          PYVERSION
+      - name: Build and check distributions
+        run: |
+          python -m pip install build twine
+          python -m build
+          python -m twine check --strict dist/*
+      - name: Check installed wheel
+        run: |
+          python -m pip install dist/*.whl pytest matplotlib
+          python -m pip check
+          python -m pytest
+          MPLBACKEND=Agg python examples/quickstart.py
+      - uses: actions/upload-artifact@v5
+        with:
+          name: python-package-distributions
+          path: dist/
+          if-no-files-found: error
+
+  publish:
+    if: ${{ inputs.confirm_pypi_upload }}
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/prime-importance
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v6
+        with:
+          name: python-package-distributions
+          path: dist/
+      - name: Publish checked artifacts
+        uses: pypa/gh-action-pypi-publish@release/v1

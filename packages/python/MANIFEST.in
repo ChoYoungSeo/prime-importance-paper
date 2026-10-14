@@ -1,0 +1,7 @@
+include README.md
+include README_PYPI.md
+include CITATION.cff
+include VALIDATION.md
+recursive-include docs/assets *.png
+recursive-include examples *.py
+recursive-include benchmarks *.py *.json

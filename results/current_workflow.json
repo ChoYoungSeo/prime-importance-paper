@@ -1,6 +1,10 @@
 {
   "historical_release_sha256": "c2e36721f4f533183c41bd18ddf410266c36241de1712d6ababf6e40d09c7d88",
-  "manifest": "results/workflow_revisions/20261014_approved_caption_style_main_page.json",
+  "maintained_packages": {
+    "manifest": "results/maintained_packages/20261014_source_inventory.json",
+    "sha256": "09e8d02b1e3706d7f26da62a2ab7897fb99730b2a91563bf81dd717b5808d8eb"
+  },
+  "manifest": "results/workflow_revisions/20261014_monorepo_topology.json",
   "schema_version": 1,
-  "sha256": "327c893912c6908fdd7c00f599725b485729a3ae445b94a3817fb54229616f9a"
+  "sha256": "68381848e4310f34415a329ca77b7c09a2de38dc82890f4ffb17ab96397b35d6"
 }
